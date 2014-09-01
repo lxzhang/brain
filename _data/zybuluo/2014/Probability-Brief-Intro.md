@@ -23,10 +23,10 @@ If an individual coin toss or the roll of dice is considered to be a random even
  
 As a mathematical foundation for statistics, probability theory is essential 
 to many human activities that involve quantitative analysis of large sets of data.
- Methods of probability theory also apply to descriptions of complex systems 
- given only partial knowledge of their state, as in statistical mechanics. 
- A great discovery of twentieth century physics was the probabilistic nature 
- of physical phenomena at atomic scales, described in quantum mechanics.
+Methods of probability theory also apply to descriptions of complex systems 
+given only partial knowledge of their state, as in statistical mechanics. 
+A great discovery of twentieth century physics was the probabilistic nature 
+of physical phenomena at atomic scales, described in quantum mechanics.
 
 
 
@@ -44,8 +44,22 @@ to many human activities that involve quantitative analysis of large sets of dat
 
 ![](/_img/2014/pdf.png)
 
+* **Probability distribution function**: continuous or discrete, non-cumulative or cumulative.
+* **Probability distribution**: sometimes the same as probability distribution function, but usually refers to the more complete assignment of probabilities to all measurable subsets of outcomes, not just to specific outcomes or ranges of outcomes.
 
+**Basic Terms**
 
+* [Mode][mode]: for a discrete random variable, the value with highest probability (the location at which the probability mass function has its peak); for a continuous random variable, the location at which the probability density function has its peak.
+* [Support][support]: the smallest closed set whose complement has probability zero.
+* [Head][head]: the range of values where the pmf or pdf is relatively high.
+* [Tail][tail]: the complement of the head within the support; the large set of values where the pmf or pdf is relatively low.
+* [Expected value][expected-value] or mean: the weighted average of the
+ possible values, using their probabilities as their weights; or the continuous analog thereof.
+* [Median][median]: the value such that the set of values less than the median has a probability of one-half.
+* [Variance][variance]: the second moment of the pmf or pdf about the mean; an important measure of the dispersion of the distribution.
+* [Standard deviation][standard-deviation]: the square root of the variance, and hence another measure of dispersion.
+* [Symmetry][symmetry]: a property of some distributions in which the portion of the distribution to the left of a specific value is a mirror image of the portion to its right.
+* [Skewness][skewness]: a measure of the extent to which a pmf or pdf "leans" to one side of its mean.
 
 
 
@@ -89,4 +103,12 @@ to many human activities that involve quantitative analysis of large sets of dat
 
 [pmf]: http://en.wikipedia.org/wiki/Probability_mass_function
 [pdf]: http://en.wikipedia.org/wiki/Probability_density_function
-
+[mode]: http://en.wikipedia.org/wiki/Mode_(statistics)
+[support]: http://en.wikipedia.org/wiki/Support_(mathematics)
+[head]: http://en.wikipedia.org/wiki/Heavy-tailed_distribution
+[tail]: http://en.wikipedia.org/wiki/Heavy-tailed_distribution
+[expected-value]: http://en.wikipedia.org/wiki/Expected_value
+[median]: http://en.wikipedia.org/wiki/Median
+[variance]: http://en.wikipedia.org/wiki/Variance
+[standard-deviation]: http://en.wikipedia.org/wiki/Standard_deviation
+[skewness]: http://en.wikipedia.org/wiki/Skewness
