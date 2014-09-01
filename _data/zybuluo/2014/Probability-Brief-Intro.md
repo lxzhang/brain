@@ -8,7 +8,6 @@ Tags: Probability
 
 ---
 
-[TOC]
 
 Probability theory is the branch of mathematics concerned with probability,
 the analysis of random phenomena. The central objects of probability theory 
@@ -258,12 +257,9 @@ This recovers the definition given above.
 * 
 
 
-[this]: url
 
 
-
-
-
+[this]: https://zybuluo.com/gnat-xj/note/30709
 
 [pmf]: http://en.wikipedia.org/wiki/Probability_mass_function
 [pdf]: http://en.wikipedia.org/wiki/Probability_density_function
@@ -277,11 +273,8 @@ This recovers the definition given above.
 [standard-deviation]: http://en.wikipedia.org/wiki/Standard_deviation
 [skewness]: http://en.wikipedia.org/wiki/Skewness
 
-
-
-
-[pic01]: /_img/2014/pmf.png
-[pic02]: /_img/2014/pdf.png
-[pic03]: /_img/2014/cumulative-distribution-func-for-normal-distribution.png
-[pic04]: /_img/2014/pmf-of-discret-probability-distribution.png
-[cdf-discrete]: /_img/2014/cdf-of-discrete-probability-distribution.png
+[pic01]: http://gnat.qiniudn.com/%40%2Fbrain%2Fimg%2F2014%2Fpmf.png
+[pic02]: http://gnat.qiniudn.com/%40%2Fbrain%2Fimg%2F2014%2Fpdf.png
+[pic03]: http://gnat.qiniudn.com/%40%2Fbrain%2Fimg%2F2014%2Fcumulative-distribution-func-for-normal-distribution.png
+[pic04]: http://gnat.qiniudn.com/%40%2Fbrain%2Fimg%2F2014%2Fpmf-of-discret-probability-distribution.png
+[cdf-discrete]: http://gnat.qiniudn.com/%40%2Fbrain%2Fimg%2F2014%2Fcdf-of-discrete-probability-distribution.png
