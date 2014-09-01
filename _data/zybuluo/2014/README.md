@@ -12,3 +12,4 @@
 
 * [ ] [Sigma Field]()
 * [ ] [MathJax Basic](MathJax-Basic.md), https://www.zybuluo.com/gnat-xj/note/30681
+* [ ] [Probability Brief Intro](Probability-Brief-Intro.md), 
