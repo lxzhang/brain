@@ -3,6 +3,7 @@
 Tags: MathJax LaTeX
 
 > [戳我的作业部落-本文][this]
+>
 > [戳我的作业部落-文档目录](https://github.com/district10/brain/tree/master/_data/zybuluo)
 
 ---
@@ -250,7 +251,7 @@ MathBB
 
 * http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols
 * http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Commands
-
+* http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 
 
 [this]: https://www.zybuluo.com/gnat-xj/note/30681
