@@ -60,10 +60,11 @@ See Brain
 | $\ell\wp$ | \ell\wp |
 | $\Re\Im$ | \Re\Im |
 | $\mho\prime$ | \mho\prime |
-| $\flat\natural\sharp\$ | \flat\natural\sharp |
+| $\cup\cap$ | \cup\cap |
+| $\flat\natural\sharp$ | \flat\natural\sharp |
 | $\surd\partial\top\bot\forall\neg$ | \surd\partial\top\bot\forall\neg |
 | $\S$ | \S |
-
+| $\quad$ | \quad |
 
 
 ## **Exponents and Subscripts**

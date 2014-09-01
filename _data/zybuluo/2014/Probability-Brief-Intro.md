@@ -135,13 +135,85 @@ the set of possible outcomes is the same and the probabilities are also the same
 
 A probability space consists of three parts:
 
-1. A sample space, Ω, which is the set of all possible outcomes.
+1. A **sample space**, Ω, which is the set of all possible outcomes.
 (注意 Outcome 和 $\omega$(omega))
-2. A set of events $\scriptstyle \mathcal{F}$, 
+2. A **set of events** $\scriptstyle \mathcal{F}$, 
 where each event is a set containing zero or more outcomes.
-3. The assignment of probabilities to the events; 
+3. The **assignment of probabilities to the events**; 
 that is, a function P from events to probabilities.
 
+In short, a probability space is a measure space such that 
+the measure of the whole space is equal to one.
+
+The expanded definition is following: a probability space is a triple 
+$\scriptstyle (\Omega,\; \mathcal{F},\; P)$ consisting of:
+
+* the sample space Ω — an arbitrary non-empty set,
+* the σ-algebra $\scriptstyle \mathcal{F} \subseteq 2^Ω$ (also called σ-field) — 
+a set of subsets of Ω, called events, such that:
+    * $\scriptstyle \mathcal{F}$ contains the sample space: $\scriptstyle \Omega \in \mathcal{F}$,
+    * $\scriptstyle \mathcal{F}$ is closed under complements: if $A\in\scriptstyle \mathcal{F}$, then also $(Ω\setminus A)\in\scriptstyle \mathcal{F}$,
+    * $\scriptstyle \mathcal{F}$ is closed under countable unions: if $A_i\in\scriptstyle \mathcal{F}$ for i=1,2,..., then also $(\cup_i A_i)\in\scriptstyle \mathcal{F}$
+* the probability measure $P: \scriptstyle \mathcal{F}→[0,1]$: countably additive, and $P(Ω) = 1$.
+
+**Discrete case**
+
+* Ω is countable.
+* Probabilities: pmf $p: Ω→[0,1]$ such that $∑_ω\in Ω p(ω) = 1.$
+* $P(A) = \sum_{\omega\in A} p(\omega) \quad \text{for all } A \subseteq \Omega $
+
+**General case**
+
+If Ω is uncountable, still, it may happen that p(ω) ≠ 0 for some ω; 
+such ω are called **atoms**. They are an at most countable (maybe empty) set, 
+whose probability is the sum of probabilities of all atoms. 
+If this sum is equal to 1 then all other points can safely be excluded 
+from the sample space, returning us to the discrete case. 
+Otherwise, if the sum of probabilities of all atoms is less than 1 (maybe 0), 
+then the probability space decomposes into a discrete (atomic) part (maybe empty) 
+and a non-atomic part.
+
+**Non-atomic case**
+
+If $p(ω) = 0 for all ω\inΩ$ 
+(in this case, Ω must be uncountable, because otherwise P(Ω)=1 could not be satisfied), 
+then equation $P(\omega)=1$ fails: the probability of a set 
+is not the sum over its elements, as **summation is only defined for countable amount of elements.**
+This makes the probability space theory much more technical. 
+A formulation stronger than summation, measure theory is applicable. 
+Initially the probabilities are ascribed to some “generator” sets (see the examples). 
+Then a limiting procedure allows assigning probabilities to sets that are limits 
+of sequences of generator sets, or limits of limits, and so on. 
+All these sets are the σ-algebra $\scriptstyle \mathcal{F}$. 
+For technical details see Carathéodory's extension theorem. 
+Sets belonging to $\scriptstyle \mathcal{F}$ are called measurable. 
+In general they are much more complicated than generator sets, 
+but much better than non-measurable sets.
+
+**Complete probability space**
+
+A probability space $\scriptstyle (\Omega,\; \mathcal{F},\; P)$ is said to be 
+a complete probability space if for all $\scriptstyle B\, \in \,\mathcal{F}$ 
+with $\scriptstyle P(B)\,=\;0$  and all $\scriptstyle A\; \subset \;B$  one has 
+$\scriptstyle A \;\in\; \mathcal{F}$. Often, the study of probability spaces 
+is restricted to complete probability spaces.
+
+
+
+
+### **Probability axioms**
+
+In Kolmogorov's probability theory, the probability $P$ of some event $E$, 
+denoted $P(E)$, is usually defined such that $P$ satisfies the Kolmogorov axioms, 
+named after the famous Russian mathematician Andrey Kolmogorov, which are described below.
+
+These assumptions can be summarised as: 
+Let $(Ω, F, P)$ be a measure space with $P(Ω)=1$. Then 
+$(Ω, F, P)$ is a probability space, with sample space $Ω$, event space $F$ and 
+probability measure $P$.
+
+An alternative approach to formalising probability, favoured by some Bayesians, 
+is given by Cox's theorem.
 
 
 ### **Measure theoretic formulation**
