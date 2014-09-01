@@ -19,3 +19,5 @@
 * [大师的幽默](大师的幽默.md)
 * [重新认识线性代数](重新认识线性代数.md)
 * [List of Latin Phrases](List-of-Latin-Phrases.md)
+* [Citation Signal](Citation-Signal.md)
+* [List of Latin Abbreviations](List-of-Latin-Abbreviations.md)
