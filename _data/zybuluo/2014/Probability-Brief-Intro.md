@@ -37,12 +37,12 @@ of physical phenomena at atomic scales, described in quantum mechanics.
 
 * **Probability mass**, [Probability mass function][pmf], **`p.m.f.`**: for discrete random variables.
 
-![](/_img/2014/pmf.png)
+![][pic01]
 
 * **Categorical distribution**: for discrete random variables with a finite set of values.
 * **Probability density**, [Probability density function][pdf], **`p.d.f.`**: most often reserved for continuous random variables.
 
-![](/_img/2014/pdf.png)
+![][pic02]
 
 * **Probability distribution function**: continuous or discrete, non-cumulative or cumulative.
 * **Probability distribution**: sometimes the same as probability distribution function, but usually refers to the more complete assignment of probabilities to all measurable subsets of outcomes, not just to specific outcomes or ranges of outcomes.
@@ -81,7 +81,8 @@ its cumulative distribution function:
 $$F(x) = \Pr \left[ X \le x \right] \qquad \text{ for all } x \in \mathbb{R}.$$
 
 Cumulative distribution function for the normal distribution:
-![](/_img/2014/cumulative-distribution-func-for-normal-distribution.png)
+
+![][pic03]
 
 
 ### **Discrete probability distribution**
@@ -96,7 +97,8 @@ $$\sum_u \Pr(X=u) = 1$$
 The probability mass function of a discrete probability distribution. 
 The probabilities of the singletons {1}, {3}, and {7} are respectively 0.2, 0.5, 0.3. 
 A set not containing any of these points has probability zero.
-![](/_img/2014/pmf-of-discret-probability-distribution.png)
+
+![][pic04]
 
 
 
@@ -142,3 +144,11 @@ A set not containing any of these points has probability zero.
 [variance]: http://en.wikipedia.org/wiki/Variance
 [standard-deviation]: http://en.wikipedia.org/wiki/Standard_deviation
 [skewness]: http://en.wikipedia.org/wiki/Skewness
+
+
+
+
+[pic01]: /_img/2014/pmf.png
+[pic02]: /_img/2014/pdf.png
+[pic03]: /_img/2014/cumulative-distribution-func-for-normal-distribution.png
+[pic04]: /_img/2014/pmf-of-discret-probability-distribution.png
