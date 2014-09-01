@@ -72,11 +72,31 @@ to the left of a specific value is a mirror image of the portion to its right.
 to one side of its mean.
 
 
+### **Cumulative distribution function**
+
+Because a probability distribution Pr on the real line is determined by
+the probability of a scalar random variable X being in a half-open interval (-∞, x], 
+the probability distribution is completely characterized by 
+its cumulative distribution function:
+$$F(x) = \Pr \left[ X \le x \right] \qquad \text{ for all } x \in \mathbb{R}.$$
+
+Cumulative distribution function for the normal distribution:
+![](/_img/2014/cumulative-distribution-func-for-normal-distribution.png)
 
 
+### **Discrete probability distribution**
 
+A discrete probability distribution shall be understood as a 
+probability distribution characterized by a probability mass function. 
+Thus, the distribution of a random variable $X$ is discrete, 
+and $X$ is then called a discrete random variable, if
 
+$$\sum_u \Pr(X=u) = 1$$
 
+The probability mass function of a discrete probability distribution. 
+The probabilities of the singletons {1}, {3}, and {7} are respectively 0.2, 0.5, 0.3. 
+A set not containing any of these points has probability zero.
+![](/_img/2014/pmf-of-discret-probability-distribution.png)
 
 
 
