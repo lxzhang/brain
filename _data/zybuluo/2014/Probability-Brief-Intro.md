@@ -94,16 +94,76 @@ and $X$ is then called a discrete random variable, if
 
 $$\sum_u \Pr(X=u) = 1$$
 
-The probability mass function of a discrete probability distribution. 
+as u runs through the set of all possible values of X. It follows that 
+such a random variable can assume only a finite or countably infinite number of values. 
+For the number of potential values to be countably infinite 
+even though their probabilities sum to 1 requires that the probabilities 
+decline to zero fast enough: for example, if 
+$\Pr(X=n) = \tfrac{1}{2^n} for n = 1, 2, ...$, 
+we have the sum of probabilities 1/2 + 1/4 + 1/8 + ... = 1.
+
+Among the most well-known discrete probability distributions 
+that are used for statistical modeling are 
+**the Poisson distribution**, 
+**the Bernoulli distribution**, 
+**the binomial distribution**, 
+**the geometric distribution**, and 
+**the negative binomial distribution**. 
+In addition, **the discrete uniform distribution** is commonly used in computer programs 
+that make equal-probability random selections between a number of choices.
+
+* pmf of a discrete probability distribution. 
 The probabilities of the singletons {1}, {3}, and {7} are respectively 0.2, 0.5, 0.3. 
 A set not containing any of these points has probability zero.
 
 ![][pic04]
 
+* cdf of a discrete probability distribution
+
+![][cdf-discrete]
 
 
 
+### **Probability space**
 
+In probability theory, a probability space or a probability triple is 
+a mathematical construct that models a real-world process (or "experiment") 
+consisting of states that occur randomly. 
+A probability space is constructed with a specific kind of situation or experiment in mind. 
+One proposes that each time a situation of that kind arises, 
+the set of possible outcomes is the same and the probabilities are also the same.
+
+A probability space consists of three parts:
+
+1. A sample space, Ω, which is the set of all possible outcomes.
+(注意 Outcome 和 $\omega$(omega))
+2. A set of events $\scriptstyle \mathcal{F}$, 
+where each event is a set containing zero or more outcomes.
+3. The assignment of probabilities to the events; 
+that is, a function P from events to probabilities.
+
+
+
+### **Measure theoretic formulation**
+
+A measurable function $X \colon A \to B$  between 
+a probability space $(A, \mathcal A, P)$ and 
+a measurable space $(B, \mathcal B)$  is called 
+a discrete random variable 
+provided its image is a countable set and the pre-image of singleton sets are measurable, 
+i.e., $X^{-1}(b) \in \mathcal A for all b \in B$. 
+The latter requirement induces a probability mass function 
+$f_X \colon X(A) \to \mathbb R$ via  $f_X(b):=P(X^{-1}(b))$.
+Since the pre-images of disjoint sets are disjoint
+
+$$
+\sum_{b \in X(A)} f_X(b) = 
+\sum_{b \in X(A)} P(X^{-1} (b)) = 
+P \left( \bigcup_{b \in X(A)} X^{-1}(b) \right) = 
+P(A)=1.
+$$
+
+This recovers the definition given above.
 
 
 
@@ -152,3 +212,4 @@ A set not containing any of these points has probability zero.
 [pic02]: /_img/2014/pdf.png
 [pic03]: /_img/2014/cumulative-distribution-func-for-normal-distribution.png
 [pic04]: /_img/2014/pmf-of-discret-probability-distribution.png
+[cdf-discrete]: /_img/2014/cdf-of-discrete-probability-distribution.png
