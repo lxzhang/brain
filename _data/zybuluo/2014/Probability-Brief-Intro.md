@@ -49,17 +49,27 @@ of physical phenomena at atomic scales, described in quantum mechanics.
 
 **Basic Terms**
 
-* [Mode][mode]: for a discrete random variable, the value with highest probability (the location at which the probability mass function has its peak); for a continuous random variable, the location at which the probability density function has its peak.
+* [Mode][mode]: for a discrete random variable, the value with highest probability 
+(the location at which the probability mass function has its peak); 
+for a continuous random variable, the location at which 
+the probability density function has its peak.
 * [Support][support]: the smallest closed set whose complement has probability zero.
 * [Head][head]: the range of values where the pmf or pdf is relatively high.
-* [Tail][tail]: the complement of the head within the support; the large set of values where the pmf or pdf is relatively low.
+* [Tail][tail]: the complement of the head within the support; 
+the large set of values where the pmf or pdf is relatively low.
 * [Expected value][expected-value] or mean: the weighted average of the
- possible values, using their probabilities as their weights; or the continuous analog thereof.
-* [Median][median]: the value such that the set of values less than the median has a probability of one-half.
-* [Variance][variance]: the second moment of the pmf or pdf about the mean; an important measure of the dispersion of the distribution.
-* [Standard deviation][standard-deviation]: the square root of the variance, and hence another measure of dispersion.
-* [Symmetry][symmetry]: a property of some distributions in which the portion of the distribution to the left of a specific value is a mirror image of the portion to its right.
-* [Skewness][skewness]: a measure of the extent to which a pmf or pdf "leans" to one side of its mean.
+ possible values, using their probabilities as their weights; 
+or the continuous analog thereof.
+* [Median][median]: the value such that the set of values less than the median 
+has a probability of one-half.
+* [Variance][variance]: the second moment of the pmf or pdf about the mean; 
+an important measure of the dispersion of the distribution.
+* [Standard deviation][standard-deviation]: the square root of the variance, 
+and hence another measure of dispersion.
+* Symmetry: a property of some distributions in which the portion of the distribution 
+to the left of a specific value is a mirror image of the portion to its right.
+* [Skewness][skewness]: a measure of the extent to which a pmf or pdf "leans" 
+to one side of its mean.
 
 
 
