@@ -246,6 +246,8 @@ MathBB
 
 **See also**
 
+* http://www.math.harvard.edu/texman/node21.html
+* http://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics
 
 **Refs**
 
