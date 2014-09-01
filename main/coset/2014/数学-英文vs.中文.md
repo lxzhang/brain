@@ -1,8 +1,6 @@
 数学-英文vs.中文
 ================
 
-看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
-先上一份整理自 Wikipedia 的“说明书”。
 
 > The 18th and 19th centuries saw the creation and 
 > standardization of mathematical notation as used today. 
@@ -18,6 +16,9 @@
 > the differential operator is due to Leibniz, 
 > the cardinal infinities to Georg Cantor (in addition to the lemniscate (∞) of John Wallis), 
 > the congruence symbol (≡) to Gauss, and so forth.
+
+看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
+先上一份整理自 Wikipedia 的“说明书”。
 
 
 ### Αα (alpha)
