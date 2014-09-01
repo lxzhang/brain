@@ -4,6 +4,22 @@
 看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
 先上一份整理自 Wikipedia 的“说明书”。
 
+> The 18th and 19th centuries saw the creation and 
+> standardization of mathematical notation as used today. 
+> Euler was responsible for many of the notations in use today: 
+> the use of a, b, c for constants and x, y, z for unknowns, 
+> e for the base of the natural logarithm, sigma (Σ) for summation, 
+> i for the imaginary unit, and the functional notation f(x). 
+> He also popularized the use of π for Archimedes constant 
+> (due to William Jones' proposal for the use of π in this way 
+> based on the earlier notation of William Oughtred). 
+>
+> Many fields of mathematics bear the imprint of their creators for notation: 
+> the differential operator is due to Leibniz, 
+> the cardinal infinities to Georg Cantor (in addition to the lemniscate (∞) of John Wallis), 
+> the congruence symbol (≡) to Gauss, and so forth.
+
+
 ### Αα (alpha)
 
 α represents:
@@ -581,6 +597,14 @@
 
 ---
 
+**See also**
+
+* https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
+* https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
+
+
 **Refs**
 
 * https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
+* https://en.wikipedia.org/wiki/Mathematical_notation
