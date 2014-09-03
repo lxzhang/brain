@@ -228,10 +228,10 @@ B. Signals that indicate a useful comparison
     7. Compare...[and]...with...and...
 C. Signals that indicate contradiction
     8. Contra
-     9. But see
-     10. But cf.
+    9. But see 
+   10. But cf.
 D. Signal that indicates background material
-     11. See generally
+   11. See generally
 ~~~
 
 

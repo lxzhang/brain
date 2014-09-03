@@ -6,7 +6,7 @@
 
 * [x] [Why Does the Multi-paragraph Quotation Rule Exist](Why-Does-the-Multi-paragraph-Quotation-Rule-Exist.md)
 * [ ] [基本数学常识](基本数学常识.md)
-* [x] [List of Names](List-of-names.md)
+* [x] [List of Names](List-of-Names.md)
 * [ ] [电脑快捷键](电脑快捷键.md)
 * [ ] [美语发音](美语发音.md)
 * [x] [数学名词溯源](数学名词.md)
