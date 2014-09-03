@@ -218,20 +218,31 @@ see *American Trucking Associations v. United States EPA*, 195 F.3d 4 (D.C. Cir.
 
 ~~~
 A. Introductory signals
+
     1. [no signal]
 	2. e.g.,
 	3. Accord
     4. See
     5. See also
     6. Cf.
+
+	
 B. Signals that indicate a useful comparison
-    7. Compare...[and]...with...and...
+    
+	7. Compare...[and]...with...and...
+
+	
 C. Signals that indicate contradiction
-    8. Contra
+    
+	8. Contra
     9. But see 
    10. But cf.
+
+   
 D. Signal that indicates background material
+
    11. See generally
+
 ~~~
 
 
