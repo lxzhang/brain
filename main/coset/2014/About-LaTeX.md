@@ -42,8 +42,15 @@ calligraphy font， Script typefaces
 
 
 
+LaTeX has defined two commands that can be used anywhere in documents (not just maths) to insert some horizontal space. They are \quad and \qquad
+
+A \quad is a space equal to the current font size. So, if you are using an 11pt font, then the space provided by \quad will also be 11pt (horizontally, of course.) The \qquad gives twice that amount. As you can see from the code from the above example, \quads were used to add some separation between the maths and the text.
 
 
+
+**`\tt`**
+
+typewriter text
 
 
 
@@ -69,3 +76,4 @@ calligraphy font， Script typefaces
 * http://www.math.uiuc.edu/~hildebr/tex/packages.html
 * https://en.wikipedia.org/wiki/Fraktur
 * https://en.wikipedia.org/wiki/Blackboard_bold
+* https://en.wikibooks.org/wiki/LaTeX/Mathematics

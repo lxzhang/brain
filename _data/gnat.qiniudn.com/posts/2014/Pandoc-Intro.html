@@ -1,0 +1,157 @@
+<h1 id="about-pandoc-markdown" class="title">About Pandoc Markdown</h1>
+<title>
+About Pandoc Markdown
+</title>
+<p><link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/district10/ad8cdbf68052b70cddf0/raw/qiniu-css-pandoc-intro.css"></link></p>
+<h2 id="i.-normal-markdown" class="h2 section">I. Normal Markdown</h2>
+<h3 id="emphasis" class="h3">1. Emphasis</h3>
+<p>Use <strong>bold</strong>, or <em>italic (slanted)</em> to emphasis in Markdown. Or <strong><em>both</em></strong> if you want to.</p>
+<h3 id="lists" class="h3">2. Lists</h3>
+<p><strong>Ordered List</strong></p>
+<ol style="list-style-type: decimal">
+<li>Stay hungry</li>
+<li>Stay foolish</li>
+</ol>
+<p><strong>Not Ordered List</strong></p>
+<ul>
+<li>All work and no play</li>
+<li>makes Jacky a dull boy</li>
+</ul>
+<p><strong>Nested List</strong></p>
+<ol style="list-style-type: decimal">
+<li>one</li>
+<li>two
+<ul>
+<li>two-one</li>
+<li>two-two</li>
+</ul></li>
+<li>three
+<ol style="list-style-type: decimal">
+<li>three-one</li>
+<li>three-two</li>
+</ol></li>
+</ol>
+<h3 id="table" class="h3">3. Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Key</th>
+<th align="right">Value</th>
+<th align="right">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Foo</td>
+<td align="right"><em>fool</em></td>
+<td align="right">* &#31532;&#19968;&#21015;&#23621;&#20013;</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Bar</strong></td>
+<td align="right">barbaric</td>
+<td align="right">&#31532;&#20108;&#21015;&#21491;&#23545;&#40784;</td>
+</tr>
+<tr class="odd">
+<td align="center">Cup</td>
+<td align="right">cap cup c u <strong><em>dummy</em></strong></td>
+<td align="right">&#31532;&#19977;&#21015;&#24038;&#23545;&#40784;</td>
+</tr>
+</tbody>
+</table>
+<p>&#20284;&#20046;&#23545;&#40784;&#26377;&#28857;&#38382;&#39064;</p>
+<h3 id="quotes" class="h3">4. Quotes</h3>
+<p>Here is a quotation from <a href="http://www.imdb.com/character/ch0000933/quotes"><em>Terminator 2</em></a></p>
+<blockquote>
+<p>The future has not been written. There is no fate but what we make for ourselves. I wish I could believe that. My name is John Connor, they tried to murder me before I was born, when I was 13 they tried again. Machines from the future. Terminators. All my life my mother told me the storm was coming, Judgment Day, the beginning of the war between man and machines. Three billion lives would vanish in an instant, and I would lead what was left of the human race to ultimate victory. It hasn't happened, no bombs fell, computers didn't take control, we stopped Judgment Day. I should feel safe, but I don't, so I live off the grid - no phone, no address, no one and nothing can find me. I've erased all connections to the past, but as hard as I try I can't erase my dreams, my nightmares.</p>
+</blockquote>
+<h3 id="misc" class="h3">5. MISC</h3>
+<p><strong>All Headers, H1-H6</strong></p>
+<h1 id="header-1" class="h1">Header 1</h1>
+<h2 id="header-2" class="h2">Header 2</h2>
+<h3 id="header-3" class="h3">Header 3</h3>
+<h4 id="header-4" class="h4">Header 4</h4>
+<h5 id="header-5" class="h5">Header 5</h5>
+<h6 id="header-6" class="h6">Header 6</h6>
+<h2 id="ii.-pandoc-markdown" class="h2 section">II. Pandoc Markdown</h2>
+<h3 id="more-emphasis" class="h3">1. More Emphasis</h3>
+<p><strong>&#19978;&#19979;&#26631;&#65292;&#21024;&#38500;&#32447;&#65306;</strong></p>
+<ul>
+<li><del>2<sup><sup>10</sup></sup> = 2014</del></li>
+<li>2<sup><sup>10</sup></sup> = 1024</li>
+<li>H<sub>2</sub>O &#26159;&#29983;&#21629;&#20043;&#28304;</li>
+</ul>
+<h3 id="mathjax" class="h3">2. MathJax</h3>
+<p>Do you know <a href="http://en.wikipedia.org/wiki/Euler%27s_totient_function"><strong>Euler <span class="math">&#934;</span>-function</strong></a> ?</p>
+<p>And, how about Einstein's <br /><span class="math"><em>E</em>&#8196;=&#8196;<em>m</em><em>c</em><sup>2</sup></span><br /></p>
+<p>&#36824;&#21487;&#20197;&#26159;&#19968;&#20010;&#30697;&#38453;&#65306;</p>
+<p><br /><span class="math">$$
+\begin{bmatrix}
+1 &amp; x &amp; x^2 \\
+1 &amp; y &amp; y^2 \\
+1 &amp; z &amp; z^2 \\
+\end{bmatrix}
+$$</span><br /></p>
+<p>&#36825;&#20010;&#20063;&#19981;&#34892;&#12290;&#12290;&#12290;</p>
+<h3 id="inline-htmlmarkdown-&#20013;&#20351;&#29992;-html-&#26631;&#35760;" class="h3">3. Inline HTML&#65288;Markdown &#20013;&#20351;&#29992; HTML &#26631;&#35760;&#65289;</h3>
+<p>&#19979;&#38754;&#26159;&#19968;&#20010; <code>&lt;div style=&quot;background-color=violet&quot;&gt;</code> &#30340; HTML &#26631;&#35760;&#65306;</p>
+<div style="background-color:violet">
+<p style="background-color:black;color:white;margin:10px;">
+&#19968;&#20010;&#8220;&#40657;&#32440;&#30333;&#23383;&#8221;&#30340;&#27573;&#33853;
+</p>
+<p>
+&#20320;&#21487;&#20197;&#29992; HTML &#26631;&#35760;&#26469;<b>&#21152;&#31895;</b>&#12289;<i>&#26012;&#20307;</i>&#25110;&#32773;&#25913;&#21464;&#25991;&#23383;&#30340; <font style="color:red">&#39068;&#33394;</font>&#12289; <font style="font-size:20px">&#23383;&#21495;</font>&#12289; <font style="font-family:Impact,Georgia,Serif;">font</font> family &#36824;&#21487;&#20351;&#29992; Markdown&#65292;&#22914;&#19979;&#65306;
+</p>
+<div markdown="1" style="background-color:yellow;margin:10px;">
+<p><strong>&#27880;</strong>&#65306;&#36825;&#20123;&#25991;&#23383;&#22312;&#19968;&#20010; <code>&lt;div markdown=&quot;1&quot; style=&quot;background-color:yellow;margin:10px;&quot;&gt;</code> &#20013;&#29992; Markdown &#20889;&#25104;</p>
+<p>&#21487;&#20197; <strong>&#21152;&#31895;</strong> &#20063;&#21487;&#20197; <em>&#26012;&#20307;</em></p>
+<p>&#29978;&#33267;&#21487;&#20197;&#20351;&#29992; Pandoc Markdown &#30340;&#19978;&#19979;&#26631;&#65288;&#20197;&#21450;&#21015;&#34920;&#65289;&#65306;</p>
+<ul>
+<li><del>2<sup><sup>10</sup></sup> = 2014</del></li>
+<li>2<sup><sup>10</sup></sup> = 1024</li>
+<li>H<sub>2</sub>O &#26159;&#29983;&#21629;&#20043;&#28304;</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Key</th>
+<th align="right">Value</th>
+<th align="right">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Foo</td>
+<td align="right"><em>fool</em></td>
+<td align="right">* &#31532;&#19968;&#21015;&#23621;&#20013;</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Bar</strong></td>
+<td align="right">barbaric</td>
+<td align="right">&#31532;&#20108;&#21015;&#21491;&#23545;&#40784;</td>
+</tr>
+<tr class="odd">
+<td align="center">Cup</td>
+<td align="right">cap cup c u <strong><em>dummy</em></strong></td>
+<td align="right">&#31532;&#19977;&#21015;&#24038;&#23545;&#40784;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 id="misc-1" class="h3">4. MISC</h3>
+<p>&#36824;&#21487;&#20197;&#35774;&#32622;&#39029;&#38754;&#20869;&#38142;&#25509;&#65292;&#28857; <a href="#quotes"><strong>&#25105;</strong></a> &#22238;&#21040; Quotes &#23567;&#33410;</p>
+<p>And</p>
+<h6 id="by-the-way-i-like-gist" class="i-like-gist">by the way, I like Gist</h6>
+<p>&#36825;&#20010;&#26631;&#39064;&#36890;&#36807;&#22312;&#23384;&#22312; Gist &#19978;&#30340;&#19968;&#20010; <a href="https://gist.github.com/district10/ad8cdbf68052b70cddf0">CSS &#25991;&#26723;</a> &#26469;&#35774;&#32622;&#20102;&#39068;&#33394;&#21644;&#23383;&#20307;&#12290; &#20107;&#23454;&#19978;&#26412;&#25991;&#30340; CSS &#37117;&#25918;&#22312;&#20102; Gist &#19978;&#12290;Amazing!!!</p>
+<h2 id="iii.-&#28304;&#30721;&#36879;&#26512;" class="h section">III. &#28304;&#30721;&#36879;&#26512;</h2>
+<h3 id="&#26412;&#25991;&#30340;-markdown-&#28304;&#30721;" class="h3">1. &#26412;&#25991;&#30340; Markdown &#28304;&#30721;</h3>
+<script src="https://gist.github.com/district10/caf9df9de0d41a97589e.js"></script>
+<h3 id="&#26412;&#25991;&#30340;-css-&#28304;&#30721;" class="h3">2. &#26412;&#25991;&#30340; CSS &#28304;&#30721;</h3>
+<script src="https://gist.github.com/district10/ad8cdbf68052b70cddf0.js"></script>
+<h3 id="pandoc-&#36716;&#25442;&#21518;&#30340;-html-&#25991;&#26723;" class="h3">3. Pandoc &#36716;&#25442;&#21518;&#30340; HTML &#25991;&#26723;</h3>
+<script src="https://gist.github.com/district10/d1f2fd07d4d95549b5fc.js"></script>
+<hr />
+<p><strong>Refs</strong></p>
+<ul>
+<li><a href="http://www.jianshu.com/users/faa44ac9e895/latest_articles" title="&#22240;&#20026;&#19981;&#33021;&#20132;&#21449;&#24341;&#29992;&#65292;&#37027;&#37324;&#26377;&#26412;&#25991;&#30340;Refs">&#25105;&#30340;&#31616;&#20070;&#39318;&#39029;</a></li>
+</ul>

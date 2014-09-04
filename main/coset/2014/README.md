@@ -24,4 +24,7 @@
 * [ ] [Selected Words on UrbanDictionary](Selected-Words-on-UrbanDictionary.md)
 * [ ] [Math Abbreviations](Math-Abbreviations.md)
 * [ ] [About LaTeX](About-LaTeX.md)
-* [ ] [关于Wikipedia](关于Wikipedia.md)
+* [ ] [About Wikipedia](About-Wikipedia.md)
+* [ ] [一些速记法则](一些速记法则.md)
+* [ ] [Pros and Cons of Dvorak](Dvorak-Pros-n-Cons.md)
+* [ ] [同时兼顾几个 Markdown 标准真的很难](同时兼顾几个Markdown标准真的很难.md)

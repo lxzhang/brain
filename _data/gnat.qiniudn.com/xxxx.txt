@@ -1,0 +1,8 @@
+<html !DOCTYPE=html5>
+<head>
+	<title>Title</title>
+</head> 
+<body>
+ <h2>This is a Header 2</h2>
+ <p>This is a paragraph</p>
+</body>
