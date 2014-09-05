@@ -32,3 +32,5 @@
 * [ ] [SVG Editor](SVG-Editor.md)
 * [ ] [MathJax](MathJax.md)
 * [ ] [About Citation](About-Citation.md)
+* [ ] [文件系统与文件类型](文件系统与文件类型.md)
+* [ ] [常见数学函数图](常见数学函数图.md)

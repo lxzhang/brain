@@ -14,7 +14,7 @@ Math Abbreviations
 * **No.** – number.
 * **NTS** – need to show.
 * **pf** – proof.
-* **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a definitive proof.
+* **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a definitive proof. [-> Pronunciation](http://zh.forvo.com/word/quod_erat_demonstrandum/)
 * **QEF** – "quod erat faciendum", a Latin phrase sometimes used at the end of a construction.
 * **Soln** – solution.
 * **st** – such that or so that.
