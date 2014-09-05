@@ -34,3 +34,6 @@
 * [ ] [About Citation](About-Citation.md)
 * [ ] [文件系统与文件类型](文件系统与文件类型.md)
 * [ ] [常见数学函数图](常见数学函数图.md)
+* [ ] [Hacks](Hacks.md)
+* [ ] [True Table](True-Table.md)
+* [ ] [高等数学拾遗](高等数学拾遗.md)
