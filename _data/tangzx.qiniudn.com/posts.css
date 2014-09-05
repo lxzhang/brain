@@ -141,3 +141,7 @@ script {
 // TeX code in a <span> with classname ".math"
 }
 
+.sc {
+// Small Caps
+font-variant:small-caps;
+}
