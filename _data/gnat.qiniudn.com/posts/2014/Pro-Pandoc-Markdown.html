@@ -1,0 +1,157 @@
+<h1 id="pro-pandoc-markdown">Pro Pandoc Markdown</h1>
+<h3 id="test-codes">Test Codes</h3>
+<p><sub><sub>~</sub></sub>~ {#codetag .python .numberLines .startFrom=&quot;20&quot;} import ogr driver = ogr.GetDriverByName('PDF') dataSource = driver.Open('test.shp', 0) layer = dataSource.GetLayer() layer.GetFeatureConut(), layer.GetExtent() feature = layer.GetFeature(0) dataSource.Destroy() <sub><sub>~</sub></sub>~</p>
+<p>random text with tag {#texttag}</p>
+<p><strong>Auto numbered list</strong></p>
+<ol>
+<li>one</li>
+<li>two</li>
+</ol>
+<ol start="9" style="list-style-type: decimal">
+<li>Ninth</li>
+<li>Tenth</li>
+<li>Eleventh
+<ol style="list-style-type: lower-roman">
+<li>subone</li>
+<li>subtwo</li>
+<li>subthree</li>
+</ol></li>
+</ol>
+<dl>
+<dt>Term 1</dt>
+<dd><p>Definition 1</p>
+</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd><p>Definition 2</p>
+<pre><code>{ some code, part of Definition 2 }</code></pre>
+<p>Third paragraph of definition 2.</p>
+</dd>
+</dl>
+<ol style="list-style-type: example">
+<li>My first example will be numbered (1).</li>
+<li>My second example will be numbered (2).</li>
+</ol>
+<p>Explanation of examples.</p>
+<ol start="3" style="list-style-type: example">
+<li><p>My third example will be numbered (3). Numbered examples can be labeled and referred to elsewhere in the document:</p></li>
+<li><p>This is a good example.</p></li>
+</ol>
+<p>As (3) illustrates, ...</p>
+<table>
+<caption>Demonstration of simple table syntax.</caption>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th align="center">Center</th>
+<th align="left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td align="left">12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+<td align="left">123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td align="right">12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+<td align="right">123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="good">Title with hash(good)</h3>
+<table>
+<caption>Here's the caption. It, too, may span multiple lines. {#table}</caption>
+<colgroup>
+<col width="16%" />
+<col width="11%" />
+<col width="22%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Centered Header</th>
+<th align="left">Default Aligned</th>
+<th align="right">Right Aligned</th>
+<th align="left">Left Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">First</td>
+<td align="left">row</td>
+<td align="right">12.0</td>
+<td align="left">Example of a row that spans multiple lines.</td>
+</tr>
+<tr class="even">
+<td align="center">Second</td>
+<td align="left">row</td>
+<td align="right">5.0</td>
+<td align="left">Here's another one. Note the blank line between rows.</td>
+</tr>
+</tbody>
+</table>
+<p>elipses...</p>
+<p>1--8 that is --- fabulous</p>
+<p><em>good underscore</em></p>
+<p><span style="font-variant: small-caps;">Small caps</span></p>
+<p><br /><span class="math"><em>x</em><sup><em>y</em></sup>&#8196;=&#8196;<em>z</em></span><br /></p>
+<p><br /><span class="math"><em>E</em>&#8196;=&#8196;<em>m</em><em>c</em><sup>2</sup></span><br /></p>
+<p><strong>four kinds of titles</strong></p>
+<p><a href="/foo/bar.html" title="My title, optional">one</a>, and <a href="/foo">two</a> and <a href="http://fsf.org" title="The free software foundation">three</a> and <a href="/bar#special" title="A title in single quotes">four</a></p>
+<p><a href="/shit">my website</a> is good, even <a href="/shit">my website</a> is good, even <a href="/baz">this</a>.</p>
+<h3 id="hashe">Hashe</h3>
+<ul>
+<li>See <a href="#good">above</a></li>
+<li>See <a href="#table">table</a></li>
+<li>See <a href="#codetag">codetag</a></li>
+</ul>
+<p>Image in a paragraph [inline-pic-without-showing-this-text]</p>
+<p>[standalone-pic-displayed-with-this-text]</p>
+<p>Here is a footnote<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, or this kind of footnote<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>Here is an inline note.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<hr />
+<p><strong>Refs</strong></p>
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html">Pandoc Markdown Official Site</a></li>
+<li><a href="http://hackage.haskell.org/package/pandoc-citeproc">The pandoc-siteproc package</a></li>
+</ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>good, you are smart<a href="#fnref1">&#8617;</a></p></li>
+<li id="fn2"><p>this foot note...<a href="#fnref2">&#8617;</a></p></li>
+<li id="fn3"><p>Inlines notes are easier to write, since you don't have to pick an identifier and move down to type the note.<a href="#fnref3">&#8617;</a></p></li>
+</ol>
+</div>

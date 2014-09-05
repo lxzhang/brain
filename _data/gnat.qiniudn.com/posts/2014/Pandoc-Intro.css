@@ -1,0 +1,53 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: white;
+  font-family: inpact;
+}
+
+.h1 {
+  background: #887ddd;
+}
+
+.h2 {
+  background: #019fa0;
+}
+
+.h3 {
+  background: #009f5d;
+}
+
+.h4 {
+  background: #8cc540;
+}
+
+.h5 {
+  background: #8cc540;
+}
+
+.h6 {
+  background: #f8bd0b;
+}
+
+.i-like-gist {
+  font-family: Verdana;
+  background-color: #887ddd;
+}
+
+.section {
+  color: black;
+  font-family: Cursive;
+  font-size: 60;
+  background-color: #019fa0;
+}
+
+.title {
+  color: white;
+  font-family: inpact;
+  font-size: 80;
+  font-weight: 900;
+  background-color: #887ddd;
+}
