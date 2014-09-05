@@ -10,7 +10,7 @@ MathJax Notes
 ### Getting Started
 
 * Using the MathJax Content Delivery Network (CDN)
-* Add these to you website(into <head>), or in your pandoc markdown src
+* Add these to your src code(.html or .md)
 
     ~~~
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
