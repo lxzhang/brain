@@ -1,0 +1,143 @@
+// HMTL Entities
+
+// Headers
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+// all headers
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+
+// Inline Text Format
+
+em {
+// slanted, *text*
+}
+
+strong {
+// bold, *bold*
+}
+
+
+// Lists
+
+ol {
+// ordered list, list-style-type
+}
+
+ul {
+// unordered list
+}
+
+li {
+// list item
+}
+
+
+// Table
+
+table {
+
+}
+
+thead {
+// table header
+}
+
+tr {
+// table row
+}
+
+th {
+// ??
+}
+
+tbody {
+// table body
+}
+
+td {
+// table data?
+}
+
+
+// MISC
+
+p {
+// paragraph
+
+
+blockquote {
+// blockquote >
+}
+
+sub {
+// subscript normal-text~subscript~
+}
+
+sup {
+// subpersript normal-text^power^
+}
+
+del {
+// delete ~~deleted text~~
+}
+
+a {
+// link [text](url)
+}
+
+span {
+// normal text, a box/container
+}
+
+div {
+// box
+}
+
+br {
+// break?
+}
+
+font {
+// set font
+}
+
+script {
+// script
+}
+
+// .Classes
+
+.math {
+// TeX code in a <span> with classname ".math"
+}
+

@@ -67,3 +67,5 @@ synoptic gospels | 对观福音书的 |
 designation
 avoirdupois
 obscured 
+grook
+slate
