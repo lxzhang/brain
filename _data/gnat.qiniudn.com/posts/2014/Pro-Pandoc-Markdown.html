@@ -1,4 +1,12 @@
 <h1 id="pro-pandoc-markdown">Pro Pandoc Markdown</h1>
+<link rel="stylesheet" href="../../_hl/v1/default.css">
+<script src="../../_hl/v1/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">echo</span> <span class="st">&quot;# Hello Pandoc&quot;</span> <span class="kw">|</span> <span class="kw">pandoc.exe</span>
+<span class="kw">pandoc.exe</span> <span class="kw">&lt;</span> README <span class="kw">&gt;</span> README.html
+<span class="kw">pandoc.exe</span> README -o README.pdf</code></pre>
+<p>On some inline code <code class="sourceCode bash"><span class="kw">echo</span> bash code</code> <code class="sourceCode bash"><span class="kw">echo</span></code></p>
+<p><code>&lt;h1 id=&quot;hello-pandoc&quot;&gt;Hello Pandoc&lt;/h1&gt;</code></p>
 <h3 id="test-codes">Test Codes</h3>
 <p><sub><sub>~</sub></sub>~ {#codetag .python .numberLines .startFrom=&quot;20&quot;} import ogr driver = ogr.GetDriverByName('PDF') dataSource = driver.Open('test.shp', 0) layer = dataSource.GetLayer() layer.GetFeatureConut(), layer.GetExtent() feature = layer.GetFeature(0) dataSource.Destroy() <sub><sub>~</sub></sub>~</p>
 <p>random text with tag {#texttag}</p>

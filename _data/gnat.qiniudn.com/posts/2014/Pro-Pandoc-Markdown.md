@@ -1,6 +1,24 @@
 Pro Pandoc Markdown
 ===================
 
+<link rel="stylesheet" href="../../_hl/v1/default.css">
+<script src="../../_hl/v1/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+~~~ {.bash}
+echo "# Hello Pandoc" | pandoc.exe
+pandoc.exe < README > README.html
+pandoc.exe README -o README.pdf
+~~~
+
+On some inline code `echo bash code`{.bash}
+`echo `{.bash}
+
+
+`<h1 id="hello-pandoc">Hello Pandoc</h1>`
 
 
 ### Test Codes
