@@ -31,5 +31,6 @@ People 2014
 * [ ] [Karl Weierstrass](Karl-Weierstrass.md)
 
 
-### 黑客、顶级程序员
+### 黑客、顶级程序员（数学家）
 
+* [ ] [Donald E. Knuth](Donald-E.-Knuth.md)

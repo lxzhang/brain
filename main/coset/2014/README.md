@@ -9,7 +9,7 @@
 * [x] [List of Names](List-of-Names.md)
 * [ ] [电脑快捷键](电脑快捷键.md)
 * [ ] [美语发音](美语发音.md)
-* [x] [数学名词溯源](数学名词.md)
+* [x] [数学名词溯源](数学名词溯源.md)
 * [ ] [数学-英语.希腊.罗马-词汇](数学-英语.希腊.罗马-词汇.md)
 * [ ] [数学的英文表达](数学的英文表达.md)
 * [ ] [网络用语和 Jargon](网络用语和Jargon.md)
@@ -39,3 +39,4 @@
 * [ ] [高等数学拾遗](高等数学拾遗.md)
 * [ ] [Language Tags](Language-Tags.md)
 * [ ] [Movie Quotes](Movie-Quotes.md)
+* [ ] [管卫东](管卫东.md)
