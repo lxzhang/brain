@@ -3,9 +3,9 @@ Movie Quotes
 
 ### English
 
-** AFI's 100 Years... 100 Movie Quotes** (AFI: American Film Institute)
+* **AFI's 100 Years... 100 Movie Quotes** (AFI: American Film Institute)
 
-* "Frankly, my dear, I don't give a damn." *Gone with the Wind*
+1. "Frankly, my dear, I don't give a damn." *Gone with the Wind*
 * "I'm going to make him an offer he can't refuse."	*The Godfather*
 * "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am." *On the Waterfront*
 * "Toto, I've got a feeling we're not in Kansas anymore." *The Wizard of Oz*
@@ -109,7 +109,7 @@ Movie Quotes
 
 ### 中文
 
-* “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是，一万年。” **大话西游**
+1. “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是，一万年。” **大话西游**
 * 你可以说我是跑龙套的，但是你不可以说我是“臭跑龙套”的！ *喜剧之王*
 * 所以说做妖就像做人一样，要有仁慈的心，有了仁慈的心，就不再妖，是人妖。*大话西游*
 * 不是我喜欢打架，是有很多人喜欢被我打！ *鹿鼎记*
