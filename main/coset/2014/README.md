@@ -40,3 +40,4 @@
 * [ ] [Language Tags](Language-Tags.md)
 * [ ] [Movie Quotes](Movie-Quotes.md)
 * [ ] [管卫东](管卫东.md)
+* [ ] [Chrome](Chrome.md)
