@@ -69,3 +69,6 @@ avoirdupois
 obscured 
 grook
 slate
+supersed
+stratum
+pipe dreams

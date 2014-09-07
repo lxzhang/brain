@@ -1,6 +1,7 @@
 People 2014
 ===========
 
+### 数学家、物理学家，etc.
 
 * [ ] [René Descartes](Rene-Descartes.md)
 * [ ] [Euclid of Alexandria](Euclid-of-Alexandria.md)
@@ -17,3 +18,18 @@ People 2014
 * [ ] [Brook Taylor](Brook-Taylor.md)
 * [ ] [Guillaume de l'Hôpital](Guillaume-de-l-Hopital.md)
 * [ ] [Carl Friedrich Gauss](Carl-Friedrich-Gauss.md)
+* [ ] [Richard Dedekind](Richard-Dedekind.md)
+* [ ] [Georg Cantor][Georg-Cantor.md)
+* [ ] [Giuseppe Peano](Giuseppe-Peano.md)
+* [ ] [Henri Lebesgue](Henri-Lebesgue.md)
+* [ ] [Joseph-Louis Lagrange](Joseph-Louis-Lagrange.md)
+* [ ] [Bernhard Riemann](Bernhard-Riemann.md)
+* [ ] [Issac Newton](Issac-Newton.md)
+* [ ] [Gottfried Wilhelm Leibniz](Gottfried-Willhelm-Leibniz.md)
+* [ ] [George Green][George-Green.md)
+* [ ] [Galileo Galilei](Galileo-Galilei.md)
+* [ ] [Karl Weierstrass](Karl-Weierstrass.md)
+
+
+### 黑客、顶级程序员
+

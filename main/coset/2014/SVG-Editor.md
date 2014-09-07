@@ -3,7 +3,7 @@ SVG Editor
 
 An online [SVG editor][svg-editor]
 
-* 
+Or [Inkscape]
 
 
 ---
@@ -14,3 +14,4 @@ An online [SVG editor][svg-editor]
 
 
 [svg-editor]: http://svgedit.josegaert.com
+[Inkscape]: http://inkscape.org

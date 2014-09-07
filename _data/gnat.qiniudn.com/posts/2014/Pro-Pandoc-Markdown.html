@@ -8,7 +8,7 @@
 <p>On some inline code <code class="sourceCode bash"><span class="kw">echo</span> bash code</code> <code class="sourceCode bash"><span class="kw">echo</span></code></p>
 <p><code>&lt;h1 id=&quot;hello-pandoc&quot;&gt;Hello Pandoc&lt;/h1&gt;</code></p>
 <h3 id="test-codes">Test Codes</h3>
-<p><sub><sub>~</sub></sub>~ {#codetag .python .numberLines .startFrom=&quot;20&quot;} import ogr driver = ogr.GetDriverByName('PDF') dataSource = driver.Open('test.shp', 0) layer = dataSource.GetLayer() layer.GetFeatureConut(), layer.GetExtent() feature = layer.GetFeature(0) dataSource.Destroy() <sub><sub>~</sub></sub>~</p>
+<p><sub><sub>~</sub></sub>~ {#codetag .python .numberLines .startFrom=&quot;20&quot;} import ogr driver = ogr.GetDriverByName('PDF') dataSource = driver.Open('test.shp', 0) layer = dataSource.GetLayer() layer.GetFeatureConut(), layer.GetExtent() feature = layer.GetFeature(0) dataSource.Destroy()</p>
 <p>random text with tag {#texttag}</p>
 <p><strong>Auto numbered list</strong></p>
 <ol>
@@ -145,6 +145,7 @@
 <li>See <a href="#table">table</a></li>
 <li>See <a href="#codetag">codetag</a></li>
 </ul>
+<script src="https://gist.github.com/district10/18ecac7711890e5ed160.js"></script>
 <p>Image in a paragraph [inline-pic-without-showing-this-text]</p>
 <p>[standalone-pic-displayed-with-this-text]</p>
 <p>Here is a footnote<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, or this kind of footnote<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
