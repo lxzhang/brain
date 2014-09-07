@@ -26,7 +26,7 @@ People 2014
 * [ ] [Bernhard Riemann](Bernhard-Riemann.md)
 * [ ] [Issac Newton](Issac-Newton.md)
 * [ ] [Gottfried Wilhelm Leibniz](Gottfried-Willhelm-Leibniz.md)
-* [ ] [George Green][George-Green.md)
+* [ ] [George Green](George-Green.md)
 * [ ] [Galileo Galilei](Galileo-Galilei.md)
 * [ ] [Karl Weierstrass](Karl-Weierstrass.md)
 

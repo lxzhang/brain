@@ -110,7 +110,7 @@ Knuth (Ka-NOOTH)
 [Programs to Read](http://www-cs-faculty.stanford.edu/~uno/programs.html)
 
 
-[![](http://gnat.qiniudn.com/pic/Donald-E.-Knuth)](http://www-cs-faculty.stanford.edu/~uno/dek-14May10-1.jpeg)
+[![](http://gnat.qiniudn.com/pic/Donald-E.-Knuth.png)](http://www-cs-faculty.stanford.edu/~uno/dek-14May10-1.jpeg)
 
 
 
