@@ -29,6 +29,8 @@ People 2014
 * [ ] [George Green](George-Green.md)
 * [ ] [Galileo Galilei](Galileo-Galilei.md)
 * [ ] [Karl Weierstrass](Karl-Weierstrass.md)
+* [ ] [Leonhard Euler](Leonhard-Euler.md)
+
 
 
 ### 黑客、顶级程序员（数学家）
