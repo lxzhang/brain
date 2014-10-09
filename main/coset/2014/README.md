@@ -42,3 +42,4 @@
 * [ ] [管卫东](管卫东.md)
 * [ ] [Chrome](Chrome.md)
 * [ ] [Web Reading List 2014](Web-Reading-List-2014.md)
+* [ ] [Speed Reading](Speed-Reading.md)

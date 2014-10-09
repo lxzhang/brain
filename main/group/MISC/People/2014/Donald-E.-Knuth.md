@@ -115,7 +115,12 @@ Knuth (Ka-NOOTH)
 
 
 
+### 段子等
 
+* [科学网—图灵奖史上最年轻获奖者高德纳：把一件平常事做到人间极致](http://news.sciencenet.cn/htmlnews/2010/3/229434.shtm)
+* [八卦高德纳 (评论: 计算机程序设计艺术（第 1 卷）)](http://book.douban.com/review/5384627/)
+* [科学松鼠会 » 近看图灵碗 (8. 我就是上帝) (上)](http://songshuhui.net/archives/33469)
+* [科学松鼠会 » 近看图灵碗 (8. 我就是上帝) (下)](http://songshuhui.net/archives/34291)
 
 
 ---

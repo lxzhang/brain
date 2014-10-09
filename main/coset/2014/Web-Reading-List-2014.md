@@ -7,12 +7,26 @@ Web Reading List 2014
 * [你最推荐的 Chrome 扩展有哪些？ - 知乎](http://www.zhihu.com/question/19594682)
 
 
-### Others
+### Hackers
 
 * [Unix 传奇 (上篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2322.html)
 * [Unix 传奇 (下篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2324.html)
 * [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
 * [计算机编程简史图 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2724.html)
+
+### Others
+
+* [李开复每天早上 4 点就起床，是怎么办到的？开复老师如何能很好地安排好自己的时间？ - 知乎](http://www.zhihu.com/question/19563168/answer/12257911)
+* [财经郎眼 20140603 喜忧参半的 4G 时代 - 视频在线观看 - 财经郎眼 - 财经 - 爱奇艺](http://www.iqiyi.com/v_19rrhzlnyw.html)
+* [聊聊我在 Google 无人车研究组的那些事 | 36 氪](http://www.36kr.com/p/212843.html)
+* [如何应对一群 13 - 18 岁的街头小混混的挑衅？ - 知乎](http://www.zhihu.com/question/23585788)
+* [讲一讲汉尼拔·莱克特博士。 (汉尼拔 影评)](http://movie.douban.com/review/1038150/)
+
+
+### Math
+
+* [Why Is Rho Used for Density? | eHow](http://www.ehow.com/how-does_5407539_rho-used-density_.html)
+
 
 ### 简书
 
@@ -46,6 +60,6 @@ Web Reading List 2014
 * [如果让我再读一次本科 | 简书](http://www.jianshu.com/p/1afb865ef4bd)
 * [“文艺青年”与“装逼犯” | 简书](http://www.jianshu.com/p/06fe9c7cd38e)
 * [为什么我们无法深入交谈 | 简书](http://www.jianshu.com/p/37f7b7c88729)
-
+* [我的儿子不可能平庸 - 简书](http://www.jianshu.com/p/c8a1e1482ec4?utm_campaign=newsletter&utm_medium=note-236554&utm_source=weekly-16)
 
 

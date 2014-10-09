@@ -1,0 +1,16 @@
+<head>
+<style>
+a {
+  float:right;
+}
+/*
+#gist {
+  float:left;
+}*/
+</style>
+</head>
+
+<title>TypeRacer</title>
+
+<a href="http://data.typeracer.com/pit/profile?user=tzx9&ref=badge" target="_top"><img src="http://data.typeracer.com/misc/badge?user=tzx9" border="0" alt="TypeRacer.com scorecard for user tzx9"/></a>
+<script src="https://gist.github.com/district10/81568c96c4adbb3e107d.js"></script>

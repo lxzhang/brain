@@ -1,0 +1,3944 @@
+<h1 id="latex-&#20837;&#38376;&#21016;&#28023;&#27915;-----example-code">LaTeX &#20837;&#38376;&#65288;&#21016;&#28023;&#27915;&#65289; --- example code</h1>
+<title>
+LaTeX &#20837;&#38376;
+</title>
+&lt;--Code Highlight&gt;
+<script type="text/javascript" src="D:/gnat/Gist/brain/_data/gnat.qiniudn.com/_hl/v1/highlight.pack.js"></script>
+<p><link rel="stylesheet" type="text/css" href="D:/gnat/Gist/brain/_data/gnat.qiniudn.com/_hl/v1/default.css"></link></p>
+<p><strong>src/0-1.tex</strong></p>
+<pre class="tex"><code>$\Delta = b^2 - 4ac$</code></pre>
+<p><strong>src/0-2.tex</strong></p>
+<pre class="tex"><code>\[
+  x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</code></pre>
+<p><strong>src/1-1-01.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+
+\begin{document}
+This is my first document.
+
+Happy \TeX ing!
+\end{document}</code></pre>
+<p><strong>src/1-1-02.tex</strong></p>
+<pre class="tex"><code>\documentclass[UTF8]{ctexart}
+\begin{document}
+\section{&#25991;&#23383;}
+&#29305;&#21487;&#29233;&#25490;&#29256;&#12290;
+\section{&#25968;&#23398;}
+\[
+  a^2 + b^2 = c^2
+\]
+\end{document}</code></pre>
+<p><strong>src/1-2-01.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+  a(b+c) = ab + ac
+\end{equation}</code></pre>
+<p><strong>src/1-2-02.tex</strong></p>
+<pre class="tex"><code>$\angle ACB = \pi / 2$</code></pre>
+<p><strong>src/1-2-03.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+AB^2 = BC^2 + AC^2.
+\end{equation}</code></pre>
+<p><strong>src/1-2-04.tex</strong></p>
+<pre class="tex"><code>\includegraphics[width=3cm]{xiantu.pdf}</code></pre>
+<p><strong>src/1-2-05.tex</strong></p>
+<pre class="tex"><code>\begin{table}[H]
+\begin{tabular}{|rrr|}
+\hline
+&#30452;&#35282;&#36793; $a$ &amp; &#30452;&#35282;&#36793; $b$ &amp; &#26012;&#36793; $c$\\
+\hline
+3 &amp; 4 &amp; 5 \\
+5 &amp; 12 &amp; 13 \\
+\hline
+\end{tabular}%
+\qquad
+($a^2 + b^2 = c^2$)
+\end{table}</code></pre>
+<p><strong>src/2-1-01.tex</strong></p>
+<pre class="tex"><code>% UTF-8 &#32534;&#30721;
+caf&#233;\quad G&#246;del\quad Anton&#237;n Dvo&#345;&#225;k
+
+&#967;&#945;&#970;&#948;&#949;&#973;&#951;&#962;\qquad &#1050;&#1088;&#1102;&#1082;&#1086;&#1074;&#1072;</code></pre>
+<p><strong>src/2-1-02.tex</strong></p>
+<pre class="tex"><code>\usepackage[greek,english]{babel}</code></pre>
+<p><strong>src/2-1-03.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage[OT2,OT1]{fontenc}
+{\fontencoding{OT2}\selectfont ABCabc}</code></pre>
+<p><strong>src/2-1-04.tex</strong></p>
+<pre class="tex"><code>% coding: utf-8
+% pdflatex &#21629;&#20196;&#32534;&#35793;
+\documentclass{article}
+\usepackage[OT2,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\begin{document}
+caf&#233; \qquad G&#246;del
+{\fontencoding{OT2}\selectfont &#1050;&#1088;&#1102;&#1082;&#1086;&#1074;&#1072;}
+\end{document}</code></pre>
+<p><strong>src/2-1-05.tex</strong></p>
+<pre class="tex"><code>differ find flight difficlut ruffle</code></pre>
+<p><strong>src/2-1-06.tex</strong></p>
+<pre class="tex"><code>  shelfful shelf{}ful shelf\/ful</code></pre>
+<p><strong>src/2-1-07.tex</strong></p>
+<pre class="tex"><code>``\,`A&#39; or `B?&#39;\,&#39;&#39; he asked.</code></pre>
+<p><strong>src/2-1-08.tex</strong></p>
+<pre class="tex"><code>An inter-word dash or, hyphen, as in X-ray.
+
+A medium dash for number ranges, like 1--2.
+
+A punctuation dash---like this.</code></pre>
+<p><strong>src/2-1-09.tex</strong></p>
+<pre class="tex"><code>Good: One, two, three\ldots
+
+Bad: One, two, three...</code></pre>
+<p><strong>src/2-1-10.tex</strong></p>
+<pre class="tex"><code>She $\ldots$ she got it.
+
+I&#39;ve no idea\ldots.</code></pre>
+<p><strong>src/2-1-11.tex</strong></p>
+<pre class="tex"><code>\# \quad \$ \quad \% \quad \&amp; \quad
+\{ \quad \} \quad \_ \quad
+\textbackslash</code></pre>
+<p><strong>src/2-1-12.tex</strong></p>
+<pre class="tex"><code>This is     a short
+sentence.   This is
+            another.</code></pre>
+<p><strong>src/2-1-13.tex</strong></p>
+<pre class="tex"><code>Happy \TeX ing. Happy \TeX\ ing.
+Happy \TeX{} ing. Happy {\TeX} ing.</code></pre>
+<p><strong>src/2-1-14.tex</strong></p>
+<pre class="tex"><code>Question~1          % &#21517;&#31216;&#19982;&#32534;&#21495;&#38388;
+Donald~E. Knuth     % &#25945;&#21517;&#20043;&#38388;&#65292;&#20294;&#22995;&#21487;&#20197;&#26029;&#34892;
+Mr.~Knuth           % &#31216;&#35859;&#32553;&#20889;&#19982;&#21517;&#23383;&#38388;
+function~$f(x)$     % &#21517;&#23383;&#21518;&#30340;&#30701;&#20844;&#24335;
+1,~2, and~3         % &#24207;&#21015;&#30340;&#37096;&#20998;&#31526;&#21495;&#38388;</code></pre>
+<p><strong>src/2-1-15.tex</strong></p>
+<pre class="tex"><code>A sentence. And another.
+
+U.S.A. means United States Army?
+
+Tinker et al.\ made the double play.
+
+Roman number XII\@. Yes.</code></pre>
+<p><strong>src/2-1-16.tex</strong></p>
+<pre class="tex"><code>&#20013;&#25991;&#21644;English&#30340;&#28151;&#25490;&#25928;&#26524;
+&#24182;&#19981;&#20381;&#36182;&#20110; space &#30340;&#26377;&#26080;&#12290;</code></pre>
+<p><strong>src/2-1-17.tex</strong></p>
+<pre class="tex"><code>\mbox{&#26465;&#30446;}-a &#19981;&#21516;&#20110;&#26465;&#30446;-b</code></pre>
+<p><strong>src/2-1-18.tex</strong></p>
+<pre class="tex"><code>\CJKsetecglue{}
+&#27721;&#23383;word</code></pre>
+<p><strong>src/2-1-19.tex</strong></p>
+<pre class="tex"><code>&#24187;&#24433;\phantom{&#21442;&#25968;}&#36895;&#36895;&#38544;&#24418;
+
+&#24187;&#24433;&#21442;&#25968;&#36895;&#36895;&#26174;&#24418;</code></pre>
+<p><strong>src/2-1-20.tex</strong></p>
+<pre class="tex"><code>&#36825;&#26159;&#19968;&#34892;&#25991;&#23383;\\&#21478;&#19968;&#34892;
+
+&#36825;&#26159;&#19968;&#34892;&#25991;&#23383;\linebreak &#21478;&#19968;&#34892;</code></pre>
+<p><strong>src/2-1-21.tex</strong></p>
+<pre class="tex"><code>\begin{align*}
+[2 - (3+5)]\times 7 &amp;= 42 \\{}
+[2 + (3-5)]\times 7 &amp;= 0
+\end{align*}</code></pre>
+<p><strong>src/2-1-22.tex</strong></p>
+<pre class="tex"><code>&#174; &#169; &#163; &#167; &#182; &#8224; &#8225; &#8226; &#8482; &#8364; &#8240;</code></pre>
+<p><strong>src/2-1-23.tex</strong></p>
+<pre class="tex"><code>\usefont{T1}{t1xr}{m}{n}
+\symbol{&quot;DE}\symbol{&quot;FE}</code></pre>
+<p><strong>src/2-1-24.tex</strong></p>
+<pre class="tex"><code>\symbol{28450}\symbol{35486}</code></pre>
+<p><strong>src/2-1-25.tex</strong></p>
+<pre class="tex"><code>\textit{Italic font test}
+
+{\bfseries Bold font test}</code></pre>
+<p><strong>src/2-1-26.tex</strong></p>
+<pre class="tex"><code>\sffamily
+\textbf{This is a paragraph of bold and
+\textit{italic font, sometimes returning
+to \textnormal{normal font} is necessary.}}</code></pre>
+<p><strong>src/2-1-27.tex</strong></p>
+<pre class="tex"><code>{\itshape M}M
+
+\textit{M}M
+
+{\itshape M\/}M</code></pre>
+<p><strong>src/2-1-28.tex</strong></p>
+<pre class="tex"><code>Bold `{\bfseries leaf}&#39;
+
+Bold `{\bfseries leaf\/}&#39;
+
+Bold `\textbf{leaf}&#39;</code></pre>
+<p><strong>src/2-1-29.tex</strong></p>
+<pre class="tex"><code>\textit{M}M
+
+\textit{M\nocorr}M</code></pre>
+<p><strong>src/2-1-30.tex</strong></p>
+<pre class="tex"><code>{\CJKfamily{hei}&#36825;&#26159;&#40657;&#20307;}
+
+{\CJKfamily{kai}&#36825;&#26159;&#26999;&#20070;}</code></pre>
+<p><strong>src/2-1-31.tex</strong></p>
+<pre class="tex"><code>{\songti &#23435;&#20307;}   \quad {\heiti &#40657;&#20307;} \quad
+{\fangsong &#20223;&#23435;} \quad {\kaishu &#26999;&#20070;}</code></pre>
+<p><strong>src/2-1-32.tex</strong></p>
+<pre class="tex"><code>% ctex &#23439;&#21253;&#19979;&#40664;&#35748;&#30456;&#24403;&#20110; \CJKfamily{rm}
+% \rmfamily &#25110; \textrm &#20063;&#20250;&#21516;&#26102;&#35774;&#32622;&#27492;&#23383;&#20307;
+&#20013;&#25991;&#23383;&#20307;&#30340;\textbf{&#31895;&#20307;}&#19982;\textit{&#26012;&#20307;}</code></pre>
+<p><strong>src/2-1-33.tex</strong></p>
+<pre class="tex"><code>\fontencoding{OT1}\fontfamily{pzc}
+\fontseries{mb}\fontshape{it}
+\fontsize{14}{17}\selectfont
+PostScript New Century Schoolbook</code></pre>
+<p><strong>src/2-1-34.tex</strong></p>
+<pre class="tex"><code>\usefont{T1}{pbk}{db}{n}
+PostScript Bookman Demibold Normal</code></pre>
+<p><strong>src/2-1-35.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\usepackage{txfonts}
+\begin{document}
+Test text
+\end{document}</code></pre>
+<p><strong>src/2-1-36.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{ccfonts,eulervm}
+\begin{document}
+Test text
+\end{document}</code></pre>
+<p><strong>src/2-1-37.tex</strong></p>
+<pre class="tex"><code>% &#22312;&#23548;&#35328;&#21306;&#35774;&#32622;&#20840;&#25991;&#23383;&#20307;&#20026; Windows &#25552;&#20379;&#30340;
+% Times New Roman, Verdana, Courier New &#23383;&#20307;
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Verdana}
+\setmonofont{Courier New}</code></pre>
+<p><strong>src/2-1-38.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20351;&#29992;
+\newfontfamily\lucidasans{Lucida Sans}
+% &#27491;&#25991;&#20351;&#29992;
+{\lucidasans This is Lucida Sans.}</code></pre>
+<p><strong>src/2-1-39.tex</strong></p>
+<pre class="tex"><code>\newfontfamily\minion[Numbers=SlashedZero]{Minion Pro}
+\minion 100, OK.</code></pre>
+<p><strong>src/2-1-40.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\usepackage{ccfonts}% &#20844;&#24335;&#20351;&#29992; Concrete &#31995;&#21015;&#23383;&#20307;
+\usepackage[no-math]{fontspec}% \mathrm &#31561;&#20063;&#20351;&#29992; Concrete &#31995;&#21015;&#23383;&#20307;
+\setmainfont{Latin Modern Mono Prop}% &#27491;&#25991;&#20351;&#29992; Ladin Modern Mono &#23383;&#20307;</code></pre>
+<p><strong>src/2-1-41.tex</strong></p>
+<pre class="tex"><code>\documentclass[no-math]{ctexart}
+\usepackage[utopia]{mathdesign}% &#25968;&#23383;&#23383;&#20307;&#20351;&#29992; mathdesign &#19982; Utopia
+\usepackage[EU1]{fontenc}% &#24674;&#22797;&#27491;&#25991;&#23383;&#20307;&#30340; Unicode &#32534;&#30721;
+\setmainfont{Utopia Std}% &#27491;&#25991;&#23383;&#20307;&#20351;&#29992; OpenType &#26684;&#24335;&#30340; Adobe Utopia</code></pre>
+<p><strong>src/2-1-42.tex</strong></p>
+<pre class="tex"><code>\documentclass[UTF8]{ctexart}
+% &#35199;&#25991;&#27491;&#25991;&#21644;&#25968;&#23398;&#23383;&#20307;
+\let\hbar\relax % &#35299;&#20915; xunicode &#19982; fourier &#30340;&#31526;&#21495;&#20914;&#31361;
+\usepackage{fourier}
+% &#35774;&#32622;&#40664;&#35748;&#32534;&#30721;&#20026; T1&#65292;&#20197;&#25903;&#25345; fourier &#23439;&#21253;
+\usepackage[T1]{fontenc}
+% &#23450;&#20041;&#26032;&#30340;&#35199;&#25991; Times &#23383;&#20307;&#26063;
+\newfontfamily\times{Times New Roman}
+% &#35774;&#32622;&#35199;&#25991;&#31561;&#23485;&#23383;&#20307;&#65292;&#24182;&#37325;&#23450;&#20041; \ttfamily &#26469;&#20999;&#25442;&#21040; EU1 &#32534;&#30721;
+\setmonofont{Consolas}
+\let\oldttfamily\ttfamily
+\def\ttfamily{\oldttfamily\fontencoding{EU1}\selectfont}
+% &#35774;&#32622;&#20013;&#25991;&#23383;&#20307;
+\setCJKmainfont{Adobe Kaiti Std}
+\begin{document}
+Utopia text and $\sum math$ fonts.
+
+&#27721;&#23383;&#26999;&#20070;&#19982; {\times Times New Roman} &#23383;&#20307;&#12290;
+
+\texttt{Consolas 0123}
+\end{document}</code></pre>
+<p><strong>src/2-1-43.tex</strong></p>
+<pre class="tex"><code>% XeLaTeX &#32534;&#35793;
+\documentclass[UTF8]{ctexart}
+% &#19981;&#38656;&#35201; tipa &#23439;&#21253;&#65292;xunicode &#24050;&#32463;&#23454;&#29616;&#20854;&#21151;&#33021;
+\setmainfont{CMU Serif} % Computer Modern Roman &#30340; Unicode &#29256;&#26412;
+\begin{document}
+\LaTeX{} &#35835;&#38899;&#20026; \textipa{[&quot;lA:tEx]}&#12290;
+\end{document}</code></pre>
+<p><strong>src/2-1-44.tex</strong></p>
+<pre class="tex"><code>% XeLaTeX &#32534;&#35793;
+\documentclass[UTF8]{ctexart}
+\usepackage{tipa}% &#23439;&#21253;&#24050;&#32463;&#27491;&#30830;&#21152;&#36733; fontenc
+% \mytipa &#30340;&#23450;&#20041;&#21442;&#32771;&#21407;&#26469;&#30340; \textipa &#30340;&#26087;&#23450;&#20041;&#65292;&#25163;&#24037;&#20999;&#25442;&#32534;&#30721;
+\newcommand\mytipa[1]{{\fontencoding{T3}\selectfont#1}}
+\begin{document}
+\LaTeX{} &#35835;&#38899;&#20026; \mytipa{[&quot;lA:tEx]}&#12290;
+\end{document}</code></pre>
+<p><strong>src/2-1-45.tex</strong></p>
+<pre class="tex"><code>\fontfamily{cmfib}\selectfont
+Computer Modern Fibonacci Roman</code></pre>
+<p><strong>src/2-1-46.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20462;&#25913;&#20840;&#25991;&#40664;&#35748;&#23383;&#20307; Computer Modern Fibonacci &#23383;&#20307;&#26063;
+\renewcommand\rmdefault{cmfib}</code></pre>
+<p><strong>src/2-1-47.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20462;&#25913;&#20840;&#25991;&#40664;&#35748;&#23383;&#20307;&#20026;&#26080;&#34924;&#32447;&#23383;&#20307;&#26063; phv&#65288;Helvetica&#65289;
+\renewcommand\familydefault{\sfdefault}
+\renewcommand\sfdefault{phv}</code></pre>
+<p><strong>src/2-1-48.tex</strong></p>
+<pre class="tex"><code>\renewcommand\CJKfamilydefault{\CJKsfdefault}</code></pre>
+<p><strong>src/2-1-49.tex</strong></p>
+<pre class="tex"><code>\xfonttable{OT1}{lmr}{m}{n}</code></pre>
+<p><strong>src/2-1-50.tex</strong></p>
+<pre class="tex"><code>You \emph{should} use fonts carefully.
+
+\textit{%
+You \emph{should} use fonts carefully.}</code></pre>
+<p><strong>src/2-1-51.tex</strong></p>
+<pre class="tex"><code>This is {\em emphasized\/} text.</code></pre>
+<p><strong>src/2-1-52.tex</strong></p>
+<pre class="tex"><code>\newcommand\Emph{\textbf}
+This is \Emph{emphasized} text.</code></pre>
+<p><strong>src/2-1-53.tex</strong></p>
+<pre class="tex"><code>\underline{Emphasized} text and
+\underline{another}.</code></pre>
+<p><strong>src/2-1-54.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#29992; \usepackage{ulem}
+\uline{Emphasized} text and \uline{another}.
+
+A \emph{very very very very very very very
+very very very very very} long sentence.</code></pre>
+<p><strong>src/2-1-55.tex</strong></p>
+<pre class="tex"><code>\uuline{urgent}\qquad \uwave{boat}\qquad
+\sout{wrong}\qquad \xout{removed}\qquad
+\dashuline{dashing}\qquad \dotuline{dotty}</code></pre>
+<p><strong>src/2-1-56.tex</strong></p>
+<pre class="tex"><code>\CJKunderdot{&#27721;&#23383;&#65292;&#19979;&#21152;&#28857;}\\
+\CJKunderline{&#27721;&#23383;&#65292;&#19979;&#21010;&#32447;} \\
+\CJKunderdblline{&#27721;&#23383;&#65292;&#19979;&#21010;&#32447;} \\
+\CJKunderwave{&#27721;&#23383;&#65292;&#19979;&#21010;&#32447;} \\
+\CJKsout{&#27721;&#23383;&#65292;&#21024;&#38500;&#32447;}\\
+\CJKxout{&#27721;&#23383;&#65292;&#21024;&#38500;&#32447;}</code></pre>
+<p><strong>src/2-1-57.tex</strong></p>
+<pre class="tex"><code>\begin{CJKfilltwosides}{5cm}
+&#27721;&#23383;&#65292;&#20998;&#25955;&#23545;&#40784;
+\end{CJKfilltwosides}</code></pre>
+<p><strong>src/2-1-58.tex</strong></p>
+<pre class="tex"><code>\emph{&#27721;&#23383;&#65292;&#24378;&#35843;}\\
+\CTEXunderdot{&#27721;&#23383;&#65292;&#21152;&#28857;}</code></pre>
+<p><strong>src/2-1-59.tex</strong></p>
+<pre class="tex"><code>The text can be {\Large larger}.</code></pre>
+<p><strong>src/2-1-60.tex</strong></p>
+<pre class="tex"><code>\setlength{\lineskiplimit}{2.625bp} % &#20116;&#21495;&#23383; 1/4 &#23383;&#39640;
+\setlength{\lineskip}{2.625bp}</code></pre>
+<p><strong>src/2-1-61.tex</strong></p>
+<pre class="tex"><code>1\,234\,567\,890</code></pre>
+<p><strong>src/2-1-62.tex</strong></p>
+<pre class="tex"><code>\newcommand\dbldag{\dag\!\dag}
+\dbldag\ versus \dag\dag</code></pre>
+<p><strong>src/2-1-63.tex</strong></p>
+<pre class="tex"><code>Space\hspace{1cm}1\,cm</code></pre>
+<p><strong>src/2-1-64.tex</strong></p>
+<pre class="tex"><code>text\\
+\hspace{1cm}text\\
+\hspace*{1cm}text</code></pre>
+<p><strong>src/2-1-65.tex</strong></p>
+<pre class="tex"><code>\newcommand\test{longggggggg%
+  \hspace{2em plus 1em minus 0.25em}}
+\test\test\test\test\test\test\test\test</code></pre>
+<p><strong>src/2-1-66.tex</strong></p>
+<pre class="tex"><code>left\hspace{\fill}middle%
+\hfill right</code></pre>
+<p><strong>src/2-1-67.tex</strong></p>
+<pre class="tex"><code>left\hspace{\stretch{2}}$2/3$%
+\hspace{\fill}right</code></pre>
+<p><strong>src/2-1-68.tex</strong></p>
+<pre class="tex"><code>left\hrulefill middle\dotfill right</code></pre>
+<p><strong>src/2-1-69.tex</strong></p>
+<pre class="tex"><code>\setlength{\parindent}{8em}
+Paragraph indent can be very wide in \LaTeX.</code></pre>
+<p><strong>src/2-1-70.tex</strong></p>
+<pre class="tex"><code>Para\par
+\addtolength{\parindent}{2em}Para\par
+\addtolength{\parindent}{2em}Para\par</code></pre>
+<p><strong>src/2-1-71.tex</strong></p>
+<pre class="tex"><code>\mbox{cannot be broken}</code></pre>
+<p><strong>src/2-1-72.tex</strong></p>
+<pre class="tex"><code>\makebox[1em]{\textbullet}text \\
+\makebox[5cm][s]{some stretched text}</code></pre>
+<p><strong>src/2-1-73.tex</strong></p>
+<pre class="tex"><code>&#35821;&#35328;&#25991;&#23383;\llap{word}\\
+\rlap{word}&#35821;&#35328;&#25991;&#23383;</code></pre>
+<p><strong>src/2-1-74.tex</strong></p>
+<pre class="tex"><code>\fbox{framed} \\
+\framebox[3cm][s]{framed box}</code></pre>
+<p><strong>src/2-1-75.tex</strong></p>
+<pre class="tex"><code>\setlength{\fboxsep}{0pt} \fbox{tight}
+\setlength{\fboxsep}{1em} \fbox{loose}</code></pre>
+<p><strong>src/2-1-76.tex</strong></p>
+<pre class="tex"><code>\newsavebox{\mybox} % &#36890;&#24120;&#22312;&#23548;&#35328;&#21306;&#23450;&#20041;
+\sbox{\mybox}{test text}
+\usebox{\mybox} \fbox{\usebox{\mybox}}</code></pre>
+<p><strong>src/2-1-77.tex</strong></p>
+<pre class="tex"><code>\newsavebox{\verbbox} % &#36890;&#24120;&#22312;&#23548;&#35328;&#21306;&#23450;&#20041;
+\begin{lrbox}{\verbbox}
+\verb|#$%^&amp;{}|
+\end{lrbox}
+\usebox{\verbbox} \fbox{\usebox{\verbbox}}</code></pre>
+<p><strong>src/2-1-78.tex</strong></p>
+<pre class="tex"><code>\framebox[2\width]{&#24102;&#36793;&#26694;}</code></pre>
+<p><strong>src/2-2-01.tex</strong></p>
+<pre class="tex"><code>\setlength{\parskip}{0pt}</code></pre>
+<p><strong>src/2-2-02.tex</strong></p>
+<pre class="tex"><code>\raggedright
+English words like `technology&#39; stem from a
+Greek root beginning with the letters &#964;&#949;&#967;\dots</code></pre>
+<p><strong>src/2-2-03.tex</strong></p>
+<pre class="tex"><code>\begin{center}
+&#23621;&#20013;
+\end{center}</code></pre>
+<p><strong>src/2-2-04.tex</strong></p>
+<pre class="tex"><code>\hyphenation{man-u-script com-pu-ter gym-na-sium}</code></pre>
+<p><strong>src/2-2-05.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{ragged2e}
+\RaggedRight
+English words like `technology&#39; stem from a
+Greek root beginning with the letters &#964;&#949;&#967;\dots</code></pre>
+<p><strong>src/2-2-06.tex</strong></p>
+<pre class="tex"><code>\setlength{\leftskip}{4em}
+\setlength{\rightskip}{1em}
+These parameters tell \TeX{} how much glue
+to place at the left and at the right end
+of each line of the current paragraph.</code></pre>
+<p><strong>src/2-2-07.tex</strong></p>
+<pre class="tex"><code>\hangindent=5pc \hangafter=-2
+These two parameters jointly specify
+``hanging indentation&#39;&#39; for a paragraph.
+The hanging indentation indicates to \TeX{}
+that certain lines of the paragraph should
+be indented and the remaining lines should
+have their normal width.</code></pre>
+<p><strong>src/2-2-08.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{lettrine}
+\lettrine{T}{he} \TeX{} in \LaTeX{} refers
+to Donald Knuth&#39;s \TeX{} typesetting system.
+The \LaTeX{} program is a special version of
+\TeX{} that understands \LaTeX{} commands.</code></pre>
+<p><strong>src/2-2-09.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{shapepar}
+\heartpar{%
+  &#32511;&#33609;&#33485;&#33485;&#65292;&#30333;&#38654;&#33579;&#33579;&#65292;&#26377;&#20301;&#20339;&#20154;&#65292;&#22312;&#27700;&#19968;&#26041;&#12290;
+  &#32511;&#33609;&#33803;&#33803;&#65292;&#30333;&#38654;&#36855;&#31163;&#65292;&#26377;&#20301;&#20339;&#20154;&#65292;&#38752;&#27700;&#32780;&#23621;&#12290;
+  &#25105;&#24895;&#36870;&#27969;&#32780;&#19978;&#65292;&#20381;&#20558;&#22312;&#22905;&#36523;&#26049;&#12290;&#26080;&#22856;&#21069;&#26377;&#38505;&#28393;&#65292;&#36947;&#36335;&#21448;&#36828;&#21448;&#38271;&#12290;
+  &#25105;&#24895;&#39034;&#27969;&#32780;&#19979;&#65292;&#25214;&#23547;&#22905;&#30340;&#26041;&#21521;&#12290;&#21364;&#35265;&#20381;&#31232;&#20223;&#20315;&#65292;&#22905;&#22312;&#27700;&#30340;&#20013;&#22830;&#12290;
+  &#25105;&#24895;&#36870;&#27969;&#32780;&#19978;&#65292;&#19982;&#22905;&#36731;&#35328;&#32454;&#35821;&#12290;&#26080;&#22856;&#21069;&#26377;&#38505;&#28393;&#65292;&#36947;&#36335;&#26354;&#25240;&#26080;&#24050;&#12290;
+  &#25105;&#24895;&#39034;&#27969;&#32780;&#19979;&#65292;&#25214;&#23547;&#22905;&#30340;&#36275;&#36857;&#12290;&#21364;&#35265;&#20223;&#20315;&#20381;&#31232;&#65292;&#22905;&#22312;&#27700;&#20013;&#20267;&#31435;&#12290;}</code></pre>
+<p><strong>src/2-2-10.tex</strong></p>
+<pre class="tex"><code>&#21069;&#25991;&#8230;&#8230;
+\begin{quote}
+&#23398;&#32780;&#26102;&#20064;&#20043;&#65292;&#19981;&#20134;&#35828;&#20046;&#65311;
+&#26377;&#26379;&#33258;&#36828;&#26041;&#26469;&#65292;&#19981;&#20134;&#20048;&#20046;&#65311;
+\end{quote}
+&#21518;&#25991;&#8230;&#8230;</code></pre>
+<p><strong>src/2-2-11.tex</strong></p>
+<pre class="tex"><code>&#21069;&#25991;&#8230;&#8230;
+\begin{quotation}
+&#23398;&#32780;&#26102;&#20064;&#20043;&#65292;&#19981;&#20134;&#35828;&#20046;&#65311;
+&#26377;&#26379;&#33258;&#36828;&#26041;&#26469;&#65292;&#19981;&#20134;&#20048;&#20046;&#65311;
+
+&#40664;&#32780;&#35782;&#20043;&#65292;&#23398;&#32780;&#19981;&#21388;&#65292;&#35826;&#20154;&#19981;&#20518;&#65292;&#20309;&#26377;&#20110;&#25105;&#21705;&#65311;
+\end{quotation}
+&#21518;&#25991;&#8230;&#8230;</code></pre>
+<p><strong>src/2-2-12.tex</strong></p>
+<pre class="tex"><code>\begin{verse}
+&#22312;&#19968;&#27573;&#20869;&#20351;&#29992; \verb=\\= &#25442;&#34892;&#65292;\\
+&#20998;&#27573;&#20173;&#29992;&#31354;&#34892;&#12290;
+
+&#36807;&#38271;&#30340;&#38271;&#20250;&#22312;&#25240;&#34892;&#26102;&#24748;&#25346;&#32553;&#36827;&#65292;
+&#23601;&#20687;&#29616;&#22312;&#36825;&#19968;&#21477;&#12290;
+\end{verse}</code></pre>
+<p><strong>src/2-2-13.tex</strong></p>
+<pre class="tex"><code>\begin{abstract}
+&#26412;&#20070;&#35762;&#35299; \LaTeX{} &#30340;&#20351;&#29992;&#12290;
+\end{abstract}</code></pre>
+<p><strong>src/2-2-14.tex</strong></p>
+<pre class="tex"><code>\CTEXoptions[abstractname={&#25688;\quad &#35201;}]</code></pre>
+<p><strong>src/2-2-15.tex</strong></p>
+<pre class="tex"><code>\begin{enumerate}
+  \item &#20013;&#25991;
+  \item English
+  \item Fran&#231;ais
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-16.tex</strong></p>
+<pre class="tex"><code>\begin{itemize}
+  \item &#20013;&#25991;
+  \item English
+  \item Fran&#231;ais
+\end{itemize}</code></pre>
+<p><strong>src/2-2-17.tex</strong></p>
+<pre class="tex"><code>\begin{description}
+  \item[&#20013;&#25991;] &#20013;&#22269;&#30340;&#35821;&#35328;&#25991;&#23383;
+  \item[English] The language of England
+  \item[Fran&#231;ais] La langue de France
+\end{description}</code></pre>
+<p><strong>src/2-2-18.tex</strong></p>
+<pre class="tex"><code>\begin{enumerate}
+  \item &#20013;&#25991;
+  \begin{enumerate}
+    \item &#21476;&#20195;&#27721;&#35821;
+    \item &#29616;&#20195;&#27721;&#35821;
+    \begin{enumerate}
+      \item &#21475;&#35821;
+      \begin{enumerate}
+        \item &#26222;&#36890;&#35805;
+        \item &#26041;&#35328;
+      \end{enumerate}
+      \item &#20070;&#38754;&#35821;
+    \end{enumerate}
+  \end{enumerate}
+  \item English
+  \item Fran&#231;ais
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-19.tex</strong></p>
+<pre class="tex"><code>\begin{enumerate}
+  \item &#20013;&#25991;
+  \item[1a.] &#27721;&#35821;
+  \item English
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-20.tex</strong></p>
+<pre class="tex"><code>\begin{itemize}
+  \item[\dag] &#20013;&#25991;
+  \item English
+  \item Fran&#231;ais
+\end{itemize}</code></pre>
+<p><strong>src/2-2-21.tex</strong></p>
+<pre class="tex"><code>\begin{enumerate}
+  \item &#36825;&#26159;&#32534;&#21495; \theenumi
+  \item &#36825;&#26159;&#32534;&#21495; \theenumi
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-22.tex</strong></p>
+<pre class="tex"><code>\begin{enumerate}
+\item &#32534;&#21495;
+  \arabic{enumi}, \roman{enumi}, \Roman{enumi},
+  \alph{enumi}, \Alph{enumi}, \fnsymbol{enumi}
+\item &#32534;&#21495;
+  \arabic{enumi}, \roman{enumi}, \Roman{enumi},
+  \alph{enumi}, \Alph{enumi}, \fnsymbol{enumi}
+\item &#32534;&#21495;
+  \arabic{enumi}, \roman{enumi}, \Roman{enumi},
+  \alph{enumi}, \Alph{enumi}, \fnsymbol{enumi}
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-23.tex</strong></p>
+<pre class="tex"><code>\renewcommand\theenumi{\roman{enumi}}
+\renewcommand\labelenumi{(\theenumi)}
+\begin{enumerate}
+  \item &#20351;&#29992;&#20013;&#25991;
+  \item Using English
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-24.tex</strong></p>
+<pre class="tex"><code>% &#35745;&#25968;&#22120;&#35774;&#32622;&#65292;&#36890;&#24120;&#22312;&#23548;&#35328;&#21306;
+\newcounter{mycnt}
+\setcounter{mycnt}{0}                   % &#40664;&#35748;&#20540;&#23601;&#26159; 0
+\renewcommand\themycnt{\arabic{mycnt}}  % &#40664;&#35748;&#20540;&#23601;&#26159;&#38463;&#25289;&#20271;&#25968;&#23383;
+% &#35745;&#25968;&#22120;&#20351;&#29992;&#65292;&#36890;&#24120;&#20570;&#25104;&#33258;&#23450;&#20041;&#21629;&#20196;&#30340;&#19968;&#37096;&#20998;
+\stepcounter{mycnt}\themycnt &#36755;&#20986;&#35745;&#25968;&#22120;&#20540;&#20026; 1&#65307;
+\stepcounter{mycnt}\themycnt &#36755;&#20986;&#35745;&#25968;&#22120;&#20540;&#20026; 2&#65307;
+\addtocounter{mycnt}{1}\themycnt &#36755;&#20986;&#35745;&#25968;&#22120;&#20540;&#20026; 3&#65307;
+\addtocounter{mycnt}{-1}\themycnt &#36755;&#20986;&#35745;&#25968;&#22120;&#20540;&#20026; 2&#65307;
+\addtocounter{mycnt}{-1}\themycnt &#36755;&#20986;&#35745;&#25968;&#22120;&#20540;&#20026; 1&#12290;</code></pre>
+<p><strong>src/2-2-25.tex</strong></p>
+<pre class="tex"><code>\usepackage{amsmath}
+\numberwithin{equation}{section}</code></pre>
+<p><strong>src/2-2-26.tex</strong></p>
+<pre class="tex"><code>{% &#20351;&#29992;&#20998;&#32452;&#35753; \descriptionlabel &#30340;&#20462;&#25913;&#23616;&#37096;&#21270;
+\renewcommand\descriptionlabel[1]{\normalfont\Large\itshape
+  \textbullet\ #1}
+\begin{description}
+  \item[&#26631;&#31614;] &#21487;&#20197;&#20462;&#25913; \verb=\descriptionlabel= &#25913;&#21464;&#26631;&#31614;&#30340;&#26684;&#24335;&#12290;
+  \item[&#20854;&#20182;] &#20854;&#20182;&#26684;&#24335;&#30340;&#20063;&#21487;&#20197;&#21442;&#32771;&#21518;&#38754;&#30340;&#21015;&#34920;&#29615;&#22659;&#20462;&#25913;&#12290;
+\end{description}
+}</code></pre>
+<p><strong>src/2-2-27.tex</strong></p>
+<pre class="tex"><code>\newcounter{mylist}
+\begin{list}{\#\themylist}%
+  {\usecounter{mylist}}
+  \item &#20013;&#25991;
+  \item English
+\end{list}</code></pre>
+<p><strong>src/2-2-28.tex</strong></p>
+<pre class="tex"><code>\begin{list}{\textbullet}{%
+  \setlength{\topsep}{0pt}  \setlength{\partopsep}{0pt}
+  \setlength{\parsep}{0pt}  \setlength{\itemsep}{0pt}}
+  \item &#20013;&#25991;
+
+    &#21448;&#19968;&#27573;&#20013;&#25991;
+
+  \item English
+  \item Fran&#231;ais
+\end{list}</code></pre>
+<p><strong>src/2-2-29.tex</strong></p>
+<pre class="tex"><code>\newenvironment{myitemize}{%
+    \begin{list}{\textbullet}{%
+      \setlength{\topsep}{0pt}  \setlength{\partopsep}{0pt}
+      \setlength{\parsep}{0pt}  \setlength{\itemsep}{0pt}}}
+  {\end{list}}</code></pre>
+<p><strong>src/2-2-30.tex</strong></p>
+<pre class="tex"><code>\newenvironment{mycenter}
+  {\begin{trivlist}
+     \centering
+     \item[]}
+  {\end{trivlist}}</code></pre>
+<p><strong>src/2-2-31.tex</strong></p>
+<pre class="tex"><code>% \usepackage{enumitem}
+\begin{enumerate}[itemsep=0pt,parsep=0pt,
+    label=(\arabic*)]
+  \item &#20013;&#25991;
+  \item English
+  \item Fran&#231;ais
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-32.tex</strong></p>
+<pre class="tex"><code>\usepackage{enumitem}
+% &#20223;&#29031; enumerate &#29615;&#22659;&#23450;&#20041;&#21487;&#20108;&#32423;&#23884;&#22871;&#30340; mylist
+\newlist{mylist}{enumerate}{2}
+% &#20998;&#21035;&#23450;&#20041;&#27599;&#32423;&#30340;&#26684;&#24335;
+\setlist[mylist,1]{itemsep=0pt,parsep=0pt,label=(\arabic*)}
+\setlist[mylist,2]{itemsep=0pt,parsep=0pt,label=(\alph*)}</code></pre>
+<p><strong>src/2-2-33.tex</strong></p>
+<pre class="tex"><code>% \usepackage{enumitem}
+\AddEnumerateCounter{\chinese}{\chinese}{}
+\begin{enumerate}[label={\chinese*&#12289;},labelsep=0pt]
+  \item &#20869;&#23481;&#28165;&#26224;
+  \item &#26684;&#24335;&#32654;&#35266;
+\end{enumerate}</code></pre>
+<p><strong>src/2-2-34.tex</strong></p>
+<pre class="tex"><code>\newtheorem{thm}{&#23450;&#29702;}  % &#19968;&#33324;&#22312;&#23548;&#35328;&#21306;
+\begin{thm}
+&#30452;&#35282;&#19977;&#35282;&#24418;&#26012;&#36793;&#30340;&#24179;&#26041;&#31561;&#20110;&#20004;&#33136;&#30340;&#24179;&#26041;&#21644;&#12290;
+\end{thm}</code></pre>
+<p><strong>src/2-2-35.tex</strong></p>
+<pre class="tex"><code>\begin{thm}[&#21246;&#32929;&#23450;&#29702;]
+&#30452;&#35282;&#19977;&#35282;&#24418;&#26012;&#36793;&#30340;&#24179;&#26041;&#31561;&#20110;&#20004;&#33136;&#30340;&#24179;&#26041;&#21644;&#12290;
+\end{thm}</code></pre>
+<p><strong>src/2-2-36.tex</strong></p>
+<pre class="tex"><code>\newtheorem{lemma}{&#24341;&#29702;}[chapter]% &#25353;&#31456;
+\begin{lemma} &#20559;&#24207;&#38598;&#21487;&#33391;&#24207;&#21270;&#12290; \end{lemma}
+\begin{lemma} &#23454;&#25968;&#38598;&#19981;&#21487;&#25968;&#12290;   \end{lemma}</code></pre>
+<p><strong>src/2-2-37.tex</strong></p>
+<pre class="tex"><code>\newtheorem{prop}[thm]{&#21629;&#39064;}
+\begin{prop}
+&#30452;&#35282;&#19977;&#35282;&#24418;&#30340;&#26012;&#36793;&#22823;&#20110;&#30452;&#35282;&#36793;&#12290;
+\end{prop}</code></pre>
+<p><strong>src/2-2-38.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+\usepackage{theorem}
+\theoremstyle{changebreak}
+\theoremheaderfont{\sffamily\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{definition}{&#23450;&#20041;}[chapter]</code></pre>
+<p><strong>src/2-2-39.tex</strong></p>
+<pre class="tex"><code>\begin{definition}
+&#26377;&#19968;&#20010;&#35282;&#26159;&#30452;&#35282;&#30340;&#19977;&#35282;&#24418;&#26159;\emph{&#30452;&#35282;&#19977;&#35282;&#24418;}&#12290;
+\end{definition}</code></pre>
+<p><strong>src/2-2-40.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+\usepackage[thmmarks]{ntheorem}
+{   % &#21033;&#29992;&#20998;&#32452;&#65292;&#26684;&#24335;&#35774;&#32622;&#21482;&#20316;&#29992;&#20110;&#35777;&#26126;&#29615;&#22659;
+  \theoremstyle{nonumberplain}
+  \theoremheaderfont{\bfseries}
+  \theorembodyfont{\normalfont}
+  \theoremsymbol{\mbox{$\Box$}} % &#25918;&#36827;&#30418;&#23376;&#65292;&#25110;&#29992; \ensuremath
+  \newtheorem{proof}{&#35777;&#26126;}
+}</code></pre>
+<p><strong>src/2-2-41.tex</strong></p>
+<pre class="tex"><code>\begin{proof}
+&#35777;&#26126;&#26159;&#26174;&#28982;&#30340;&#12290;
+\end{proof}</code></pre>
+<p><strong>src/2-2-42.tex</strong></p>
+<pre class="tex"><code>\usepackage{amsthm}
+\renewcommand\proofname{&#35777;&#26126;}
+\renewcommand\qedsymbol{\ensuremath{\Box}}</code></pre>
+<p><strong>src/2-2-43.tex</strong></p>
+<pre class="tex"><code>% \usepackage{amsthm}
+\begin{proof}
+&#26368;&#21518;&#25105;&#20204;&#26377;
+\[
+  f(x) = 0. \qedhere
+\]
+\end{proof}</code></pre>
+<p><strong>src/2-2-44.tex</strong></p>
+<pre class="tex"><code>\verb&quot;\LaTeX \&amp; \TeX&quot; \qquad
+\verb!\/}{#$%&amp;~!</code></pre>
+<p><strong>src/2-2-45.tex</strong></p>
+<pre class="tex"><code>&#26174;&#31034;&#31354;&#26684; \verb*!1 2  3   4!</code></pre>
+<p><strong>src/2-2-46.tex</strong></p>
+<pre class="tex"><code>\begin{verbatim}
+#!usr/bin/env perl
+$name = &quot;guy&quot;;
+print &quot;Hello, $name!\n&quot;;
+\end{verbatim}</code></pre>
+<p><strong>src/2-2-47.tex</strong></p>
+<pre class="tex"><code>\begin{verbatim*}
+#include &lt;stdio.h&gt;
+main() {
+    printf(&quot;Hello, world.\n&quot;);
+}
+\end{verbatim*}</code></pre>
+<p><strong>src/2-2-48.tex</strong></p>
+<pre class="tex"><code>% \usepackage{fancyvrb}
+\SaveVerb{myverb}|#$%^&amp;|
+\fbox{&#22871;&#20013; \UseVerb{myverb}}</code></pre>
+<p><strong>src/2-2-49.tex</strong></p>
+<pre class="tex"><code>% \usepackage{cprotect}
+\cprotect\fbox{&#22871;&#20013; \verb|#$%^&amp;|}</code></pre>
+<p><strong>src/2-2-50.tex</strong></p>
+<pre class="tex"><code>verbatim |\LaTeX|</code></pre>
+<p><strong>src/2-2-51.tex</strong></p>
+<pre class="tex"><code>\begin{lstlisting}[language=C]
+/* hello.c */
+#include &lt;stdio.h&gt;
+main() {
+    printf(&quot;Hello.\n&quot;);
+}
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-52.tex</strong></p>
+<pre class="tex"><code>\lstset{ % &#25972;&#20307;&#35774;&#32622;
+  basicstyle=\sffamily,
+  keywordstyle=\bfseries,
+  commentstyle=\rmfamily\itshape,
+  stringstyle=\ttfamily}
+\begin{lstlisting}[language=C]
+/* hello.c */
+#include &lt;stdio.h&gt;
+main() {
+    printf(&quot;Hello.\n&quot;);
+}
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-53.tex</strong></p>
+<pre class="tex"><code>\lstset{flexiblecolumns}% column=flexible
+\begin{lstlisting}[language=C]
+/* hello.c */
+#include &lt;stdio.h&gt;
+main() {
+    printf(&quot;Hello.\n&quot;);
+}
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-54.tex</strong></p>
+<pre class="tex"><code>\lstset{columns=flexible,
+  numbers=left,numberstyle=\footnotesize}
+\begin{lstlisting}[language=C]
+/* hello.c */
+#include &lt;stdio.h&gt;
+main() {
+    printf(&quot;Hello.\n&quot;);
+}
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-55.tex</strong></p>
+<pre class="tex"><code>\lstset{language=C,flexiblecolumns}
+&#35821;&#21477; \lstinline!typedef char byte!</code></pre>
+<p><strong>src/2-2-56.tex</strong></p>
+<pre class="tex"><code>\lstset{language=C,flexiblecolumns,
+  escapechar=`} % &#35774;&#32622; ` &#20026;&#36867;&#36920;&#23383;&#31526;
+\begin{lstlisting}
+int n;  // `&#19968;&#20010;&#25972;&#25968;`
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-57.tex</strong></p>
+<pre class="tex"><code>\lstset{language=C,flexiblecolumns,
+  escapechar=`}
+\begin{lstlisting}
+double x = 1/sin(x); // `$\frac1{\sin x}$`
+\end{lstlisting}</code></pre>
+<p><strong>src/2-2-58.tex</strong></p>
+<pre class="tex"><code>\begin{tabbing}
+&#26684;&#24335;\hspace{3em} \= &#20316;&#32773; \\
+Plain \TeX  \&gt; &#39640;&#24503;&#32435; \\
+\LaTeX      \&gt; Leslie Lamport
+\end{tabbing}</code></pre>
+<p><strong>src/2-2-59.tex</strong></p>
+<pre class="tex"><code>\begin{tabbing}
+&#26684;&#24335;\hspace{3em} \= &#20316;&#32773; \kill
+Plain \TeX  \&gt; &#39640;&#24503;&#32435; \\
+\LaTeX      \&gt; Leslie Lamport
+\end{tabbing}</code></pre>
+<p><strong>src/2-2-60.tex</strong></p>
+<pre class="tex"><code>\newcommand\kw{\textbf} % &#34920;&#31034;&#25551;&#36848;&#31639;&#27861;&#30340;&#20851;&#38190;&#23383;
+\begin{tabbing}
+\pushtabs
+&#31639;&#27861;&#65306;&#22312;&#24207;&#21015; $A$ &#20013;&#23545; $x$ &#20570;&#20108;&#20998;&#26816;&#32034; \\
+&#36755;&#20837;&#65306;$A$, $x$ &#21450;&#19979;&#26631;&#19978;&#19979;&#30028; $L$, $H$ \\
+\qquad\=\+\kw{integer} $L, H, M, j$ \\
+\kw{while} \=\+ $L \leq H$ \kw{do} \` $L$ &#19982; $H$ &#26159;&#24038;&#21491;&#20998;&#28857; \\
+           $M \gets \lfloor(L+H)/2\rfloor$ \` $M$ &#26159;&#20013;&#38388;&#20998;&#28857; \\
+           \kw{case} \=\+\\
+                   condition \= foo \+\kill
+                   $x &gt; A[M]$:\&#39; $H \gets M-1$ \\
+                   $x &lt; A[M]$:\&#39; $H \gets M+1$ \\
+                    \kw{else}:\&#39; \= $j \gets M$ \` &#25214;&#21040; $x$&#65292;&#36820;&#22238;&#20301;&#32622;\\
+                                 \&gt; \kw{return}$(j)$ \\
+           \&lt;\&lt; \kw{endcase} \-\-\-\\
+$j \gets 0$ \\
+\kw{return}$(j)$ \-\\
+\poptabs
+&#31639;&#27861;&#31034;&#20363;&#65306;\\
+$A = \{2, 3, 5, 7, 11\}$, $x=3$\\
+\qquad\=\+ $M$\qquad \= $L$\qquad \= $H$\qquad \= \\
+           &#26080;      \&gt; 1       \&gt; 5             \&gt; &#21021;&#22987;&#20540;&#65292;&#36827;&#20837;&#24490;&#29615; \\
+           3       \&gt; 1       \&gt; 2             \&gt; $H$ &#21464;&#21270; \\
+           2       \&gt; &#26080;      \&gt; &#26080;            \&gt; &#25214;&#21040; $x$&#65292;&#36755;&#20986;&#20301;&#32622; 2
+\end{tabbing}</code></pre>
+<p><strong>src/2-2-61.tex</strong></p>
+<pre class="tex"><code>&#20363;&#22914;\footnote{&#36825;&#26159;&#19968;&#20010;&#33050;&#27880;&#12290;}&#12290;</code></pre>
+<p><strong>src/2-2-62.tex</strong></p>
+<pre class="tex"><code>\begin{minipage}{8em}
+&#36825;&#26159;&#23567;&#39029;&#29615;&#22659;\footnote{&#33050;&#27880;&#12290;}&#20013;&#30340;&#33050;&#27880;&#12290;
+\end{minipage}</code></pre>
+<p><strong>src/2-2-63.tex</strong></p>
+<pre class="tex"><code>\renewcommand\thefootnote{\fnsymbol{footnote}}</code></pre>
+<p><strong>src/2-2-64.tex</strong></p>
+<pre class="tex"><code>\usepackage{pifont}
+\renewcommand\thefootnote{\ding{\numexpr171+\value{footnote}}}</code></pre>
+<p><strong>src/2-2-65.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{r|r}
+  &#33258;&#21464;&#37327; &amp; &#22240;&#21464;&#37327;\footnotemark \\ \hline
+  $x$ &amp; $y$
+\end{tabular}
+\footnotetext{$y=x^2$&#12290;}</code></pre>
+<p><strong>src/2-2-66.tex</strong></p>
+<pre class="tex"><code>\section[&#33410;&#26631;&#39064;]{&#33410;&#26631;&#39064;\protect\footnote{&#26631;&#39064;&#20013;&#30340;&#33050;&#27880;}}</code></pre>
+<p><strong>src/2-2-67.tex</strong></p>
+<pre class="tex"><code>\usepackage[perpage]{footmisc}</code></pre>
+<p><strong>src/2-2-68.tex</strong></p>
+<pre class="tex"><code>&#26377;&#36793;&#27880;&#30340;&#25991;&#23383;\marginpar[\hfill &#24038; $\rightarrow$]{$\leftarrow$ &#21491;}</code></pre>
+<p><strong>src/2-2-69.tex</strong></p>
+<pre class="tex"><code>&#21069;&#35328;\parbox{2em}{&#19981;&#25645;&#21518;&#35821;}&#12290;</code></pre>
+<p><strong>src/2-2-70.tex</strong></p>
+<pre class="tex"><code>&#21069;&#35328;\parbox[t]{2em}{&#19981;&#25645;&#21518;&#35821;}&#12290;
+&#21518;&#35821;\parbox[b]{2em}{&#19981;&#25645;&#21069;&#35328;}&#12290;</code></pre>
+<p><strong>src/2-2-71.tex</strong></p>
+<pre class="tex"><code>\begin{minipage}[c][2.5cm][t]{2em} &#20004;&#20010; \end{minipage}\quad
+\begin{minipage}[c][2.5cm][c]{3em} &#40644;&#40514;&#40483;&#32736;&#26611;&#65292; \end{minipage}\quad
+\begin{minipage}[c][2.5cm][b]{3em} &#19968;&#34892;&#30333;&#40557;&#19978;&#38738;&#22825;&#12290; \end{minipage}\quad
+\begin{minipage}[c][2.5cm][s]{4em}
+\setlength{\parskip}{0pt plus 1pt}% &#24674;&#22797;&#27491;&#25991;&#40664;&#35748;&#27573;&#38388;&#36317;
+&#31383;&#21547;&#35199;&#23725;&#21315;&#31179;&#38634;&#65292;\par
+&#38376;&#27850;&#19996;&#21556;&#19975;&#37324;&#33337;&#12290;
+\end{minipage}</code></pre>
+<p><strong>src/2-2-72.tex</strong></p>
+<pre class="tex"><code>\newsavebox{\verbatimbox} % &#36890;&#24120;&#22312;&#23548;&#35328;&#21306;&#23450;&#20041;
+\begin{lrbox}{\verbatimbox}
+\begin{minipage}{10em}
+\begin{verbatim}
+#!/bin/sh
+cat ~/${file}
+\end{verbatim}
+\end{minipage}
+\end{lrbox}
+\fbox{\usebox{\verbatimbox}}\quad\fbox{\usebox{\verbatimbox}}</code></pre>
+<p><strong>src/2-2-73.tex</strong></p>
+<pre class="tex"><code>\rule{1pt}{1em}Middle\rule{1pt}{1em} \\
+Left\rule[0.5ex]{2cm}{0.6pt}Right \\
+\rule[-0.1em]{1em}{1em} &#20063;&#21487;&#20197;&#29992;&#20316;&#35777;&#27605;&#31526;&#21495;</code></pre>
+<p><strong>src/2-2-74.tex</strong></p>
+<pre class="tex"><code>\fbox{---}\qquad
+\fbox{\strut---}\qquad
+\fbox{\rule{0pt}{2em}---}</code></pre>
+<p><strong>src/2-2-75.tex</strong></p>
+<pre class="tex"><code>% &#36825;&#19982;&#23454;&#38469; \TeX &#30340;&#23450;&#20041;&#22522;&#26412;&#31561;&#20215;
+\mbox{T\hspace{-0.1667em}%
+\raisebox{-0.5ex}{E}%
+\hspace{-0.125em}X}</code></pre>
+<p><strong>src/2-2-76.tex</strong></p>
+<pre class="tex"><code>\fbox{\begin{varwidth}{10cm}
+&#33258;&#28982;\\&#23485;&#24230;
+\end{varwidth}}</code></pre>
+<p><strong>src/2-3-01.tex</strong></p>
+<pre class="tex"><code>\title{&#26434;&#35848;&#21246;&#32929;&#23450;&#29702;\\&#8212;&#8212;&#21246;&#32929;&#23450;&#29702;&#30340;&#21382;&#21490;&#19982;&#29616;&#29366;}
+\author{&#24352;&#19977;\\&#20061;&#31456;&#23398;&#22530;}
+\date{&#24218;&#23493;&#30427;&#22799;}</code></pre>
+<p><strong>src/2-3-02.tex</strong></p>
+<pre class="tex"><code>\author{&#24352;&#19977;\\&#20061;&#31456;&#23398;&#22530; \and &#26446;&#22235;\\&#22825;&#20803;&#30740;&#31350;&#25152;}</code></pre>
+<p><strong>src/2-3-03.tex</strong></p>
+<pre class="tex"><code>\title{&#26434;&#35848;&#21246;&#32929;&#23450;&#29702;\thanks{&#26412;&#25991;&#30001;&#20061;&#31456;&#22522;&#37329;&#20250;&#36190;&#21161;&#12290;}}
+\author{&#24352;&#19977;\thanks{&#20061;&#31456;&#23398;&#22530;&#35762;&#24072;&#12290;}\\&#20061;&#31456;&#23398;&#22530;}</code></pre>
+<p><strong>src/2-3-04.tex</strong></p>
+<pre class="tex"><code>% &#25163;&#24037;&#25490;&#29256;&#30340;&#26631;&#39064;&#39029;
+\begin{titlepage}
+  \vspace*{\fill}
+  \begin{center}
+  \normalfont
+  {\Huge\bfseries &#26434;&#35848;&#21246;&#32929;&#23450;&#29702;}
+
+  \bigskip
+  {\Large\itshape &#24352;&#19977;}
+
+  \medskip
+  \today
+  \end{center}
+  \vspace{\stretch{3}}
+\end{titlepage}</code></pre>
+<p><strong>src/2-3-05.tex</strong></p>
+<pre class="tex"><code>\documentclass{book}
+\title{Languages}\author{someone}
+\begin{document}
+\maketitle
+\tableofcontents
+% &#36825;&#37324;&#29992;&#32553;&#36827;&#26174;&#31034;&#23618;&#27425;
+\part{Introduction}                         % Part I
+  \chapter{Background}                      %   Chapter 1
+\part{Classification}                       % Part II
+  \chapter{Natural Language}                %   Chapter 2
+  \chapter{Computer Languages}              %   Chapter 3
+    \section{Machine Languages}             %     3.1
+    \section{High Level Languages}          %     3.2
+      \subsection{Compiled Language}        %       3.2.1
+      \subsection{Interpretative Language}  %       3.2.2
+      \subsubsection{Lisp}
+        \paragraph{Common Lisp}
+        \paragraph{Scheme}
+      \subsubsection{Perl}
+\end{document}</code></pre>
+<p><strong>src/2-3-06.tex</strong></p>
+<pre class="tex"><code>% languages.tex
+%   &#25972;&#20010;&#25991;&#26723;&#30340;&#20027;&#25991;&#20214;
+\documentclass{ctexbook}
+\usepackage{syntonly}
+\syntaxonly     % &#21482;&#26816;&#26597;&#35821;&#27861;&#65292;&#19981;&#36755;&#20986; DVI/PDF &#25991;&#20214;
+\begin{document}
+&#8230;&#8230;
+\end{document}</code></pre>
+<p><strong>src/2-3-07.tex</strong></p>
+<pre class="tex"><code>\usepackage[sf,bf,it,centering]{titlesec}</code></pre>
+<p><strong>src/2-3-08.tex</strong></p>
+<pre class="tex"><code>\titlelabel{\S~\thetitle\quad}</code></pre>
+<p><strong>src/2-3-09.tex</strong></p>
+<pre class="tex"><code>\titleformat*{\section}{\Large\itshape\centering}</code></pre>
+<p><strong>src/2-4-01.tex</strong></p>
+<pre class="tex"><code>\documentclass[a4paper,titlepage]{article}</code></pre>
+<p><strong>src/2-4-02.tex</strong></p>
+<pre class="tex"><code>\documentclass{moderncv}
+\usepackage{ctex}
+\zihao{-4}
+\begin{document}
+&#8230;&#8230;&#8230;&#8230;
+\end{document}</code></pre>
+<p><strong>src/2-4-03.tex</strong></p>
+<pre class="tex"><code>\XeTeXinputencoding &quot;GBK&quot;
+\documentclass{ctexart}
+\begin{document}
+GBK &#32534;&#30721;&#30340;&#20013;&#25991;&#25991;&#26723;&#12290;
+\end{document}</code></pre>
+<p><strong>src/2-4-04.tex</strong></p>
+<pre class="tex"><code>\usepackage[a4paper,left=3cm,right=3cm]{geometry}</code></pre>
+<p><strong>src/2-4-05.tex</strong></p>
+<pre class="tex"><code>\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=3cm}</code></pre>
+<p><strong>src/2-4-06.tex</strong></p>
+<pre class="tex"><code>\pagenumbering{roman}</code></pre>
+<p><strong>src/2-4-07.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\pagestyle{headings}</code></pre>
+<p><strong>src/2-4-08.tex</strong></p>
+<pre class="tex"><code>\begin{figure}[p]
+  \thispagestyle{plain}
+  &#8230;&#8230;&#8230;&#8230;
+\end{figure}</code></pre>
+<p><strong>src/2-4-09.tex</strong></p>
+<pre class="tex"><code>\documentclass{ctexart}
+\pagestyle{headings}
+\markright{&#24352;&#19977;}</code></pre>
+<p><strong>src/2-4-10.tex</strong></p>
+<pre class="tex"><code>\documentclass[twoside]{ctexrep}
+\usepackage{fancyhdr}
+\pagestyle{fancy}       % &#20351;&#29992; fancy &#39118;&#26684;
+\fancyhf{}              % &#28165;&#38500;&#25152;&#26377;&#39029;&#30473;&#39029;&#33050;
+\cfoot{\thepage}        % &#39029;&#33050;&#23621;&#20013;&#39029;&#30721;
+\fancyhead[CO]{&#24352;&#19977;}    % &#22855;&#25968;&#39029;&#23621;&#20013;&#39029;&#30473;&#20316;&#32773;&#21517;
+\fancyhead[CE]{&#35770;&#35821;&#35328;}  % &#20598;&#25968;&#39029;&#23621;&#20013;&#39029;&#30473;&#25991;&#31456;&#39064;&#30446;
+\fancyfoot[RO,LE]{$\heartsuit$}
+    % &#22855;&#25968;&#39029;&#33050;&#21491;&#65292;&#20598;&#25968;&#39029;&#33050;&#24038;&#65288;&#21363;&#22806;&#20391;&#65289;&#35013;&#39280;&#31526;&#21495;</code></pre>
+<p><strong>src/2-4-11.tex</strong></p>
+<pre class="tex"><code>\documentclass[twoside,fancyhdr]{ctexrep}
+\fancyhf{}
+% &#8230;&#8230;</code></pre>
+<p><strong>src/2-4-12.tex</strong></p>
+<pre class="tex"><code>\renewcommand\headrulewidth{0.6pt}  % &#40664;&#35748;&#20026; 0.4pt
+\renewcommand\footrulewidth{0.6pt}  % &#40664;&#35748;&#20026; 0pt</code></pre>
+<p><strong>src/2-4-13.tex</strong></p>
+<pre class="tex"><code>\fancypagestyle{plain}{%
+  \fancyhf{}
+  \cfoot{--\textit{\thepage}--}     % &#25913;&#21464;&#39029;&#30721;&#24418;&#29366;
+  \renewcommand\headrulewidth{0pt}  % &#26080;&#39029;&#30473;&#32447;
+  \renewcommand\footrulewidth{0pt}  % &#26080;&#39029;&#33050;&#32447;
+}</code></pre>
+<p><strong>src/2-4-14.tex</strong></p>
+<pre class="tex"><code>\newcommand\PRC{People&#39;s Republic of \emph{China}}</code></pre>
+<p><strong>src/2-4-15.tex</strong></p>
+<pre class="tex"><code>\newcommand\loves[2]{#1&#21916;&#27426;#2}
+\newcommand\hatedby[2]{#2&#19981;&#21463;#1&#21916;&#27426;}</code></pre>
+<p><strong>src/2-4-16.tex</strong></p>
+<pre class="tex"><code>\newcommand\loves[3][&#21916;&#27426;]{{#2#1#3}}</code></pre>
+<p><strong>src/2-4-17.tex</strong></p>
+<pre class="tex"><code>\newcommand\Emph[1]{\emph{#1}}
+\newcommand\setEmph[1]{%
+  \renewcommand\Emph[1]{%
+    #1{##1}}}</code></pre>
+<p><strong>src/2-4-18.tex</strong></p>
+<pre class="tex"><code>\newenvironment{myabstract}[1][&#25688;&#35201;]%
+  {\small
+   \begin{center}\bfseries #1\end{center}%
+   \begin{quotation}}%
+  {\end{quotation}}</code></pre>
+<p><strong>src/2-4-19.tex</strong></p>
+<pre class="tex"><code>\newenvironment{Quotation}[1]%
+  {\newcommand\quotesource{#1}%
+   \begin{quotation}}%
+   {\par\hfill &#8212;&#8212;&#12298;\textit{\quotesource}&#12299;%
+   \end{quotation}}
+
+\begin{Quotation}{&#26131;&#183;&#20094;}
+&#21021;&#20061;&#65292;&#28508;&#40857;&#21247;&#29992;&#12290;
+\end{Quotation}</code></pre>
+<p><strong>src/3-1-01.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\begin{document}
+\tableofcontents
+\section{Foo}
+\subsection{blah}
+\section{Bar}
+\end{document}</code></pre>
+<p><strong>src/3-1-02.tex</strong></p>
+<pre class="tex"><code>\setcounter{secnumdepth}{4} % &#22686;&#21152;&#32534;&#21495;&#28145;&#24230;
+\setcounter{tocdepth}{4}    % &#22686;&#21152;&#30446;&#24405;&#28145;&#24230;</code></pre>
+<p><strong>src/3-1-03.tex</strong></p>
+<pre class="tex"><code>\addcontentsline{toc}{section}{Title}
+\maketitle
+\tableofcontents</code></pre>
+<p><strong>src/3-1-04.tex</strong></p>
+<pre class="tex"><code>\usepackage{tocbibind}</code></pre>
+<p><strong>src/3-1-05.tex</strong></p>
+<pre class="tex"><code>\addtocontents{toc}{\newpage}
+\part{Foo}</code></pre>
+<p><strong>src/3-1-06.tex</strong></p>
+<pre class="tex"><code>% \usepackage{tocloft}
+\renewcommand\cfttoctitlefont{\hfill\Large\sffamily\bfseries}
+\renewcommand\cftaftertoctitle{\hfill}
+\setlength\cftbeforetoctitleskip{2ex}
+\setlength\cftaftertoctitleskip{2ex}</code></pre>
+<p><strong>src/3-1-07.tex</strong></p>
+<pre class="tex"><code>% \usepackage{tocloft}
+\renewcommand\cftdot{&#8230;}
+\renewcommand{\cftdotsep}{0}</code></pre>
+<p><strong>src/3-1-08.tex</strong></p>
+<pre class="tex"><code>\settowidth{\cftchapternumwidth}{&#31532;&#20960;&#21313;&#20960;&#31456;}        % &#26368;&#23485;&#30340;&#21487;&#33021;&#32534;&#21495;
+\renewcommand\cftchapteraftersnumb{\hspace{0.5em}}  % &#39069;&#22806;&#38388;&#36317;</code></pre>
+<p><strong>src/3-1-09.tex</strong></p>
+<pre class="tex"><code>\documentclass{ctexbook} % &#25110; ctexrep, ctexart
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\numberline}[1]{%
+  \settowidth\@tempdimb{#1\hspace{0.5em}}%
+  \ifdim\@tempdima&lt;\@tempdimb%
+    \@tempdima=\@tempdimb%
+  \fi%
+  \hb@xt@\@tempdima{\@cftbsnum #1\@cftasnum\hfil}\@cftasnumb}
+\makeatother</code></pre>
+<p><strong>src/3-2-01.tex</strong></p>
+<pre class="tex"><code>\section{Lanuages}
+\label{sec:lang}</code></pre>
+<p><strong>src/3-2-02.tex</strong></p>
+<pre class="tex"><code>\begin{align}
+  c^2 &amp;= a^2 + b^2
+    \label{eq:gougu-formula} \\
+  5^2 &amp;= 3^2 + 4^2
+    \label{eq:gougu-example}
+\end{align}</code></pre>
+<p><strong>src/3-2-03.tex</strong></p>
+<pre class="tex"><code>&#21246;&#32929;&#23450;&#29702;&#20844;&#24335; (\ref{eq:gougu-formula})
+&#20986;&#29616;&#22312; \pageref{eq:gougu-formula}~&#39029;&#12290;</code></pre>
+<p><strong>src/3-2-04.tex</strong></p>
+<pre class="tex"><code>\newcommand\thmref[1]{&#23450;&#29702;~\ref{#1}}</code></pre>
+<p><strong>src/3-2-05.tex</strong></p>
+<pre class="tex"><code>See \autoref{fig:xref}.</code></pre>
+<p><strong>src/3-2-06.tex</strong></p>
+<pre class="tex"><code>\renewcommand\figureautorefname{&#22270;}
+&#21442;&#35265;\autoref{fig:xref}&#12290;</code></pre>
+<p><strong>src/3-2-07.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{nameref}
+&#35265;&#8220;\nameref{fig:xref}&#8221;&#12290;</code></pre>
+<p><strong>src/3-2-08.tex</strong></p>
+<pre class="tex"><code>page \thepage\ of \pageref{LastPage}</code></pre>
+<p><strong>src/3-2-09.tex</strong></p>
+<pre class="tex"><code>% languages.tex &#23548;&#35328;&#21306;
+\usepackage{xr}
+\externaldocument[ch:]{chinese}</code></pre>
+<p><strong>src/3-2-10.tex</strong></p>
+<pre class="tex"><code>\documentclass[hyperref,UTF8]{ctexart}</code></pre>
+<p><strong>src/3-2-11.tex</strong></p>
+<pre class="tex"><code>\documentclass[hyperref,UTF8]{ctexbook}
+\usepackage{geometry}
+\geometry{screen}
+\hypersetup{
+  colorlinks=true,
+  bookmarks=true,
+  bookmarksopen=false,
+  pdfpagemode=FullScreen,
+  pdfstartview=Fit,
+  pdftitle={&#21021;&#31561;&#20960;&#20309;&#25945;&#31243;&#65288;&#30005;&#23376;&#29256;&#65289;},
+  pdfauthor={&#24352;&#19977;}
+}</code></pre>
+<p><strong>src/3-2-12.tex</strong></p>
+<pre class="tex"><code>\url{http://bbs.ctex.org/forum.php?mod=viewthread&amp;tid=48244#pid337079}</code></pre>
+<p><strong>src/3-2-13.tex</strong></p>
+<pre class="tex"><code>\href{http://bbs.ctex.org/}{CTeX &#35770;&#22363;}</code></pre>
+<p><strong>src/3-2-14.tex</strong></p>
+<pre class="tex"><code>\hyperref[eq:gougu-formula]{&#28857;&#20987;&#26597;&#30475;&#21246;&#32929;&#23450;&#29702;&#20844;&#24335;}</code></pre>
+<p><strong>src/3-2-15.tex</strong></p>
+<pre class="tex"><code>\phantomsection
+\addcontentsline{toc}{section}{&#20064;&#39064;}
+\section*{&#26412;&#31456;&#20064;&#39064;}</code></pre>
+<p><strong>src/3-2-16.tex</strong></p>
+<pre class="tex"><code>\pdfbookmark[2]{&#21246;&#32929;&#23450;&#29702;&#35777;&#26126;}{gouguproof}
+\begin{proof} &#8230;&#8230; \end{proof}</code></pre>
+<p><strong>src/3-2-17.tex</strong></p>
+<pre class="tex"><code>\section{\texorpdfstring{$\frac{1}{\pi}$}{1/&#960;} &#30340;&#35745;&#31639;}</code></pre>
+<p><strong>src/3-3-01.bib</strong></p>
+<pre class="tex"><code>% tex.bib &#20013;&#30340;&#19968;&#26465;
+@BOOK{mittelbach2004,
+  title = {The {{\LaTeX}} Companion},
+  publisher = {Addison-Wesley},
+  year = {2004},
+  author = {Frank Mittelbach and Michel Goossens},
+  series = {Tools and Techniques for Computer Typesetting},
+  address = {Boston},
+  edition = {Second}
+}</code></pre>
+<p><strong>src/3-3-02.bib</strong></p>
+<pre class="tex"><code>@String{ j-CJ = &quot;The Computer Journal&quot; }
+
+@Article{Knuth:CJ-2-27-97,
+  author =       &quot;Donald E. Knuth&quot;,
+  title =        &quot;Literate Programming&quot;,
+  journal =      j-CJ,
+  year =         &quot;1984&quot;,
+  number =       &quot;2&quot;,
+  volume =       &quot;27&quot;,
+  pages =        &quot;97--111&quot;,
+  month =        may,
+}</code></pre>
+<p><strong>src/3-3-03.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+% \usepackage{natbib}
+% \bibliographystyle{plainnat}
+% &#27491;&#25991;
+&#22312; \citet{lamport1994} &#20013;&#25552;&#21040;&#20102;&#21033;&#29992; \BibTeX{} &#33258;&#21160;&#22788;&#29702;&#25991;&#29486;&#30340;&#26041;&#24335;&#65292;
+&#22312;&#21478;&#19968;&#26412;&#20070; \citep{mittelbach2004} &#20013;&#21017;&#26377;&#36827;&#19968;&#27493;&#30340;&#26684;&#24335;&#19982;&#24037;&#20855;&#30340;&#35828;&#26126;&#12290;</code></pre>
+<p><strong>src/3-3-04.tex</strong></p>
+<pre class="tex"><code>\citet{Abrahams1990} \\
+\citet*{Abrahams1990}</code></pre>
+<p><strong>src/3-3-05.tex</strong></p>
+<pre class="tex"><code>\citep[\S~4.3~&#33410;]{lamport1994} \\
+\cite[&#21448;&#35265;][&#31532;~13~&#31456;]{mittelbach2004}</code></pre>
+<p><strong>src/3-3-06.tex</strong></p>
+<pre class="tex"><code>\citeauthor{Abrahams1990} \\
+\citefullauthor{Abrahams1990} \\ % &#25110;&#21152; *
+\citeyear{Abrahams1990} \\
+\citeyearpar{Abrahams1990} \\
+\citenum{Abrahams1990}</code></pre>
+<p><strong>src/3-3-07.tex</strong></p>
+<pre class="tex"><code>\citealt{Patashnik1988:btxdoc}\\
+\citealp{Patashnik1988:btxdoc}\\% &#26377;&#36887;&#21495;
+\citetext{&#21516;&#21069;} \\
+\citetext{&#21442;&#35265; \citealp{Shell2007}&#65292;
+  &#20197;&#21450; \citealp{Markey2009}}</code></pre>
+<p><strong>src/3-3-08.tex</strong></p>
+<pre class="tex"><code>\usepackage[numbers,square]{natbib}</code></pre>
+<p><strong>src/3-3-09.tex</strong></p>
+<pre class="tex"><code>\CTEXoptions[bibname={&#26412;&#20070;&#24341;&#29992;&#30340;&#25991;&#29486;}]
+% &#25110; \renewcommand\bibname{&#26412;&#20070;&#24341;&#29992;&#30340;&#25991;&#29486;}</code></pre>
+<p><strong>src/3-3-10.tex</strong></p>
+<pre class="tex"><code>\renewcommand\bibpreamble{&#19979;&#38754;&#32473;&#20986;&#26412;&#25991;&#21442;&#32771;&#30340;&#20960;&#31687;&#25991;&#31456;&#12290;}</code></pre>
+<p><strong>src/3-3-11.tex</strong></p>
+<pre class="tex"><code>\renewcommand\bibfont{\small}</code></pre>
+<p><strong>src/3-3-12.tex</strong></p>
+<pre class="tex"><code>\renewcommand\citenumfont{\itshape}</code></pre>
+<p><strong>src/3-3-13.tex</strong></p>
+<pre class="tex"><code>\renewcommand\bibnumfmt[1]{\textbf{#1.}}</code></pre>
+<p><strong>src/3-3-14.tex</strong></p>
+<pre class="tex"><code>\setlength{\bibsep}{0pt}</code></pre>
+<p><strong>src/3-3-15.tex</strong></p>
+<pre class="tex"><code>% main.tex
+% &#20027;&#25991;&#26723;
+\documentclass{book}
+\usepackage{chapterbib}
+\usepackage[sectionbib]{natbib}
+\begin{document}
+  % ...
+  \include{chap-intro}
+  \include{chap-research}
+  \include{chap-conclusion}
+\end{document}
+
+% chap-intro.tex
+% &#20854;&#20013;&#19968;&#31456;
+\chapter{Introduction}
+% ...
+\bibliographystyle{plainnat}
+\bibliography{foo}
+
+% chap-research.tex
+% ...</code></pre>
+<p><strong>src/3-3-16.tex</strong></p>
+<pre class="tex"><code>\usepackage[numbers,sort&amp;compress]{natbib}</code></pre>
+<p><strong>src/3-3-17.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328; \usepackage[merge]{natbib}
+\citep*{knuthtex1986, *lamport1994, *mittelbach2004}</code></pre>
+<p><strong>src/3-3-20.tex</strong></p>
+<pre class="tex"><code>\documentclass[openbib]{article}
+\bibliographystyle{plain}
+\begin{document}
+\TeX{} and \LaTeX{} see \cite{knuthtex1986}, \cite{Lamport1994}.
+\nocite{mittelbach2004}
+\bibliography{tex}
+\end{document}</code></pre>
+<p><strong>src/3-4-01.tex</strong></p>
+<pre class="tex"><code>% foo.tex
+\documentclass{ctexart}
+\usepackage{makeidx}
+\makeindex
+% ...
+\begin{document}
+\section{&#21246;&#32929;&#23450;&#29702;}
+% &#31532; 1 &#39029;
+&#21246;&#32929;&#23450;&#29702;&#22312;&#35199;&#26041;&#31216;&#20026;&#27605;&#36798;&#21733;&#25289;&#26031;&#23450;&#29702;&#65288;Pythagoras&#39; theorem&#65289;&#12290;
+\index{Pythagoras}
+% ...
+% &#31532; 2 &#39029;
+&#22312;&#20013;&#22269;&#24120;&#31216;&#21246;&#32929;&#23450;&#29702;&#20026;&#21830;&#39640;&#23450;&#29702;&#12290;\index{&#21830;&#39640;}
+
+\printindex
+\end{document}</code></pre>
+<p><strong>src/3-4-02.tex</strong></p>
+<pre class="tex"><code>\renewcommand\seename{&#21442;&#35265;}
+\renewcommand\alsoname{&#21448;&#35265;}</code></pre>
+<p><strong>src/3-4-03.tex</strong></p>
+<pre class="tex"><code>\newcommand*\numsee[2]{#2&#65288;\emph{&#21442;&#35265;} #1&#65289;}</code></pre>
+<p><strong>src/3-4-04.tex</strong></p>
+<pre class="tex"><code>\documentclass[UTF8]{ctexart}
+\usepackage{imakeidx}
+\makeindex[title={&#21517;&#35789;&#32034;&#24341;}]
+\makeindex[name=persons,title={&#20154;&#21517;&#32034;&#24341;}]
+
+\begin{document}
+... \index{&#21517;&#35789;}
+... \index[persons]{&#20154;&#21517;}
+...
+\printindex           % &#36755;&#20986;&#21517;&#35789;&#32034;&#24341;
+\printindex[persons]  % &#36755;&#20986;&#20154;&#21517;&#32034;&#24341;
+\end{document}</code></pre>
+<p><strong>src/3-4-05.tex</strong></p>
+<pre class="tex"><code>\newcommand*\keyword[1]{\texttt{#1}\index{#1@\texttt{#1}}}</code></pre>
+<p><strong>src/3-4-06.tex</strong></p>
+<pre class="tex"><code>\documentclass[UTF8]{ctexbook}
+\usepackage{imakeidx}
+\makeindex[%
+  name=persons,           % &#32034;&#24341;&#25991;&#20214;&#21517;&#65288;&#40664;&#35748;&#20026; \jobname&#65292;&#21363;&#20027;&#25991;&#20214;&#21517;&#65289;
+  title={&#20154;&#21517;&#32034;&#24341;},       % &#32034;&#24341;&#34920;&#26631;&#39064;&#65288;&#40664;&#35748;&#20026; \indexname&#65289;
+  intoc=true,             % &#21152;&#20837;&#30446;&#24405;&#65288;&#40664;&#35748;&#20026; false&#65292;&#19981;&#21152;&#20837;&#30446;&#24405;&#65289;
+  columns=2,              % &#20998;&#26639;&#65288;&#40664;&#35748;&#20026; 1&#65289;
+  columnsep=1cm,          % &#26639;&#38388;&#36317;&#65288;&#40664;&#35748;&#20026; 35pt&#65289;
+  columnseprule=true,     % &#20998;&#26639;&#32447;&#65288;&#40664;&#35748;&#20026; false&#65289;
+  program=makeindex,      % &#35843;&#29992;&#30340;&#32034;&#24341;&#31243;&#24207;&#65288;&#25110;&#29992; xindy&#12289;texindy&#65289;
+  options={-s mkind.ist}, % &#32034;&#24341;&#31243;&#24207;&#30340;&#36873;&#39033;&#65288;&#40664;&#35748;&#20026;&#31354;&#65289;
+  noautomatic=false       % &#19981;&#33258;&#21160;&#35843;&#29992;&#32034;&#24341;&#31243;&#24207;&#65288;&#40664;&#35748;&#20026; false&#65289;
+]
+\indexsetup{%
+  level=\section*,        % &#26631;&#39064;&#32423;&#21035;&#65288;&#40664;&#35748; \chapter* &#21363;&#19981;&#32534;&#21495;&#30340;&#31456;&#65289;
+  toclevel=section,       % &#30446;&#24405;&#32423;&#21035;&#65288;&#19981;&#24102;&#21453;&#26012;&#32447;&#65292;&#21448;&#22914; chapter&#65289;
+  firstpagestyle=empty,   % &#32034;&#24341;&#31532;&#19968;&#39029;&#30340;&#39029;&#38754;&#39118;&#26684;&#65288;&#40664;&#35748;&#20026; plain&#65289;
+  headers={&#20154;&#21517;}{&#20154;&#21517;},   % &#32034;&#24341;&#30340;&#22855;&#20598;&#39029;&#30473;
+  othercode={             % &#23558;&#22312;&#32034;&#24341;&#26465;&#30446;&#20043;&#21069;&#29983;&#25928;&#30340;&#20219;&#24847;&#20195;&#30721;
+    \renewcommand{\indexspace}{\smallskip}}
+}
+\begin{document}
+&#24352;&#19977;\index[persons]{&#24352;&#19977;} \newpage
+&#26446;&#22235;\index[persons]{&#26446;&#22235;} \newpage
+&#29579;&#20116;\index[persons]{&#29579;&#20116;}
+
+\indexprologue{&#36825;&#37324;&#21015;&#20986;&#26412;&#25991;&#28041;&#21450;&#30340;&#25152;&#26377;&#20154;&#21517;&#12290;}
+\printindex[persons]
+\end{document}</code></pre>
+<p><strong>src/3-4-08.tex</strong></p>
+<pre class="tex"><code>\documentclass[UTF8]{ctexart}
+\usepackage{glossaries}
+\makeglossaries
+\begin{document}
+
+\newglossaryentry{gloss}{
+  name=glossary,
+  description={A vocabulary with annotations for a particular subject},
+  plural=glossaries}
+
+\Glspl{gloss} are important for technical documents.
+
+\newglossaryentry{sec}{
+  name=&#20998;&#33410;,
+  description={&#25226;&#25991;&#31456;&#20998;&#25104;&#31456;&#33410;}}
+\gls{sec}&#23545;&#20110;&#38271;&#25991;&#26723;&#38750;&#24120;&#37325;&#35201;&#12290;
+
+\printglossaries
+\end{document}</code></pre>
+<p><strong>src/4-1-01.tex</strong></p>
+<pre class="tex"><code>&#20132;&#25442;&#24459;&#26159; $a+b=b+a$&#65292;&#22914; $1+2=2+1=3$&#12290;</code></pre>
+<p><strong>src/4-1-02.tex</strong></p>
+<pre class="tex"><code>% &#29992;&#20110; ntheorem &#23439;&#21253;
+\renewcommand\qedsymbol{\ensuremath{\Box}}
+&#35777;&#27605;&#31526;&#21495;&#65306;\qedsymbol &#25110; $\qedsymbol$&#12290;</code></pre>
+<p><strong>src/4-1-03.tex</strong></p>
+<pre class="tex"><code>&#20132;&#25442;&#24459;&#26159;
+\[ a+b=b+a, \]
+&#22914;
+\[
+  1+2=2+1=3.
+\]</code></pre>
+<p><strong>src/4-1-04.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+  a+b=b+a \label{eq:commutative}
+\end{equation}</code></pre>
+<p><strong>src/4-1-05.tex</strong></p>
+<pre class="tex"><code>$\text{&#34987;&#20943;&#25968;} - \text{&#20943;&#25968;} = \text{&#24046;}$</code></pre>
+<p><strong>src/4-1-06.tex</strong></p>
+<pre class="tex"><code>&#24050;&#30693;&#30340;&#21464;&#37327;&#26377; $a$, $b$, $c$, $d$, $S$, $R$ &#21644; $T$&#12290;</code></pre>
+<p><strong>src/4-2-01.tex</strong></p>
+<pre class="tex"><code>$A_{ij} = 2^{i+j}$</code></pre>
+<p><strong>src/4-2-02.tex</strong></p>
+<pre class="tex"><code>$A_i^k = B^k_i$ \qquad
+$K_{n_i} = K_{2^i} = 2^{n_i}
+         = 2^{2^i}$ \qquad
+$3^{3^{3^{\cdot^{\cdot^{\cdot^3}}}}}$</code></pre>
+<p><strong>src/4-2-03.tex</strong></p>
+<pre class="tex"><code>$a = a&#39;$, $b_0&#39; = b_0&#39;&#39;$,
+${c&#39;}^2 = (c&#39;)^2$</code></pre>
+<p><strong>src/4-2-04.tex</strong></p>
+<pre class="tex"><code>$A = 90^\circ$</code></pre>
+<p><strong>src/4-2-05.tex</strong></p>
+<pre class="tex"><code>\newcommand\degree{^\circ}</code></pre>
+<p><strong>src/4-2-06.tex</strong></p>
+<pre class="tex"><code>\[
+  \max_n f(n) = \sum_{i=0}^n A_i
+\]</code></pre>
+<p><strong>src/4-2-07.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \DeclareMathOperator\dif{d\!}
+\[ \int_0^1 f(t) \dif t
+= \iint_D g(x,y) \dif x \dif y \]</code></pre>
+<p><strong>src/4-2-08.tex</strong></p>
+<pre class="tex"><code>\[
+  \iiint\limits_D \mathrm{d}f
+    = \max\nolimits_D g
+\]</code></pre>
+<p><strong>src/4-2-09.tex</strong></p>
+<pre class="tex"><code>% \usepackage{mathtools}
+$\prescript{n}{m}{H}_i^j &lt; L$</code></pre>
+<p><strong>src/4-2-10.tex</strong></p>
+<pre class="tex"><code>\[ \sideset{_a^b}{_c^d} \sum_{i=0}^n A_i
+ = \sideset{}{&#39;} \prod_k f_i \]</code></pre>
+<p><strong>src/4-2-11.tex</strong></p>
+<pre class="tex"><code>$\overset{*}{X}$ \qquad
+$\underset{*}{X}$ \qquad
+$\overset{*}{\underset{\dag}{X}}$</code></pre>
+<p><strong>src/4-2-12.tex</strong></p>
+<pre class="tex"><code>$A_m{}^n$ &#25110; $A_m^{\phantom{m}n}$</code></pre>
+<p><strong>src/4-2-13.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{tensor}
+$M\indices{^a_b^{cd}_e}$ \qquad
+$\tensor[^a_b^c_d]{M}{^a_b^c_d}$</code></pre>
+<p><strong>src/4-2-14.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{mhchem}
+&#37259;&#20013;&#20027;&#35201;&#26159; \ce{H2O}&#65292;&#21547;&#26377; \ce{CH3COO-}&#12290;
+
+\ce{^{227}_{90}Th} &#20803;&#32032;&#20855;&#26377;&#24378;&#25918;&#23556;&#24615;&#12290;</code></pre>
+<p><strong>src/4-2-15.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+\ce{2H2 + O2 -&gt;[\text{&#29123;&#28903;}] 2H2O}
+\end{equation}</code></pre>
+<p><strong>src/4-2-16.tex</strong></p>
+<pre class="tex"><code>$\overline{a+b} =
+  \overline a + \overline b$ \\
+$\underline a = (a_0, a_1, a_2, \dots)$</code></pre>
+<p><strong>src/4-2-17.tex</strong></p>
+<pre class="tex"><code>$ \overline{\underline{\underline a}
++ \overline{b}^2} - c^{\underline n} $</code></pre>
+<p><strong>src/4-2-18.tex</strong></p>
+<pre class="tex"><code>$\overleftarrow{a+b}$\\
+$\overrightarrow{a+b}$\\
+$\overleftrightarrow{a+b}$\\
+$\underleftarrow{a-b}$\\
+$\underrightarrow{a-b}$\\
+$\underleftrightarrow{a-b}$</code></pre>
+<p><strong>src/4-2-19.tex</strong></p>
+<pre class="tex"><code>$\vec x = \overrightarrow{AB}$</code></pre>
+<p><strong>src/4-2-20.tex</strong></p>
+<pre class="tex"><code>$\overbrace{a+b+c} = \underbrace{1+2+3}$</code></pre>
+<p><strong>src/4-2-21.tex</strong></p>
+<pre class="tex"><code>\[ ( \overbrace{a_0,a_1,\dots,a_n}
+  ^{\text{&#20849; $n+1$ &#39033;}} ) =
+( \underbrace{0,0,\dots,0}_{n} , 1 ) \]</code></pre>
+<p><strong>src/4-2-22.tex</strong></p>
+<pre class="tex"><code>\[ \underbracket{\overbracket{1+2}+3}_3 \]</code></pre>
+<p><strong>src/4-2-23.tex</strong></p>
+<pre class="tex"><code>\[
+\frac 12 + \frac 1a = \frac{2+a}{2a}
+\]</code></pre>
+<p><strong>src/4-2-24.tex</strong></p>
+<pre class="tex"><code>\[  \frac{1}{\frac 12 (a+b)}
+= \frac{2}{a+b}  \]</code></pre>
+<p><strong>src/4-2-25.tex</strong></p>
+<pre class="tex"><code>\[
+\tfrac 12 f(x) =
+  \frac{1}{\dfrac 1a + \dfrac 1b + c}
+\]</code></pre>
+<p><strong>src/4-2-26.tex</strong></p>
+<pre class="tex"><code>\[  \cfrac{1}{1+\cfrac{2}{%
+      1+\cfrac{3}{1+x}}}  =
+    \cfrac[r]{1}{1+\cfrac{2}{%
+      1+\cfrac[l]{3}{1+x}}}   \]</code></pre>
+<p><strong>src/4-2-27.tex</strong></p>
+<pre class="tex"><code>% \usepackage{xfrac}
+&#21306;&#21035; $\sfrac 1a + b$ &#21644; $1/(a+b)$</code></pre>
+<p><strong>src/4-2-28.tex</strong></p>
+<pre class="tex"><code>\[
+(a+b)^2 = \binom 20 a^2
+  + \binom 21 ab + \binom 22 b^2
+\]</code></pre>
+<p><strong>src/4-2-29.tex</strong></p>
+<pre class="tex"><code>\newcommand\stiring[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand\dstiring[2]{\genfrac{[}{]}{0pt}{0}{#1}{#2}}
+\newcommand\tstiring[2]{\genfrac{[}{]}{0pt}{1}{#1}{#2}}
+\[  \stiring{n}{1} = (n-1)!, \qquad n &gt; 0.  \]</code></pre>
+<p><strong>src/4-2-30.tex</strong></p>
+<pre class="tex"><code>$\sqrt 4 = \sqrt[3]{8} = 2$</code></pre>
+<p><strong>src/4-2-31.tex</strong></p>
+<pre class="tex"><code>\[
+\sqrt[n]{\frac{x^2 + \sqrt 2}{x+y}}
+\]</code></pre>
+<p><strong>src/4-2-32.tex</strong></p>
+<pre class="tex"><code>\[
+(x^p+y^q)^{\frac{1}{1/p+1/q}}
+\]</code></pre>
+<p><strong>src/4-2-33.tex</strong></p>
+<pre class="tex"><code>\[
+\sqrt[\uproot{16}\leftroot{-2}n]
+  {\frac{x^2 + \sqrt 2}{x+y}}
+\]</code></pre>
+<p><strong>src/4-2-34.tex</strong></p>
+<pre class="tex"><code>$\sqrt{\frac 12} &lt;
+  \sqrt{\vphantom{\frac12}2}$</code></pre>
+<p><strong>src/4-2-35.tex</strong></p>
+<pre class="tex"><code>$\sqrt b \sqrt y$ \qquad
+$\sqrt{\mathstrut b} \sqrt{\mathstrut y}$</code></pre>
+<p><strong>src/4-2-36.tex</strong></p>
+<pre class="tex"><code>\[  A = \begin{pmatrix}
+  a_{11} &amp; a_{12} &amp; a_{13} \\
+  0 &amp; a_{22} &amp; a_{23} \\
+  0 &amp; 0 &amp; a_{33}
+\end{pmatrix}  \]</code></pre>
+<p><strong>src/4-2-37.tex</strong></p>
+<pre class="tex"><code>\[  A = \begin{bmatrix}
+  a_{11} &amp; \dots &amp; a_{1n} \\
+   &amp; \ddots &amp; \vdots \\
+  0 &amp; &amp; a_{nn}
+\end{bmatrix}_{n\times n}  \]</code></pre>
+<p><strong>src/4-2-38.tex</strong></p>
+<pre class="tex"><code>\[  \begin{pmatrix}
+1 &amp; \frac 12 &amp; \dots &amp; \frac 1n \\
+\hdotsfor{4} \\
+m &amp; \frac m2 &amp; \dots &amp; \frac mn
+\end{pmatrix}  \]</code></pre>
+<p><strong>src/4-2-39.tex</strong></p>
+<pre class="tex"><code>\[  \begin{pmatrix}
+\begin{matrix} 1&amp;0\\0&amp;1 \end{matrix}
+&amp; \text{\Large 0} \\
+\text{\Large 0} &amp;
+\begin{matrix} 1&amp;0\\0&amp;-1 \end{matrix}
+\end{pmatrix} \]</code></pre>
+<p><strong>src/4-2-40.tex</strong></p>
+<pre class="tex"><code>&#22797;&#25968; $z = (x,y)$ &#20063;&#21487;&#29992;&#30697;&#38453; \begin{math}
+\left( \begin{smallmatrix}
+x &amp; -y \\ y &amp; x
+\end{smallmatrix} \right)
+\end{math} &#26469;&#34920;&#31034;&#12290;</code></pre>
+<p><strong>src/4-2-41.tex</strong></p>
+<pre class="tex"><code>\[
+\sum_{\substack{0&lt;i&lt;n \\ 0&lt;j&lt;i}} A_{ij}
+\]</code></pre>
+<p><strong>src/4-2-42.tex</strong></p>
+<pre class="tex"><code>\[  \sum_{\begin{subarray}{l}
+  i&lt;10 \\ j&lt;100 \\ k&lt;1000
+\end{subarray}} X(i,j,k)  \]</code></pre>
+<p><strong>src/4-2-43.tex</strong></p>
+<pre class="tex"><code>\[  \setcounter{MaxMatrixCols}{15}
+\begin{Bmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 1\\
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{Bmatrix}  \]</code></pre>
+<p><strong>src/4-2-44.tex</strong></p>
+<pre class="tex"><code>% \usepackage{mathtools}
+\[  \begin{pmatrix*}[r]
+  10 &amp; -10 \\ -20 &amp;  3
+\end{pmatrix*}  \]</code></pre>
+<p><strong>src/4-2-45.tex</strong></p>
+<pre class="tex"><code>\[  \bordermatrix{
+  &amp; 1 &amp; 2 &amp; 3 \cr
+1 &amp; A &amp; B &amp; C \cr
+2 &amp; D &amp; E &amp; F \cr}  \]</code></pre>
+<p><strong>src/4-3-01.tex</strong></p>
+<pre class="tex"><code>\newcommand\mi{\mathrm{i}}
+\newcommand\me{\mathrm{e}}</code></pre>
+<p><strong>src/4-3-02.tex</strong></p>
+<pre class="tex"><code>% \usepackage{accents}
+$\accentset{*}{A}$, $\accentset{@}{X}$,
+$\underaccent{\check}{a}$,
+$\underaccent{\hat}{b}$,
+$\undertilde{abc}$</code></pre>
+<p><strong>src/4-3-03.tex</strong></p>
+<pre class="tex"><code>% \usepackage{bm}
+% \hm &#30340;&#25928;&#26524;&#38656;&#35201;&#23454;&#38469;&#23383;&#20307;&#25903;&#25345;
+\textbf{&#21246;&#32929;&#23450;&#29702; $\bm{a^2+b^2=c^2}$}
+\[  \bm u + \bm v = (1,0) + (0,1)  \]
+\[  \hm\int &gt; \bm\int &gt; \int  \]</code></pre>
+<p><strong>src/4-3-04.tex</strong></p>
+<pre class="tex"><code>\[
+\mathcal{F}(x) = \sum_{k=0}^\infty
+  \oint_0^1 f_k(x,t) \,\mathrm{d}t
+\]</code></pre>
+<p><strong>src/4-3-05.tex</strong></p>
+<pre class="tex"><code>\[  \int f(x) \,\mathrm{d} x  \]</code></pre>
+<p><strong>src/4-3-06.tex</strong></p>
+<pre class="tex"><code>\newcommand\diff{\,\mathrm{d}}
+\[  \iiint\limits_{0&lt;x,y,z&lt;1} f(x,y,z)
+  \diff x \diff y \diff z  \]</code></pre>
+<p><strong>src/4-3-07.tex</strong></p>
+<pre class="tex"><code>$  \cos 2x = \cos(x+x)
+= \cos^2 x - \sin^2 x  $</code></pre>
+<p><strong>src/4-3-08.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+  \varlimsup_{k\to\infty} A_k = \lim_{J\to\infty} \lim_{K\to\infty}
+    \bigcap_{j=1}^J \bigcup_{k=j}^K A_k
+\end{equation}</code></pre>
+<p><strong>src/4-3-09.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{amsmath}
+\DeclareMathOperator{\card}{card}         % &#38598;&#21512;&#22522;&#25968;
+\DeclareMathOperator*{\esssup}{ess\,sup}  % &#26412;&#24615;&#19978;&#30830;&#30028;</code></pre>
+<p><strong>src/4-3-10.tex</strong></p>
+<pre class="tex"><code>\[  \operatorname*{Prob}_{\{1,\ldots,n\}}
+  (\bar X) =
+\operatorname{card}(\varnothing)/n = 0. \]</code></pre>
+<p><strong>src/4-3-11.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \DeclareMathOperator\dif{d\!}
+\[
+\int_0^1 \int_0^1 f(x,y) \int_0^1 \frac{\dif z}{g(x,y,z)} \dif x\dif y
+\]</code></pre>
+<p><strong>src/4-3-12.tex</strong></p>
+<pre class="tex"><code>&#32676; $G$ &#30340; $(H,K)$-&#21452;&#38506;&#38598;&#20026;
+$H\backslash G/K$&#12290;
+
+$S\cup T = (S\cap T)\cup (S\setminus T)$</code></pre>
+<p><strong>src/4-3-13.tex</strong></p>
+<pre class="tex"><code>\newcommand\defeq{\stackrel{\text{d}}{=}}
+$f(x) \defeq ax^2+bx+c$</code></pre>
+<p><strong>src/4-3-14.tex</strong></p>
+<pre class="tex"><code>\[ A  \xleftarrow{0&lt;x&lt;1} B
+  \xrightarrow[x\leq 0]{x\geq 1} C  \]</code></pre>
+<p><strong>src/4-3-15.tex</strong></p>
+<pre class="tex"><code>$x=y \implies x+a=y+a$ \\
+$x=y \impliedby x+a=y+a$ \\
+$x=y \iff x\le y \And x\ge y$</code></pre>
+<p><strong>src/4-3-16.tex</strong></p>
+<pre class="tex"><code>&#36816;&#31639; $\heartsuit$ &#30340;&#20132;&#25442;&#24459;&#65306;
+\[  a \mathbin{\heartsuit} b =
+b \mathbin{\heartsuit} a  \]</code></pre>
+<p><strong>src/4-3-17.tex</strong></p>
+<pre class="tex"><code>\newcommand\varnotin{%
+  \mathrel{\overline{\in}}}
+$\forall x$, $\forall S$, $x\varnotin S$.</code></pre>
+<p><strong>src/4-3-18.tex</strong></p>
+<pre class="tex"><code>\newcommand*\abs[1]{\lvert#1\rvert}
+$\abs{x+y} \le \abs{x} + \abs{y}$</code></pre>
+<p><strong>src/4-3-19.tex</strong></p>
+<pre class="tex"><code>\[
+\partial_x \partial_y \left[
+\frac12 \left( x^2+y^2 \right)^2 + xy
+\right]
+\]</code></pre>
+<p><strong>src/4-3-20.tex</strong></p>
+<pre class="tex"><code>\[  \left.
+\int_0^x f(t,\lambda) \,\mathrm{d}t
+    \right|_{x=1}, \qquad
+\lambda \in
+  \left[\frac12,\infty\right).  \]</code></pre>
+<p><strong>src/4-3-21.tex</strong></p>
+<pre class="tex"><code>\[
+  \Pr \left( X&gt;\frac12
+  \middle\vert Y=0 \right)
+= \left.
+  \int_0^1 p(t)\,\mathrm{d}t
+  \middle/ ( N^2+1 ) \right.
+\]</code></pre>
+<p><strong>src/4-3-22.tex</strong></p>
+<pre class="tex"><code>\[
+\biggl( \sum_{i=1}^n A_i \biggr) \cdot
+\biggl( \sum_{i=1}^n B_i \biggr) &gt; 0
+\]</code></pre>
+<p><strong>src/4-3-23.tex</strong></p>
+<pre class="tex"><code>$ 1 + \Bigl(2 - \bigl(3 \times
+  (4 \div 5) \bigr) \Bigr) $</code></pre>
+<p><strong>src/4-3-24.tex</strong></p>
+<pre class="tex"><code>\[  P = \biggl&lt; \frac12 \biggr&gt;, \qquad
+M = \left&lt; \begin{matrix}
+  a &amp; b \\ c &amp; d \\
+\end{matrix}\right&gt;  \]</code></pre>
+<p><strong>src/4-3-25.tex</strong></p>
+<pre class="tex"><code>$a:b = ac:bc$</code></pre>
+<p><strong>src/4-3-26.tex</strong></p>
+<pre class="tex"><code>\[  \Pr(x\colon g(x)&gt;5) = 0.25,
+  \qquad g\colon x \mapsto x^2  \]</code></pre>
+<p><strong>src/4-3-27.tex</strong></p>
+<pre class="tex"><code>\[  (1,\dots,n) \qquad 1+\dots+n
+\qquad  a=\dots=z  \]</code></pre>
+<p><strong>src/4-3-28.tex</strong></p>
+<pre class="tex"><code>\[  \prod_{i=1}^n a_i = a_1 \dotsm a_n
+\qquad \int_0^1\dotsi\int_0^1  \]</code></pre>
+<p><strong>src/4-4-01.tex</strong></p>
+<pre class="tex"><code>\begin{gather}
+a+b = b+a \\
+ab = ba
+\end{gather}</code></pre>
+<p><strong>src/4-4-02.tex</strong></p>
+<pre class="tex"><code>\begin{gather*}
+3+5 = 5+3 = 8 \\
+3\times 5 = 5\times 3
+\end{gather*}</code></pre>
+<p><strong>src/4-4-03.tex</strong></p>
+<pre class="tex"><code>\begin{gather}
+3^2 + 4^2 = 5^2 \notag \\
+5^2 + 12^2 = 13^2 \notag \\
+a^2 + b^2 = c^2
+\end{gather}</code></pre>
+<p><strong>src/4-4-04.tex</strong></p>
+<pre class="tex"><code>\begin{align}
+  x &amp;= t + \cos t + 1 \\
+  y &amp;= 2\sin t
+\end{align}</code></pre>
+<p><strong>src/4-4-05.tex</strong></p>
+<pre class="tex"><code>\begin{align*}
+x &amp;= t  &amp; x &amp;= \cos t    &amp; x &amp;= t \\
+y &amp;= 2t &amp; y &amp;= \sin(t+1) &amp; y &amp;= \sin t
+\end{align*}</code></pre>
+<p><strong>src/4-4-06.tex</strong></p>
+<pre class="tex"><code>% &#20851;&#31995;&#31526;&#21518;&#23545;&#40784;&#65292;&#38656;&#35201;&#20351;&#29992;&#31354;&#30340;&#20998;&#32452;
+% &#20195;&#26367;&#20851;&#31995;&#31526;&#21491;&#20391;&#31526;&#21495;&#65292;&#20445;&#35777;&#38388;&#36317;
+\begin{align*}
+    &amp; (a+b)(a^2-ab+b^2) \notag \\
+={} &amp; a^3 - a^2b + ab^2 + a^2b
+      - ab^2 + b^2 \notag \\
+={} &amp; a^3 + b^3 \label{eq:cubesum}
+\end{align*}</code></pre>
+<p><strong>src/4-4-07.tex</strong></p>
+<pre class="tex"><code>% &#32570;&#23569;&#20851;&#31995;&#31526;&#65292;&#38656;&#35201;&#20351;&#29992;&#24187;&#24433;&#32473;&#20851;&#31995;&#31526;
+% &#21344;&#20301;&#65292;&#24182;&#21033;&#29992; \mathrel &#20445;&#35777;&#38388;&#36317;
+\begin{align*}
+&amp;\mathrel{\phantom{=}}
+   (a+b)(a^2-ab+b^2) \notag \\
+&amp;= a^3 - a^2b + ab^2 + a^2b
+   - ab^2 + b^2 \notag \\
+&amp;= a^3 + b^3 \label{eq:cubesum}
+\end{align*}</code></pre>
+<p><strong>src/4-4-08.tex</strong></p>
+<pre class="tex"><code>\begin{flalign}
+  x &amp;= t  &amp; x &amp;= 2 \\
+  y &amp;= 2t &amp; y &amp;= 4
+\end{flalign}</code></pre>
+<p><strong>src/4-4-09.tex</strong></p>
+<pre class="tex"><code>\begin{alignat}{2}
+  x &amp;= \sin t &amp;\quad&amp;\text{&#27700;&#24179;&#26041;&#21521;} \\
+  y &amp;= \cos t &amp;&amp;\text{&#22402;&#30452;&#26041;&#21521;}
+\end{alignat}</code></pre>
+<p><strong>src/4-4-10.tex</strong></p>
+<pre class="tex"><code>\begin{alignat*}{6}
+ &amp;1 &amp; &amp;+2 &amp; &amp;+3 &amp; &amp;+4 &amp; &amp;+5 &amp; &amp;=15 \\
+ &amp;1 &amp; &amp;   &amp; &amp;+3 &amp; &amp;   &amp; &amp;+5 &amp; &amp;=9 \\
+ &amp;  &amp; &amp;+2 &amp; &amp;   &amp; &amp;+4 &amp; &amp;   &amp; &amp;=6
+\end{alignat*}</code></pre>
+<p><strong>src/4-4-11.tex</strong></p>
+<pre class="tex"><code>\begin{align*}
+x^2 + 2x &amp;= -1
+\intertext{&#31227;&#39033;&#24471;}
+x^2 + 2x + 1 &amp;= 0
+\end{align*}</code></pre>
+<p><strong>src/4-4-12.tex</strong></p>
+<pre class="tex"><code>&#35774; $G$ &#26159;&#19968;&#20010;&#24102;&#26377;&#36816;&#31639; $*$ &#30340;&#38598;&#21512;&#65292;&#21017; $G$ &#26159;\emph{&#32676;}&#65292;&#24403;&#19988;&#20165;&#24403;&#65306;
+\begin{subequations}\label{eq:group}
+\begin{alignat}{2}
+\forall a,b,c &amp;\in G, &amp;\qquad (a*b)*c &amp;= a*(b*c);\label{subeq:assoc}\\
+\exists e, \forall a &amp;\in G, &amp;  e*a &amp;= a; \\
+\forall a, \exists b &amp;\in G, &amp;  b*a &amp;= e.
+\end{alignat}
+\end{subequations}
+&#24335;~\eqref{eq:group} &#30340;&#19977;&#20010;&#26465;&#20214;&#20013;&#65292;\eqref{subeq:assoc}~&#21448;&#31216;&#20026;&#32467;&#21512;&#24459;&#12290;</code></pre>
+<p><strong>src/4-4-13.tex</strong></p>
+<pre class="tex"><code>\begin{multline}
+a+b+c+d+e \\
+ +f+g+h+i+j \\
+ +k+l+m+n+o \\
+   +p+q+r+s+t
+\end{multline}</code></pre>
+<p><strong>src/4-4-14.tex</strong></p>
+<pre class="tex"><code>\setlength{\multlinegap}{3em}
+\setlength{\multlinetaggap}{3em}
+\begin{multline*}
+1+2+3 \\ \shoveleft{+4+5+6} \\
++7+8+9 \\
+\shoveright{+10+11+12} \\ +13+14+15
+\end{multline*}</code></pre>
+<p><strong>src/4-4-15.tex</strong></p>
+<pre class="tex"><code>\begin{equation}  \begin{split}
+\cos 2x &amp;= \cos^2 x - \sin^2 x \\
+        &amp;= 2\cos^2 x - 1
+\end{split}  \end{equation}</code></pre>
+<p><strong>src/4-4-16.tex</strong></p>
+<pre class="tex"><code>\begin{equation}\label{eq:trigonometric}
+\begin{split}
+\frac12 (\sin(x+y) + \sin(x-y))
+  &amp;= \frac12(\sin x\cos y + \cos x\sin y) \\
+  &amp;\quad + \frac12(\sin x\cos y - \cos x\sin y) \\
+  &amp;= \sin x\cos y
+\end{split}
+\end{equation}</code></pre>
+<p><strong>src/4-4-17.tex</strong></p>
+<pre class="tex"><code>% \usepackage{breqn}
+\begin{dmath}\label{eq:trigonometric}
+\frac12 (\sin(x+y) + \sin(x-y)) = \frac12(\sin x\cos y + \cos x\sin y)
++ \frac12(\sin x\cos y - \cos x\sin y) = \sin x\cos y
+\end{dmath}</code></pre>
+<p><strong>src/4-4-18.tex</strong></p>
+<pre class="tex"><code>\begin{equation}\label{eq:dirichlet}
+D(x) = \begin{cases}
+1, &amp; \text{if } x \in \mathbb{Q}; \\
+0, &amp; \text{if } x \in
+     \mathbb{R}\setminus\mathbb{Q}.
+\end{cases}
+\end{equation}</code></pre>
+<p><strong>src/4-4-19.tex</strong></p>
+<pre class="tex"><code>% \usepackage{mathtools}
+\[ \left\lvert x - \frac12 \right\rvert
+= \begin{dcases}
+x-\frac12,  &amp; x \geq \frac12;\\
+\frac12-x,  &amp; x &lt; \frac12.
+\end{dcases}  \]</code></pre>
+<p><strong>src/4-4-20.tex</strong></p>
+<pre class="tex"><code>% \usepackage{cases}
+\begin{numcases}{f(x)=}
+  1/q, &amp; if $x = p/q \in \mathbb{Q}$; \\
+  0,   &amp; else.
+\end{numcases}</code></pre>
+<p><strong>src/4-4-21.tex</strong></p>
+<pre class="tex"><code>\[  \left. \begin{gathered}
+  S \subseteq T \\
+  S \supseteq T
+\end{gathered} \right\}
+\implies S = T  \]</code></pre>
+<p><strong>src/4-4-22.tex</strong></p>
+<pre class="tex"><code>% \usepackage{mathtools}
+\[  \text{&#27604;&#36739;&#26354;&#32447;}
+\left\{ \begin{lgathered}
+  x = \sin t, y = \cos t \\
+  x = t + \sin t, y = \cos t
+\end{lgathered} \right.  \]</code></pre>
+<p><strong>src/4-4-23.tex</strong></p>
+<pre class="tex"><code>\begin{equation}\label{eq:trinary}
+\begin{aligned} x+y &amp;= -1 \\ x+y+z &amp;= 2 \\ xyz &amp;= -6 \end{aligned}
+\implies
+\begin{aligned} x+y &amp;= -1 \\ xy &amp;= -2 \\ z &amp;= 3 \end{aligned}
+\implies
+\begin{alignedat}{3}
+             x &amp;= 1,  &amp;\quad y &amp;= -2, &amp;\quad z &amp;= 3 \\
+\text{&#25110;\ }  x &amp;= -2, &amp;      y &amp;= 1,  &amp;      z &amp;= 3
+\end{alignedat}
+\end{equation}</code></pre>
+<p><strong>src/4-4-24.tex</strong></p>
+<pre class="tex"><code>% \usepackage{mathtools}
+\newcommand\Set[2]{%
+  \left\{#1\ \middle\vert\ #2 \right\}}
+\[  \Omega = \Set{x}{\begin{multlined}
+x^7+x^6+x^5 \\ +x^4+x^3+x^2 \\ +x+1=0
+\end{multlined}}  \]</code></pre>
+<p><strong>src/4-4-25.tex</strong></p>
+<pre class="tex"><code>\begin{align*}
+2^5 &amp;= (1+1)^5 \\
+&amp;= \begin{multlined}[t]
+\binom50\cdot 1^5 + \binom51\cdot 1^4 \cdot 1
+  + \binom52\cdot 1^3 \cdot 1^2 \\
++ \binom53\cdot 1^2 \cdot 1^3 + \binom54\cdot 1 \cdot 1^4
+  + \binom55\cdot 1^5
+\end{multlined} \\
+&amp;= \binom50 + \binom51 + \binom52 + \binom53 + \binom54 + \binom55
+\end{align*}</code></pre>
+<p><strong>src/4-5-01.tex</strong></p>
+<pre class="tex"><code>\documentclass[fleqn,leqno]{article}
+\usepackage[tbtags]{amsmath}</code></pre>
+<p><strong>src/4-5-02.tex</strong></p>
+<pre class="tex"><code>\begin{equation*}
+  a^2 + b^2 = c^2 \tag{$\star$}
+\end{equation*}</code></pre>
+<p><strong>src/4-5-03.tex</strong></p>
+<pre class="tex"><code>\begin{equation*}
+\sum_{k=1}^n \frac1k
+  = \ln n + \mathrm{C} \tag*{[Euler]}
+\end{equation*}</code></pre>
+<p><strong>src/4-5-04.tex</strong></p>
+<pre class="tex"><code>\newtagform{bracket}[\textit]{[}{]}
+\usetagform{bracket}
+\begin{equation}
+\sum_{k=1}^n \frac1k = \ln n + \mathrm{C}
+\end{equation}</code></pre>
+<p><strong>src/4-5-05.tex</strong></p>
+<pre class="tex"><code>\renewcommand\theequation{%
+  \thechapter.\roman{equation}}
+\begin{equation}\label{eq:euler}
+  \chi = V + F - E = 2
+\end{equation}</code></pre>
+<p><strong>src/4-5-06.tex</strong></p>
+<pre class="tex"><code>\newenvironment{mysubeqn}%
+  {\begin{subequations}
+    \renewcommand\theequation{\theparentequation-\roman{equation}}}%
+  {\end{subequations}}
+\begin{mysubeqn}
+\begin{gather}
+  \zeta(2) = \frac{\uppi^2}{6} \\
+  \zeta(s) = \prod_{p\text{ prime}} \frac{1}{1 - p^{-s}}
+\end{gather}
+\end{mysubeqn}</code></pre>
+<p><strong>src/4-5-07.tex</strong></p>
+<pre class="tex"><code>\documentclass{book}
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter}</code></pre>
+<p><strong>src/4-5-08.tex</strong></p>
+<pre class="tex"><code>{\Large\[F(x) \equiv 0\]}</code></pre>
+<p><strong>src/4-5-09.tex</strong></p>
+<pre class="tex"><code>\newcommand\D{\displaystyle}
+\[  \mathop{\text{\Large$\D\sum_i$}}
+  \dfrac{\D\int f_i(x)\,\mathrm{d}x}
+    {\D\oint g_i(x)\,\mathrm{d}x}  \]</code></pre>
+<p><strong>src/4-5-10.tex</strong></p>
+<pre class="tex"><code>% &#21333;&#20301; pt&#65292;&#20013;&#25991;&#20116;&#21495;&#23383;&#65288;10.5 bp&#65289;
+\DeclareMathSizes{10.54}{10.54}{6.32}{4.22}
+% &#40664;&#35748;&#26631;&#21495;&#23610;&#23544;&#26159;&#27491;&#25991; 0.6 &#20493;
+\renewcommand\defaultscriptratio{0.6}
+% &#40664;&#35748;&#23567;&#26631;&#21495;&#23610;&#23544;&#26159;&#27491;&#25991; 0.4 &#20493;
+\renewcommand\defaultscriptscriptratio{0.4}</code></pre>
+<p><strong>src/4-5-11.tex</strong></p>
+<pre class="tex"><code>\fbox{\parbox{17em}{%
+$F(x,y,z)\* G(x,y,z)$ &#19981;&#21516;&#20110; $F(x,y,z)\* G(x,y,z)$ &#21527;&#65311;}}</code></pre>
+<p><strong>src/4-5-12.tex</strong></p>
+<pre class="tex"><code>\[  \left\{
+  0, 1, -1, 2, -2, \frac12, -\frac12, \frac13, -\frac13, \dotsc
+\right\}  \]</code></pre>
+<p><strong>src/4-5-13.tex</strong></p>
+<pre class="tex"><code>\renewcommand\*{%
+  \discretionary{\,\mbox{$\cdot$}}{}{}}
+\fbox{\parbox{17em}{%
+$F(x,y,z)\* G(x,y,z)$ &#19981;&#21516;&#20110; $F(x,y,z)\* G(x,y,z)$}}</code></pre>
+<p><strong>src/4-5-14.tex</strong></p>
+<pre class="tex"><code>\begin{align*}
+&amp; \int f(x)\,\mathrm{d}x\,\mathrm{d}y \\
+&amp; \sqrt2 \, x   &amp;&amp; \sqrt{\,\log x} \\
+&amp; x^2 \! / 2    &amp;&amp; |\!{\gets} 5 {\to}\!|
+\end{align*}</code></pre>
+<p><strong>src/4-5-15.tex</strong></p>
+<pre class="tex"><code>\[
+  f(x) \equiv 0, \qquad x &gt; 0
+\]</code></pre>
+<p><strong>src/4-5-16.tex</strong></p>
+<pre class="tex"><code>\newcommand\lowint{%
+  \mspace{2mu}\underline{\vphantom{\int}\mspace{7mu}}\mspace{-9mu}\int}
+\[
+  \lowint_a^b f(x)\,\mathrm{d}x = \inf_P s(P).
+\]</code></pre>
+<p><strong>src/4-5-17.tex</strong></p>
+<pre class="tex"><code>\zihao{7}% 5.5bp
+\setlength{\abovedisplayskip}%
+  {2pt plus 1pt minus 3pt}
+&#24403;&#25991;&#23383;&#38750;&#24120;&#23567;&#26102;&#20063;&#24212;&#35813;&#21516;&#26102;&#20943;&#23567;
+&#26174;&#31034;&#20844;&#24335;&#19982;&#25991;&#23383;&#30340;&#38388;&#36317;&#65306;
+\[ 1+2+3+4+5 = 15 \]</code></pre>
+<p><strong>src/4-5-18.tex</strong></p>
+<pre class="tex"><code>\setlength\jot{9pt}% &#29992;&#26469;&#20998;&#24320;&#20998;&#24335;
+\begin{gather}
+a = \frac12 \\ b = \frac34
+\end{gather}</code></pre>
+<p><strong>src/4-5-19.tex</strong></p>
+<pre class="tex"><code>\setlength{\mathsurround}{3pt}
+&#20844;&#24335; $a+b$ &#19982;&#25991;&#23383;&#27604;&#36739;&#26494;&#25955;&#12290;</code></pre>
+<p><strong>src/4-5-20.tex</strong></p>
+<pre class="tex"><code>$\ddot{h} \iff \skew{-2}{\ddot}{h}$</code></pre>
+<p><strong>src/4-5-21.tex</strong></p>
+<pre class="tex"><code>\begin{equation*}
+\begin{split}
+f(x) &amp;= \left(\vphantom{\frac1x}
+x+2+3+4\right. \\
+  &amp; \left.\phantom{=\biggl(x+{}}
+5+6+7+\frac1x \right)^2 \\
+  &amp;= g(x)
+\end{split}
+\end{equation*}</code></pre>
+<p><strong>src/4-5-22.tex</strong></p>
+<pre class="tex"><code>\[  \underline{
+\smash{\int f(x)\,\mathrm{d}x}
+}  \]</code></pre>
+<p><strong>src/4-5-23.tex</strong></p>
+<pre class="tex"><code>$\sqrt{A_{n_k}} \qquad
+\sqrt{\smash[b]{A_{n_k}}}$</code></pre>
+<p><strong>src/4-5-24.tex</strong></p>
+<pre class="tex"><code>\vspace{\baselineskip}% &#34987;&#24573;&#30053;&#30340;&#39640;&#24230;
+\[
+  \text{&#23454;&#25968;} \begin{cases}
+    \text{&#26377;&#29702;&#25968;}\smash[t]{\begin{cases}
+      \text{&#25972;&#25968;}\smash{\begin{cases}
+          \text{&#22855;&#25968;} \\ \text{&#20598;&#25968;}
+        \end{cases}}\\
+      \text{&#20998;&#25968;}
+    \end{cases}} \\[4ex]
+    \text{&#26080;&#29702;&#25968;}\smash[b]{\begin{cases}
+      \text{&#20195;&#25968;&#26080;&#29702;&#25968;} \\ \text{&#36229;&#36234;&#25968;}
+    \end{cases}}
+  \end{cases}
+\]</code></pre>
+<p><strong>src/5-1-01.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{lcr}
+left &amp; center &amp; right \\
+&#26412;&#21015;&#24038;&#23545;&#40784; &amp; &#26412;&#21015;&#23621;&#20013;
+  &amp; &#26412;&#21015;&#21491;&#23545;&#40784; \\
+\end{tabular}</code></pre>
+<p><strong>src/5-1-02.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{ll}
+\bfseries &#21151;&#33021; &amp; \bfseries &#29615;&#22659; \\
+&#34920;&#26684; &amp; \ttfamily tabular \\
+&#23545;&#40784; &amp; \ttfamily tabbing \\
+\end{tabular}</code></pre>
+<p><strong>src/5-1-03.tex</strong></p>
+<pre class="tex"><code>\[
+  \begin{array}{r|r}
+    \frac12 &amp; 0 \\
+    \hline
+    0 &amp; -\frac12 \\
+  \end{array}
+\]</code></pre>
+<p><strong>src/5-1-04.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}[b]{c}
+&#19978; \\ &#20013;&#38388; \\ &#19979;
+\end{tabular}
+&#19982;&#24213;&#37096;&#23545;&#40784;&#12290;</code></pre>
+<p><strong>src/5-1-05.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|rr|}
+\hline
+  &#36755;&#20837; &amp; &#36755;&#20986; \\ \hline
+  $-2$ &amp; 4 \\
+  0 &amp; 0 \\
+  2 &amp; 4 \\
+\hline
+\end{tabular}
+\qquad
+&#36755;&#20837;&#19982;&#36755;&#20986;&#26377;&#20851;&#31995; $y = x^2$&#12290;</code></pre>
+<p><strong>src/5-1-06.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c|rrr|p{4em}|}
+\hline
+  &#22995;&#21517; &amp; &#35821;&#25991; &amp; &#25968;&#23398; &amp; &#22806;&#35821; &amp; &#22791;&#27880; \\
+\hline
+  &#24352;&#19977; &amp; 87 &amp; 100 &amp; 93 &amp; &#20248;&#31168; \\
+  &#26446;&#22235; &amp; 75 &amp; 63 &amp; \emph{52} &amp; &#34917;&#32771;&#21478;&#34892;&#36890;&#30693; \\
+  &#29579;&#23567;&#20108; &amp; 80 &amp; 82 &amp; 78 &amp; \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-07.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c|r@{.}l|}
+  \hline
+  &#25910;&#20837; &amp; 12345&amp;6  \\ \hline
+  &#25903;&#20986; &amp;   765&amp;43 \\ \hline
+  &#33410;&#20313; &amp; 11580&amp;17 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-08.tex</strong></p>
+<pre class="tex"><code>\[
+\begin{array}{|c|*{3}{r@{.}l|}}  % &#30456;&#24403;&#20110; |c|r@{.}l|r@{.}l|r@{.}l|
+\hline
+\text{&#25910;&#20837;} &amp; 12345&amp;6  &amp; 5000&amp;0 &amp;   1020&amp;55 \\ \hline
+\text{&#25903;&#20986;} &amp;   765&amp;43 &amp; 5120&amp;5 &amp;  98760&amp;0  \\ \hline
+\text{&#33410;&#20313;} &amp; 11580&amp;17 &amp; -120&amp;5 &amp; -97739&amp;45 \\ \hline
+\end{array}
+\]</code></pre>
+<p><strong>src/5-1-09.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{dcolumn}
+\newcolumntype{d}{D{.}{.}{2}}
+\begin{tabular}{|c|*{3}{d|}}  % &#30456;&#24403;&#20110; |c|d|d|d|
+\hline
+&#22995;&#21517; &amp; \multicolumn{1}{c|}{&#24352;&#19977;} &amp; \multicolumn{1}{c|}{&#26446;&#22235;}
+     &amp; \multicolumn{1}{c|}{&#29579;&#20116;} \\ \hline
+&#25910;&#20837; &amp; 12345.6  &amp; 5000   &amp;   1020.55 \\ \hline
+&#25903;&#20986; &amp;   765.43 &amp; 5120.5 &amp;  98760    \\ \hline
+&#33410;&#20313; &amp; 11580.17 &amp; -120.5 &amp; -97739.45 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-10.tex</strong></p>
+<pre class="tex"><code>\verb=tabular= &#29615;&#22659;&#21487;&#20197;&#22312;
+$\left(\begin{tabular}{@{}c@{}}
+  &#25991;&#26412; \\ &#25968;&#23398;
+\end{tabular}\right)$
+&#27169;&#24335;&#19979;&#36890;&#29992;&#12290;</code></pre>
+<p><strong>src/5-1-11.tex</strong></p>
+<pre class="tex"><code>% &#31532; 1 &#21015;&#21069;&#26159;&#21407;&#22987;&#38388;&#36317;&#65292;&#31532; 2 &#21015;&#21069;&#21482;&#26377; 1em &#38388;&#36317;
+% &#31532; 3&#12289;4 &#21015;&#21069;&#21017;&#26159;&#21407;&#22987;&#38388;&#36317;&#21152; 1em
+\begin{tabular}{|c|@{\extracolsep{1em}}c|c|c|}
+\hline
+  1 &amp; 2 &amp; 3 &amp; 4 \\
+  1 &amp; 2 &amp; 3 &amp; 4 \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-12.tex</strong></p>
+<pre class="tex"><code>\renewcommand\arraystretch{2}
+\begin{tabular}{|l|r|}
+\hline
+&#36825;&#26159;&#19968;&#20010; &amp; &#23485;&#26494;&#30340;&#34920;&#26684; \\ \hline
+loose &amp; table \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-13.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{array}
+\begin{tabular}[b]{|c|}
+\firsthline
+&#19978; \\ &#20013;&#38388; \\ &#19979; \\
+\lasthline
+\end{tabular}
+&#19982;&#24213;&#37096;&#23545;&#40784;&#12290;</code></pre>
+<p><strong>src/5-1-14.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|r|r|}
+  \hline
+  \multicolumn{2}{|c|}{&#25104;&#32489;} \\ \hline
+  &#35821;&#25991; &amp; &#25968;&#23398; \\ \hline
+  87 &amp; 100 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-15.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|r|r|}
+  \hline
+  \multicolumn{1}{|c|}{&#36755;&#20837;} &amp;
+  \multicolumn{1}{c|}{&#36755;&#20986;} \\ \hline
+  1 &amp; 1 \\ 5 &amp; 25 \\ 15 &amp; 225 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-16.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c|r|r|}
+\hline
+&amp; \multicolumn{2}{c|}{&#25104;&#32489;} \\ \cline{2-3}
+&#22995;&#21517; &amp; &#35821;&#25991; &amp; &#25968;&#23398; \\ \hline
+&#24352;&#19977; &amp; 87 &amp; 100 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-17.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c|}
+\hline
+1 \\ \hline
+\begin{tabular}{@{}c|c@{}} 1 &amp; 2 \end{tabular} \\ \hline
+\begin{tabular}{@{}c|c|c@{}} 1 &amp; 2 &amp; 3\end{tabular} \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-18.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{multirow}
+\begin{tabular}{|c|r|r|}
+\hline
+\multirow{2}*{&#22995;&#21517;} &amp;
+\multicolumn{2}{c|}{&#25104;&#32489;} \\ \cline{2-3}
+     &amp; &#35821;&#25991; &amp; &#25968;&#23398; \\ \hline
+&#24352;&#19977; &amp; 87   &amp; 100  \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-19.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{makecell}
+\begin{tabular}{|r|r|}
+\hline
+\makecell{&#22788;&#29702;&#21069;\\&#25968;&#25454;} &amp;
+\makecell{&#22788;&#29702;&#21518;\\&#25968;&#25454;} \\ \hline
+4934 &amp; 8945 \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-20.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{makecell}
+\begin{tabular}{|r|r|}
+\hline
+\thead{&#22788;&#29702;&#21069;\\&#25968;&#25454;} &amp;
+\thead{&#22788;&#29702;&#21518;\\&#25968;&#25454;} \\ \hline
+4934 &amp; 8945 \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-21.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{rotating,makecell}
+\settowidth\rotheadsize{\theadfont &#25968;&#23398;&#35838;}
+\begin{tabular}{|c|c|}
+\hline
+\thead{&#22995;&#21517;} &amp; \rothead{&#25968;&#23398;&#35838;\\&#25104;&#32489;} \\\hline
+&#24352;&#19977; &amp; 100 \\\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-22.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{multirow,makecell}
+\begin{tabular}{|c|r|}
+\hline
+\multirowcell{3}{&#21508;&#31185;\\&#25104;&#32489;} &amp; 78 \\
+\cline{2-2} &amp; 82 \\ \cline{2-2}
+ &amp; 86 \\ \hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-23.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{diagbox}
+\begin{tabular}{|c|*{4}{c}|}
+\hline
+\diagbox{&#22825;&#24178;}{&#22320;&#25903;} &amp; &#23376; &amp; &#19985; &amp; &#23493; &amp; &#21359; \\
+\hline
+&#30002; &amp;  1 &amp;&amp; 51 &amp; \\
+&#20057; &amp;&amp;  2 &amp;&amp; 52 \\
+&#19993; &amp; 13 &amp;&amp; 3 &amp; \\
+&#19969; &amp;&amp; 14 &amp;&amp; 4\\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-24.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{diagbox}
+\begin{tabular}{|c|*{4}{c}|}
+\hline
+\diagbox{&#22825;&#24178;}{&#24207;&#21495;}{&#22320;&#25903;} &amp; &#23376; &amp; &#19985; &amp; &#23493; &amp; &#21359; \\
+\hline
+&#30002; &amp;  1 &amp;&amp; 51 &amp; \\
+&#20057; &amp;&amp;  2 &amp;&amp; 52 \\
+&#19993; &amp; 13 &amp;&amp; 3 &amp; \\
+&#19969; &amp;&amp; 14 &amp;&amp; 4\\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-25.tex</strong></p>
+<pre class="tex"><code>\begin{tabular*}{\textwidth}{|c@{\extracolsep{\fill}}ccccc|}
+\hline
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\
+\hline
+\end{tabular*}</code></pre>
+<p><strong>src/5-1-26.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{tabularx}
+\begin{tabularx}{\textwidth}{|c|X|X|X|X|X|}
+\hline
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\ \hline
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\
+\hline
+\end{tabularx}</code></pre>
+<p><strong>src/5-1-27.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{tabularx}
+\newcolumntype{Y}{&gt;{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|Y|}
+\hline
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\ \hline
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\
+\hline
+\end{tabularx}</code></pre>
+<p><strong>src/5-1-28.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20351;&#29992; \usepackage{longtable}
+\newcommand\meta[1]{\emph{$\langle$#1$\rangle$}}
+\begin{longtable}{|l|l|}
+\caption{\texttt{longtable} &#29615;&#22659;&#20013;&#30340;&#21629;&#20196;&#27719;&#24635;} \\
+\hline
+\endfirsthead
+\caption{\texttt{longtable} &#29615;&#22659;&#20013;&#30340;&#21629;&#20196;&#27719;&#24635;&#65288;&#32493;&#34920;&#65289;} \\
+\hline
+\endhead
+\hline
+\multicolumn{2}{c}{\itshape &#25509;&#19979;&#19968;&#39029;&#34920;&#26684;&#8230;&#8230;} \\[2ex]
+\endfoot
+\hline
+\endlastfoot
+\multicolumn{2}{|c|}{&#29615;&#22659;&#30340;&#27700;&#24179;&#23545;&#40784;&#21487;&#36873;&#39033;} \\ \hline
+&#30041;&#31354; &amp; &#34920;&#26684;&#23621;&#20013;%
+\footnote{&#23454;&#38469;&#19978;&#65292;&#30041;&#31354;&#30340;&#23545;&#40784;&#26041;&#24335;&#26159;&#30001;&#19968;&#32452;&#21629;&#20196;&#25511;&#21046;&#30340;&#65292;&#21442;&#35265;&#23439;&#21253;&#25991;&#26723;&#12290;} \\
+\verb=[c]= &amp; &#34920;&#26684;&#23621;&#20013; \\
+\verb=[l]= &amp; &#34920;&#26684;&#24038;&#23545;&#40784; \\
+\verb=[r]= &amp; &#34920;&#26684;&#21491;&#23545;&#40784; \\
+\hline \multicolumn{2}{|c|}{&#32467;&#26463;&#34920;&#26684;&#19968;&#34892;&#30340;&#21629;&#20196;} \\ \hline
+\verb=\\= &amp; &#26222;&#36890;&#30340;&#32467;&#26463;&#19968;&#34892;&#34920;&#26684; \\
+\verb=\\[=\meta{&#36317;&#31163;}\verb=]= &amp; &#32467;&#26463;&#19968;&#34892;&#65292;&#24182;&#22686;&#21152;&#39069;&#22806;&#38388;&#36317; \\
+\verb=\\*= &amp; &#32467;&#26463;&#19968;&#34892;&#65292;&#31105;&#27490;&#22312;&#27492;&#20998;&#39029; \\
+\verb=\kill= &amp; &#24403;&#21069;&#34892;&#19981;&#36755;&#20986;&#65292;&#21482;&#21442;&#19982;&#23485;&#24230;&#35745;&#31639; \\
+\verb=\endhead= &amp; &#27492;&#21629;&#20196;&#20197;&#19978;&#37096;&#20998;&#26159;&#27599;&#39029;&#30340;&#34920;&#22836; \\
+\verb=\endfirsthead= &amp; &#27492;&#21629;&#20196;&#20197;&#19978;&#37096;&#20998;&#26159;&#34920;&#26684;&#31532;&#19968;&#39029;&#30340;&#34920;&#22836; \\
+\verb=\endfoot= &amp; &#27492;&#21629;&#20196;&#20197;&#19978;&#37096;&#20998;&#26159;&#27599;&#39029;&#30340;&#34920;&#23614; \\
+\verb=\endlastfoot= &amp; &#27492;&#21629;&#20196;&#20197;&#19978;&#37096;&#20998;&#26159;&#34920;&#26684;&#26368;&#21518;&#19968;&#39029;&#30340;&#34920;&#23614; \\
+\hline \multicolumn{2}{|c|}{&#26631;&#39064;&#21629;&#20196;} \\ \hline
+\verb=\caption{=\meta{&#26631;&#39064;}\verb=}= &amp; &#29983;&#25104;&#24102;&#32534;&#21495;&#30340;&#34920;&#26684;&#26631;&#39064; \\
+\verb=\caption*{=\meta{&#26631;&#39064;}\verb=}= &amp; &#29983;&#25104;&#19981;&#24102;&#32534;&#21495;&#30340;&#34920;&#26684;&#26631;&#39064; \\
+\hline \multicolumn{2}{|c|}{&#20998;&#39029;&#25511;&#21046;} \\ \hline
+\verb=\newpage= &amp; &#24378;&#21046;&#20998;&#39029; \\
+\verb=\pagebreak[=\meta{&#31243;&#24230;}\verb=]= &amp; &#20801;&#35768;&#20998;&#39029;&#30340;&#31243;&#24230;&#65288;0--4&#65289; \\
+\verb=\nopagebreak[=\meta{&#31243;&#24230;}\verb=]= &amp; &#31105;&#27490;&#20998;&#39029;&#30340;&#31243;&#24230;&#65288;0--4&#65289; \\
+\hline \multicolumn{2}{|c|}{&#33050;&#27880;&#25511;&#21046;} \\ \hline
+\verb=\footnote= &amp; &#20351;&#29992;&#33050;&#27880;\footnote{&#26222;&#36890;&#34920;&#26684;&#20013;&#19981;&#33021;&#29992;&#12290;}&#65292;
+  &#27880;&#24847;&#19981;&#33021;&#29992;&#22312;&#34920;&#26684;&#22836;&#23614; \\
+\verb=\footnotemark= &amp; &#21333;&#29420;&#20135;&#29983;&#33050;&#27880;&#32534;&#21495;&#65292;&#19981;&#33021;&#29992;&#22312;&#34920;&#26684;&#22836;&#23614; \\
+\verb=\footnotetext= &amp; &#21333;&#29420;&#20135;&#29983;&#33050;&#27880;&#25991;&#23383; \\
+\hline \multicolumn{2}{|c|}{&#38271;&#24230;&#21442;&#25968;} \\ \hline
+\verb=\LTleft= &amp; &#23545;&#40784;&#26041;&#24335;&#30041;&#31354;&#26102;&#65292;&#34920;&#26684;&#24038;&#36793;&#30340;&#38388;&#36317;&#65292;&#40664;&#35748;&#20026; \verb=\fill= \\
+\verb=\LTright= &amp; &#23545;&#40784;&#26041;&#24335;&#30041;&#31354;&#26102;&#65292;&#34920;&#26684;&#21491;&#36793;&#30340;&#38388;&#36317;&#65292;&#40664;&#35748;&#20026; \verb=\fill= \\
+\verb=\LTpre= &amp; &#34920;&#26684;&#19978;&#26041;&#38388;&#36317;&#65292;&#40664;&#35748;&#20026; \verb=\bigskipamount= \\
+\verb=\LTpost= &amp; &#34920;&#26684;&#19979;&#26041;&#38388;&#36317;&#65292;&#40664;&#35748;&#20026; \verb=\bigskipamount= \\
+\verb=\LTcapwidth= &amp; &#34920;&#26684;&#26631;&#39064;&#30340;&#23485;&#24230;&#65292;&#40664;&#35748;&#20026; 4\,in \\
+\end{longtable}</code></pre>
+<p><strong>src/5-1-29.tex</strong></p>
+<pre class="tex"><code>% foo.tex
+% &#23548;&#35328;&#21306;&#29992;&#65306;
+\usepackage{ltxtable}
+% &#27491;&#25991;&#20351;&#29992;&#65306;
+\LTXtable{\textwidth}{mytable}</code></pre>
+<p><strong>src/5-1-30.tex</strong></p>
+<pre class="tex"><code>% mytable.tex
+\begin{longtable}{|X|X|X|}
+  ...
+\end{longtable}</code></pre>
+<p><strong>src/5-1-31.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20351;&#29992;
+% \usepackage{ltxtable}
+% \usepackage{fancyvrb}
+\begin{VerbatimOut}{\jobname.vrb}
+\begin{longtable}{|c|X|X|X|X|X|}
+\caption{&#21508;&#31181;&#24207;&#21495;} \\ \hline
+\endfirsthead
+\hline
+\endhead
+\hline
+\endfoot
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\ \hline
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\
+\end{longtable}
+\end{VerbatimOut}
+\LTXtable{0.5\textwidth}{\jobname.vrb}</code></pre>
+<p><strong>src/5-1-32.tex</strong></p>
+<pre class="tex"><code>% \usepackage{tabu}
+% \usepackage{longtable} % &#20173;&#28982;&#38656;&#35201;&#36733;&#20837; longtable
+\begin{longtabu}to 0.5\textwidth{|c|X|X|X|X|X|}
+\hline
+\endhead
+\hline
+\endfoot
+\caption{&#21508;&#31181;&#24207;&#21495;} \\ \hline
+\endfirsthead
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\ \hline
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\
+\end{longtabu}</code></pre>
+<p><strong>src/5-1-33.tex</strong></p>
+<pre class="tex"><code>% \usepackage{xtab}
+\begin{center}
+\tablecaption{&#21508;&#31181;&#24207;&#21495;}
+\tablefirsthead{\hline}
+\tabletail{\hline \multicolumn{6}{r}{\small &#25509;&#19979;&#39029;}\\}
+\tablelasttail{\hline}
+\begin{xtabular}{|*{6}{c|}}
+  &#25968;&#23383; &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+  &#23383;&#27597; &amp; A &amp; B &amp; C &amp; D &amp; E \\ \hline
+  &#22825;&#24178; &amp; &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; &amp; &#25098; \\ \hline
+\end{xtabular}
+\end{center}</code></pre>
+<p><strong>src/5-1-34.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{ccccc}
+  \toprule
+  &#24207;&#21495; &amp; &#24615;&#21035; &amp; &#24180;&#40836; &amp; &#36523;&#39640;/cm &amp; &#20307;&#37325;/kg \\
+  \midrule
+  1 &amp; F &amp; 14 &amp; 156 &amp; 42 \\
+  2 &amp; F &amp; 16 &amp; 158 &amp; 45 \\
+  3 &amp; M &amp; 14 &amp; 162 &amp; 48 \\
+  4 &amp; M &amp; 15 &amp; 163 &amp; 50 \\
+  \bottomrule
+\end{tabular}</code></pre>
+<p><strong>src/5-1-35.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{multirow,booktabs}
+\begin{tabular}{*{6}{c}}
+\bottomrule
+\multirow{2}*{&#22995;&#21517;} &amp; \multicolumn{2}{c}{&#25991;&#31185;} &amp;
+  \multicolumn{2}{c}{&#29702;&#31185;} &amp; \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-6}
+  \morecmidrules\cmidrule(lr){6-6}
+&amp; &#21382;&#21490; &amp; &#25991;&#23398; &amp; &#29289;&#29702; &amp; &#21270;&#23398; &amp; &#24635;&#35780; \\
+\midrule
+&#24352;&#19977; &amp; A &amp; A &amp; B &amp; A &amp; A \\
+\bottomrule
+\end{tabular}</code></pre>
+<p><strong>src/5-1-36.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{makecell}
+\begin{tabular}{c|cc}
+\Xhline{2pt}
+&#33258;&#21464;&#37327; &amp; \multicolumn{2}{c}{&#22240;&#21464;&#37327;} \\
+\Xcline{2-3}{0.4pt}
+&#21322;&#24452; &amp; &#21608;&#38271; &amp; &#38754;&#31215; \\
+\Xhline{1pt}
+1.00 &amp; 6.28 &amp; 6.28 \\
+2.00 &amp; 12.57 &amp; 12.57 \\
+3.00 &amp; 18.85 &amp; 28.27 \\
+\Xhline{2pt}
+\end{tabular}</code></pre>
+<p><strong>src/5-1-37.tex</strong></p>
+<pre class="tex"><code>% \usepackage{makecell}
+\newcolumntype{V}{!{\vrule width 2pt}}
+\begin{tabular}{Vc|ccV}
+\Xhline{2pt}
+&#33258;&#21464;&#37327; &amp; \multicolumn{2}{cV}{&#22240;&#21464;&#37327;} \\
+\Xcline{2-3}{0.4pt}
+&#21322;&#24452; &amp; &#21608;&#38271; &amp; &#38754;&#31215; \\
+\Xhline{1pt}
+1.00 &amp; 6.28 &amp; 6.28 \\
+2.00 &amp; 12.57 &amp; 12.57 \\
+3.00 &amp; 18.85 &amp; 28.27 \\
+\Xhline{2pt}
+\end{tabular}</code></pre>
+<p><strong>src/5-1-38.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c||cc|}
+\hline\hline
+&#33258;&#21464;&#37327; &amp; \multicolumn{2}{c|}{&#22240;&#21464;&#37327;} \\
+\cline{2-3}
+&#21322;&#24452; &amp; &#21608;&#38271; &amp; &#38754;&#31215; \\
+\hline\hline
+1.00 &amp; 6.28 &amp; 6.28 \\
+2.00 &amp; 12.57 &amp; 12.57 \\
+3.00 &amp; 18.85 &amp; 28.27 \\
+\hline\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-39.tex</strong></p>
+<pre class="tex"><code>% \usepackage{hhline}
+\begin{tabular}{|c||cc|}
+\hhline{|=:t:==|}
+&#21322;&#24452; &amp; &#21608;&#38271; &amp; &#38754;&#31215; \\
+\hhline{|=::==|}
+1.00 &amp; 6.28 &amp; 6.28 \\
+\hhline{|=:b:==|}
+\end{tabular}</code></pre>
+<p><strong>src/5-1-40.tex</strong></p>
+<pre class="tex"><code>% \usepackage{arydshln}
+\[
+\left(
+\begin{array}{@{}ccc:c@{}}
+  a_{11} &amp; a_{12} &amp; a_{13} &amp; b_1 \\
+  a_{21} &amp; a_{22} &amp; a_{23} &amp; b_2 \\
+  a_{31} &amp; a_{32} &amp; a_{33} &amp; b_3 \\
+  \cdashline{1-3}
+  0 &amp; 0 &amp; 0 &amp; b_4 \\
+\end{array}
+\right)
+\]</code></pre>
+<p><strong>src/5-1-41.tex</strong></p>
+<pre class="tex"><code>% \usepackage{arydshln}
+\setlength\dashlinedash{1pt}
+\setlength\dashlinegap{2pt}
+\begin{tabular}{:cc:cc:}
+\hdashline
+&#19978; &amp; &#19978; &amp; &#19978; &amp; &#19978; \\
+\cdashline{1-2}
+&#19979; &amp; &#19979; &amp; &#19979; &amp; &#19979; \\
+\hdashline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-42.tex</strong></p>
+<pre class="tex"><code>% \usepackage{arydshln}
+\begin{tabular}{;{8pt/2pt}cc;{2pt/2pt}cc;{8pt/2pt}}
+\hdashline[8pt/2pt]
+&#19978; &amp; &#19978; &amp; &#19978; &amp; &#19978; \\
+\cdashline{1-2}[2pt/2pt]
+&#19979; &amp; &#19979; &amp; &#19979; &amp; &#19979; \\
+\hdashline[8pt/2pt]
+\end{tabular}</code></pre>
+<p><strong>src/5-1-43.tex</strong></p>
+<pre class="tex"><code>% &#35299;&#20915; arydshln &#19982; hhline, makecell &#30340;&#20914;&#31361;
+\usepackage{array}
+\newcolumntype{|}{!{\vline}}</code></pre>
+<p><strong>src/5-1-44.tex</strong></p>
+<pre class="tex"><code>% \usepackage{array} &#25110;&#35843;&#29992;&#20854;&#20182;&#20381;&#36182; array &#30340;&#23439;&#21253;
+\begin{tabular}{&gt;{\bfseries}c|&gt;{\itshape}c&gt;{$}c&lt;{$}}
+\hline
+&#22995;&#21517; &amp; \textnormal{&#24471;&#20998;} &amp; \multicolumn{1}{c}{&#39069;&#22806;&#21152;&#20998;} \\
+\hline
+&#24352;&#19977; &amp; 85 &amp; +7 \\
+&#26446;&#22235; &amp; 82 &amp; 0 \\
+&#29579;&#20116; &amp; 70 &amp; -2 \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-45.tex</strong></p>
+<pre class="tex"><code>% \usepackage{array}
+\begin{tabular}{|&gt;{$}r&lt;{$}|&gt;{\setlength\parindent{2em}}m{15em}|%
+  &gt;{\centering\arraybackslash}m{4em}|}
+\hline
+\pi &amp; &#24076;&#33098;&#23383;&#27597;&#65292;&#22810;&#29992;&#20110;&#34920;&#31034;&#22278;&#21608;&#29575;&#65292;&#20063;&#24120;&#29992;&#20316;&#21464;&#37327;&#12290;&#34920;&#31034;&#22278;&#21608;&#29575;&#26102;&#22810;&#20351;&#29992;
+  &#30452;&#31435;&#20307;&#12290; &amp; &#24120;&#29992; \\
+\hline
+\aleph &amp; &#24076;&#20271;&#26469;&#23383;&#27597;&#30340;&#31532;&#19968;&#20010;&#65292;&#22312;&#25968;&#23398;&#20013;&#36890;&#24120;&#29992;&#20110;&#34920;&#31034;&#29305;&#27530;&#38598;&#21512;&#30340;&#22522;&#25968;&#12290;
+  &amp; &#19981;&#24120;&#29992; \\
+\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-1-46.tex</strong></p>
+<pre class="tex"><code>% \usepackage{array}
+\begin{tabular}{c!{$\Rightarrow$}c}
+&#24352;&#19977; &amp; 85 \\
+&#26446;&#22235; &amp; 82 \\
+&#29579;&#20116; &amp; 70 \\
+\end{tabular}</code></pre>
+<p><strong>src/5-1-47.tex</strong></p>
+<pre class="tex"><code>% \usepackage{array}
+\newcolumntype{M}{&gt;{$}c&lt;{$}}
+\newcolumntype{P}[1]{&gt;{\setlength\parindent{2em}}p{#1}}
+\newcolumntype{C}[1]{&gt;{\centering\arraybackslash}m{#1}}
+% &#20351;&#29992;&#26032;&#30340;&#21015;&#26684;&#24335;&#65306;
+\begin{tabular}{|M|P{15em}|C{4em}|}
+  ...
+\end{tabular}</code></pre>
+<p><strong>src/5-1-48.tex</strong></p>
+<pre class="tex"><code>% \usepackage{tabu}
+\begin{tabu}{ccc}
+\hline
+\rowfont{\bfseries}
+&#22995;&#21517; &amp; &#24471;&#20998; &amp; &#39069;&#22806;&#21152;&#20998; \\
+\hline
+&#24352;&#19977; &amp; 85 &amp; $+7$ \\
+\rowfont{\itshape}
+&#26446;&#22235; &amp; 82 &amp; 0 \\
+&#29579;&#20116; &amp; 70 &amp; $-2$ \\
+\hline
+\end{tabu}</code></pre>
+<p><strong>src/5-1-49.tex</strong></p>
+<pre class="tex"><code>\[ \left\{ \begin{matrix}
+  1 &amp; 2 \\ 3 &amp; 4
+\end{matrix} \right. \]</code></pre>
+<p><strong>src/5-1-50.tex</strong></p>
+<pre class="tex"><code>% \usepackage{delarray}
+\[
+  \begin{array}({cc}]   % &#24038;&#36793;&#22278;&#25324;&#21495;&#65292;&#21491;&#36793;&#26041;&#25324;&#21495;
+    1 &amp; 2 \\
+    3 &amp; 4
+  \end{array}
+\]</code></pre>
+<p><strong>src/5-1-51.tex</strong></p>
+<pre class="tex"><code>% \usepackage[delarray]{tabu}
+\[  \begin{tabu}({cc})
+    1 &amp; 2 \\
+    3 &amp; 4
+\end{tabu}  \]</code></pre>
+<p><strong>src/5-1-52.tex</strong></p>
+<pre class="tex"><code>% \usepackage{blkarray}
+% &#22914;&#26524;&#19981;&#29992; &amp;| &#35828;&#26126;&#65292;&#21017;&#31446;&#32447; | &#23558;&#20250;&#34987;&#30475;&#25104;&#26159;&#20013;&#38388;&#19968;&#21015;&#30340;&#20869;&#23481;
+\begin{blockarray}{|l|c&amp;|r|}
+  &#24352;&#19977; &amp; Zhang &amp; 80 \\
+       % &#19981;&#29992;&#22312; r &#21518;&#38754;&#29992; |&#65292;&#20063;&#19981;&#24433;&#21709;&#34920;&#26684;&#32447;
+  &#26446;&#22235; &amp; \BAmulticolumn{1}{r}{Li} &amp; 78 \\
+  &#29579;&#20116; &amp; Wang &amp; 100 \\
+\end{blockarray}</code></pre>
+<p><strong>src/5-1-53.tex</strong></p>
+<pre class="tex"><code>% \usepackage{blkarray}
+\[  \begin{blockarray}{(cc]}
+  1 &amp; 2 \\
+  3 &amp; 4
+\end{blockarray}  \]</code></pre>
+<p><strong>src/5-1-54.tex</strong></p>
+<pre class="tex"><code>% \usepackage{blkarray}
+\[  \left[
+\begin{blockarray}{*4r}
+\begin{block}{(rr)rr}
+ a &amp; -b &amp; 0 &amp; 0 \\
+-c &amp;  d &amp; 0 &amp; 0 \\
+\end{block}
+\begin{block}{rr(rr)}
+0 &amp; 0 &amp; -a &amp;  b \\
+0 &amp; 0 &amp;  c &amp; -d \\
+\end{block}
+\end{blockarray}
+\right]  \]</code></pre>
+<p><strong>src/5-1-55.tex</strong></p>
+<pre class="tex"><code>\[
+\begin{blockarray}{ccc}
+\begin{block}{cc\}\BAmultirow{4em}}
+1 &amp; 2 &amp; &#33258;&#28982;&#25968; \\
+3 &amp; 4 &amp; {} \\ % &#31354;&#30333; {} &#21344;&#20301;
+\end{block}
+\begin{block}{cc\}l}
+-1.5 &amp; \frac12 &amp; \BAmultirow{4em}{&#23454;&#25968;} \\
+3.5 &amp; 40 &amp; \\
+\end{block}
+\end{blockarray}
+\]</code></pre>
+<p><strong>src/5-1-56.tex</strong></p>
+<pre class="tex"><code>\usepackage{blkarray}
+\makeatletter
+\newbox\BA@first@box
+\makeatother</code></pre>
+<p><strong>src/5-2-01.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{graphics}
+% &#25110; \usepackage{graphicx}
+&#29422;&#23376;&#65306;\includegraphics{lion}</code></pre>
+<p><strong>src/5-2-02.tex</strong></p>
+<pre class="tex"><code>\includegraphics[width=2em]{lion}
+\includegraphics[height=1cm]{lion}
+\includegraphics[scale=0.5]{lion}</code></pre>
+<p><strong>src/5-2-03.tex</strong></p>
+<pre class="tex"><code>&#26059;&#36716;&#30340;&#29422;&#23376;&#65306;
+\includegraphics[angle=90]
+  {lion.eps}
+\includegraphics[angle=-45,origin=c]
+  {lion.eps}</code></pre>
+<p><strong>src/5-2-04.tex</strong></p>
+<pre class="tex"><code>&#22522;&#32447;\rule{2cm}{0.4pt}%
+\includegraphics[angle=90,origin=b,
+  totalheight=1.5cm]{lion.eps}</code></pre>
+<p><strong>src/5-2-05.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage[draft]{graphicx}
+\includegraphics{lion}</code></pre>
+<p><strong>src/5-2-06.tex</strong></p>
+<pre class="tex"><code>\graphicspath{{figures/}} % &#26412;&#20070;&#30340;&#35774;&#32622;&#65292;&#22270;&#29255;&#22312;&#24403;&#21069;&#30446;&#24405;&#19979;&#30340; figures &#30446;&#24405;
+\graphicspath{{pdf/}{png/}{jpg/}} % &#25353;&#22270;&#29255;&#31867;&#22411;&#31649;&#29702;&#30340;</code></pre>
+<p><strong>src/5-2-07.tex</strong></p>
+<pre class="tex"><code>\scalebox{2}{&#22823;&#23383;}
+\scalebox{2}[1]{&#25153;&#23383;}
+\scalebox{1}[2]{&#38271;&#23383;}</code></pre>
+<p><strong>src/5-2-08.tex</strong></p>
+<pre class="tex"><code>\LARGE &#27721;&#23383;\reflectbox{&#27721;&#23383;}</code></pre>
+<p><strong>src/5-2-09.tex</strong></p>
+<pre class="tex"><code>\resizebox{2cm}{1cm}{&#25153;}
+\resizebox{!}{1cm}{\fbox{&#39640; 1cm}}</code></pre>
+<p><strong>src/5-2-10.tex</strong></p>
+<pre class="tex"><code>\rotatebox[origin=c]{90}{&#26059;}%
+\rotatebox[origin=c]{90}{&#36716;}%
+&#30340;&#27721;&#23383;</code></pre>
+<p><strong>src/5-2-11.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{lscape}
+\begin{landscape}
+\subsection{&#39029;&#38754;&#26059;&#36716;}
+&#8230;&#8230;
+\end{landscape}</code></pre>
+<p><strong>src/5-2-12.tex</strong></p>
+<pre class="tex"><code>\begin{sidewaysfigure}[p]
+  \centering
+  \includegraphics[width=7in]{photo.jpg}
+  \caption{&#36149;&#24030;&#23569;&#25968;&#27665;&#26063;&#22320;&#21306;&#21098;&#24433;}
+\end{sidewaysfigure}</code></pre>
+<p><strong>src/5-3-01.tex</strong></p>
+<pre class="tex"><code>\begin{figure}[htbp] % &#20801;&#35768;&#21508;&#20010;&#20301;&#32622;
+  \centering
+  \includegraphics{lion.eps}
+\end{figure}
+\begin{table} % &#40664;&#35748;&#22312;&#39029;&#38754;&#39030;&#37096;&#25110;&#21333;&#29420;&#19968;&#39029;
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    &#22270;&#24418; &amp; \verb=figure= &#29615;&#22659; \\
+    \hline
+    &#34920;&#26684; &amp; \verb=table= &#29615;&#22659; \\
+    \hline
+  \end{tabular}
+\end{table}</code></pre>
+<p><strong>src/5-3-02.tex</strong></p>
+<pre class="tex"><code>\begin{figure}[htp]
+  \centering
+  \includegraphics{lion.eps}
+  \caption[&#23567;&#29422;&#23376;]{\TeX{} &#31995;&#32479;&#30340;&#21513;&#31077;&#29289;&#8212;&#8212;&#23567;&#29422;&#23376;}\label{fig-lion}
+% &#25110;&#20316; \caption[&#23567;&#29422;&#23376;]{\label{fig-lion}\TeX{} &#31995;&#32479;&#30340;&#21513;&#31077;&#29289;&#8212;&#8212;&#23567;&#29422;&#23376;}
+\end{figure}</code></pre>
+<p><strong>src/5-3-03.tex</strong></p>
+<pre class="tex"><code>% &#25918;&#23485;&#28014;&#21160;&#20307;&#30340;&#19968;&#20123;&#21442;&#25968;
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{7}
+\renewcommand\bottomcaption{0.7}
+\renewcommand\textfraction{0.1}
+% &#20005;&#26684;&#28014;&#21160;&#39029;&#30340;&#35201;&#27714;
+\renewcommand\floatpagefraction{0.7}</code></pre>
+<p><strong>src/5-3-04.tex</strong></p>
+<pre class="tex"><code>\usepackage{fixltx2e}</code></pre>
+<p><strong>src/5-3-05.tex</strong></p>
+<pre class="tex"><code>\usepackage[font=small,labelfont=bf]{caption}</code></pre>
+<p><strong>src/5-3-06.tex</strong></p>
+<pre class="tex"><code>\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}</code></pre>
+<p><strong>src/5-3-07.tex</strong></p>
+<pre class="tex"><code>\usepackage{caption}
+\captionsetup[figure]{font=small,labelfont=bf}</code></pre>
+<p><strong>src/5-3-08.tex</strong></p>
+<pre class="tex"><code>\usepackage{caption}
+\captionsetup[figure]{font=small,labelfont=bf}</code></pre>
+<p><strong>src/5-3-09.tex</strong></p>
+<pre class="tex"><code>\caption{&#40664;&#35748;&#23621;&#20013;&#30340;&#30701;&#26631;&#39064;}</code></pre>
+<p><strong>src/5-3-10.tex</strong></p>
+<pre class="tex"><code>\caption[plain &#26684;&#24335;]{plian &#26684;&#24335;&#19979;&#65292;
+&#22914;&#26524;&#26631;&#39064;&#24456;&#38271;&#65292;&#25240;&#25104;&#20960;&#34892;&#65292;&#23601;&#20250;&#20687;&#26222;&#36890;&#30340;
+&#27491;&#25991;&#27573;&#33853;&#19968;&#26679;&#26174;&#31034;&#12290;
+
+&#21482;&#35201;&#35774;&#32622;&#22909;&#21069;&#38754;&#30340;&#30701;&#26631;&#39064;&#65292;&#21487;&#20197;&#25226;&#28014;&#21160;
+&#26631;&#39064;&#20998;&#25104;&#22909;&#20960;&#27573;&#12290;}</code></pre>
+<p><strong>src/5-3-11.tex</strong></p>
+<pre class="tex"><code>\captionsetup{format=hang}
+\caption[hang &#26684;&#24335;]{hang &#26684;&#24335;&#30340;&#25928;&#26524;
+&#26159;&#65292;&#23545;&#20110;&#24456;&#38271;&#30340;&#26631;&#39064;&#65292;&#21069;&#38754;&#30340;&#25968;&#23383;&#26631;&#31614;&#20250;
+&#36827;&#34892;&#24748;&#25346;&#32553;&#36827;&#65292;&#23601;&#22909;&#20687; \LaTeX{} &#30340;&#21015;&#34920;
+&#29615;&#22659;&#19968;&#26679;&#12290;}</code></pre>
+<p><strong>src/5-3-12.tex</strong></p>
+<pre class="tex"><code>% \captionsetup{labelformat=default}
+\caption{&#40664;&#35748;&#26684;&#24335;&#65292;&#21516; simple}</code></pre>
+<p><strong>src/5-3-13.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelformat=empty}
+\caption{&#31354;&#26684;&#24335;}</code></pre>
+<p><strong>src/5-3-14.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelformat=simple}
+\caption{&#31616;&#21333;&#26684;&#24335;&#65292;&#30452;&#25509;&#36755;&#20986;}</code></pre>
+<p><strong>src/5-3-15.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelformat=brace}
+\caption{&#25968;&#23383;&#21491;&#25324;&#21495;&#65292;&#26080;&#25991;&#23383;}</code></pre>
+<p><strong>src/5-3-16.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelformat=parens}
+\caption{&#24102;&#25324;&#21495;&#25968;&#23383;&#65292;&#26080;&#25991;&#23383;}</code></pre>
+<p><strong>src/5-3-17.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=none}
+\caption{&#27809;&#38388;&#38548;}</code></pre>
+<p><strong>src/5-3-18.tex</strong></p>
+<pre class="tex"><code>% \captionsetup{labelsep=colon}
+\caption{&#33521;&#25991;&#20998;&#21495;&#65288;&#40664;&#35748;&#65289;}</code></pre>
+<p><strong>src/5-3-19.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=period}
+\caption{&#33521;&#25991;&#21477;&#28857;}</code></pre>
+<p><strong>src/5-3-20.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=space}
+\caption{&#31354;&#26684;}</code></pre>
+<p><strong>src/5-3-21.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=quad}
+\caption{&#19968;&#20010; em &#30340;&#38388;&#38548;}</code></pre>
+<p><strong>src/5-3-22.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=newline}
+\caption{&#26631;&#39064;&#20250;&#21478;&#36215;&#19968;&#34892;}</code></pre>
+<p><strong>src/5-3-23.tex</strong></p>
+<pre class="tex"><code>\captionsetup{labelsep=endash}
+\caption{en dash &#36830;&#25509;&#31526;}</code></pre>
+<p><strong>src/5-3-24.tex</strong></p>
+<pre class="tex"><code>\captionsetup{
+  justification=raggedleft,
+  singlelinecheck=false}
+\caption{&#21491;&#23545;&#40784;&#30340;&#26631;&#39064;}</code></pre>
+<p><strong>src/5-3-25.tex</strong></p>
+<pre class="tex"><code>\captionsetup{font={small,sf},
+              labelfont=bf}
+\caption{&#23567;&#21495;&#21152;&#31895;&#26080;&#34924;&#32447;&#20307; Caption}</code></pre>
+<p><strong>src/5-3-26.tex</strong></p>
+<pre class="tex"><code>\captionsetup{font=small}
+\captionsetup{font+=bf}
+\caption{&#23567;&#21495;&#21152;&#31895;&#23383;&#20307; Caption}</code></pre>
+<p><strong>src/5-3-27.tex</strong></p>
+<pre class="tex"><code>\captionsetup{margin=4em}
+\caption{&#26631;&#39064;&#36317;&#31163;&#24038;&#21491;&#21508; 4\,em
+  &#30340;&#36317;&#31163;&#12290;}</code></pre>
+<p><strong>src/5-3-28.tex</strong></p>
+<pre class="tex"><code>\captionsetup{width=6em}
+\caption{&#26631;&#39064;&#26368;&#22810;&#21482;&#26377; 8\,em &#23485;&#12290;}</code></pre>
+<p><strong>src/5-3-29.tex</strong></p>
+<pre class="tex"><code>\captionsetup{skip=0pt}
+&#28014;&#21160;&#20307;&#30340;&#20869;&#23481;&#12290;
+\caption{&#19982;&#21069;&#38754;&#26080;&#39069;&#22806;&#38388;&#36317;&#12290;}</code></pre>
+<p><strong>src/5-3-30.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+\begin{minipage}[b]{.5\textwidth}
+\centering
+\includegraphics[width=.4\textwidth]{texlive-lion.pdf}
+\caption{\TeX\ Live &#21513;&#31077;&#29289;&#29422;&#23376;}
+\end{minipage}%
+\begin{minipage}[b]{.5\textwidth}
+\centering
+\begin{tabular}{|*{5}{c|}}
+  \hline
+  1996 &amp; 1998 &amp; 1999 &amp; 2000 &amp; 2001 \\ \hline
+  2002 &amp; 2003 &amp; 2004 &amp; 2005 &amp; 2007 \\ \hline
+  2008 &amp; 2009 &amp; 2010 &amp; \dots &amp; \\
+  \hline
+\end{tabular}
+\captionsetup{type=table}
+\caption{\TeX\ Live &#30340;&#29256;&#26412;}
+\end{minipage}
+\end{figure}</code></pre>
+<p><strong>src/5-3-31.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+\usepackage{caption}
+\captionsetup{figurename=&#22270;&#29255;}</code></pre>
+<p><strong>src/5-3-32.tex</strong></p>
+<pre class="tex"><code>\captionsetup{
+  type=figure,name=&#31354;&#22270;&#29255;}
+\caption{&#26631;&#31614;&#21517;&#31216;&#21487;&#20197;&#20462;&#25913;}</code></pre>
+<p><strong>src/5-3-33.tex</strong></p>
+<pre class="tex"><code>\captionof{figure}{&#31354;&#22270;&#29255;&#26631;&#39064;}</code></pre>
+<p><strong>src/5-3-34.tex</strong></p>
+<pre class="tex"><code>\captionsetup{font=sf}
+\caption*{&#27809;&#26377;&#32534;&#21495;&#30340;&#26631;&#39064;&#65292;&#21482;&#20445;&#30041;&#26684;&#24335;}</code></pre>
+<p><strong>src/5-3-35.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+\ContinuedFloat
+ &#8192;&#8230;&#8230;
+\caption{&#26576;&#22270;&#24418;}
+\end{figure}
+\begin{figure}
+\ContinuedFloat
+ &#8192;&#8230;&#8230;
+\caption{&#26576;&#22270;&#24418;&#65288;&#32493;&#65289;}
+\end{figure}</code></pre>
+<p><strong>src/5-3-36.tex</strong></p>
+<pre class="tex"><code>% &#19968;&#33324;&#22312;&#23548;&#35328;&#21306;&#20351;&#29992;
+\DeclareCaptionLabelSeparator{fullcolon}{&#65306;} % &#22768;&#26126;&#20013;&#25991;&#30340;&#20840;&#35282;&#20882;&#21495;&#20998;&#38548;&#31526;
+\captionsetup{labelsep=fullcolon} % &#20026;&#20013;&#25991;&#30340;&#26631;&#39064;&#35774;&#32622;&#20840;&#35282;&#20882;&#21495;&#20998;&#38548;&#31526;</code></pre>
+<p><strong>src/5-3-37.tex</strong></p>
+<pre class="tex"><code>% &#20013;&#25991;&#25991;&#26723;&#31867;&#20250;&#35774;&#23450;&#22909;&#26631;&#39064;&#30340;&#31532;&#19968;&#31181;&#35821;&#35328;
+\documentclass{ctexart}
+\usepackage{bicaption}
+% &#22768;&#26126; english &#36873;&#39033;&#37325;&#23450;&#20041;&#31532;&#20108;&#31181;&#35821;&#35328;&#30340;&#26631;&#31614;&#21517;&#65292;&#36873;&#39033;&#27809;&#26377;&#21442;&#25968;
+\DeclareCaptionOption{english}[]{%
+  \renewcommand\figurename{Figure}%
+  \renewcommand\tablename{Table}}
+\captionsetup[bi-second]{english}</code></pre>
+<p><strong>src/5-3-38.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+  \centering FIGURE
+  \bicaption{&#20013;&#25991;&#26631;&#39064;}{English Title}
+\end{figure}</code></pre>
+<p><strong>src/5-3-39.tex</strong></p>
+<pre class="tex"><code>\begin{table}
+  \centering
+  \caption{&#24182;&#25490;&#30340;&#34920;&#26684;}
+  \begin{tabular}{|c|c|}
+    \hline &#22270; &amp; &#34920; \\ \hline
+  \end{tabular}%
+  \qquad
+  \begin{tabular}{|c|c|}
+    \hline Figure &amp; Table \\ \hline A &amp; B \\ \hline
+  \end{tabular}
+\end{table}</code></pre>
+<p><strong>src/5-3-40.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{texlive-lion.pdf}%
+  \qquad
+  \parbox[b]{0.4\textwidth}{&#36825;&#21482;&#29422;&#23376;&#26159;&#30001;&#30011;&#24072; Duane Bibby &#19987;&#38376;&#20026;&#33879;&#21517;&#30340;
+  \TeX{} &#21457;&#34892;&#29256; \TeXLive{} &#32472;&#21046;&#30340;&#20316;&#21697;&#12290;&#29422;&#23376;&#26159; \TeX{} &#31995;&#32479;&#30340;&#21513;&#31077;&#29289;&#65292;
+  Duane Bibby &#21019;&#20316;&#20102;&#22823;&#37327;&#26377;&#20851; \TeX{} &#29422;&#23376;&#30340;&#25554;&#22270;&#65292;&#22914;&#39640;&#24503;&#32435;&#30340; \textit{The
+  \TeX{}book} &#19982; Lamport &#30340; \textit{\LaTeX: A Document Preparation
+  System} &#20004;&#20070;&#20013;&#30340;&#29422;&#23376;&#25554;&#22270;&#65292;&#23601;&#26159;&#30001; Duane Bibby &#21019;&#20316;&#30340;&#12290;}
+  \caption{\TeX{} &#29422;&#23376;}\label{fig:texlivelion}
+\end{figure}</code></pre>
+<p><strong>src/5-3-41.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+  \centering
+  \begin{varwidth}[t]{\textwidth}
+    \vspace{0pt}
+    \includegraphics{lion.eps}
+  \end{varwidth}%
+  \qquad
+  \begin{varwidth}[t]{\textwidth}
+    \vspace{0pt}
+    \includegraphics[height=4cm]{texlive-lion.pdf}
+  \end{varwidth}
+  \caption{&#20004;&#24133;&#29422;&#23376;&#22270;&#24418;&#30340;&#25353;&#39030;&#37096;&#23545;&#40784;}
+\end{figure}</code></pre>
+<p><strong>src/5-3-42.tex</strong></p>
+<pre class="tex"><code>\begin{table}
+\parbox[b]{.5\textwidth}{\centering
+  \caption{&#25991;&#23383;&#34920;&#26684;}
+  \begin{tabular}{|c|c|}
+    \hline &#22270; &amp; &#34920; \\ \hline
+  \end{tabular}}%
+\parbox[b]{.5\textwidth}{\centering
+  \caption{&#25968;&#23398;&#34920;&#26684;}
+  $\begin{array}{|c|c|}
+    \hline \sqrt{2} &amp; 1.414\dots \\ \hline
+    \sqrt{3} &amp; 1.732\dots \\ \hline
+  \end{array}$}
+\end{table}</code></pre>
+<p><strong>src/5-3-43.tex</strong></p>
+<pre class="tex"><code>% \usepackage{caption,subcaption}
+\begin{table}
+\caption{&#22270;&#34920;&#30340;&#23376;&#26631;&#39064;}
+\parbox[b]{.5\textwidth}{\centering
+  \begin{tabular}{|c|c|}
+    \hline &#22270; &amp; &#34920; \\ \hline
+  \end{tabular}
+  \subcaption{&#25991;&#23383;&#34920;&#26684;}}%
+\parbox[b]{.5\textwidth}{\centering
+  $\begin{array}{|c|c|}
+    \hline \sqrt{2} &amp; 1.414\dots \\ \hline
+    \sqrt{3} &amp; 1.732\dots \\ \hline
+  \end{array}$
+  \subcaption{&#25968;&#23398;&#34920;&#26684;}}
+\end{table}</code></pre>
+<p><strong>src/5-3-44.tex</strong></p>
+<pre class="tex"><code>% \usepackage{caption,subcaption}
+\begin{table}
+  \caption{&#23376;&#22270;&#34920;&#29615;&#22659;}
+  \begin{subtable}[b]{.5\textwidth}
+    \centering
+    \begin{tabular}{|c|c|} \hline &#22270; &amp; &#34920; \\ \hline \end{tabular}
+    \caption{&#25991;&#23383;&#34920;&#26684;}
+  \end{subtable}%
+  \begin{subtable}[b]{.5\textwidth}
+    \centering
+    $\begin{array}{|c|c|}
+      \hline \sqrt{2} &amp; 1.414\dots \\ \hline
+      \sqrt{3} &amp; 1.732\dots \\ \hline
+    \end{array}$
+    \caption{&#25968;&#23398;&#34920;&#26684;}
+  \end{subtable}
+\end{table}</code></pre>
+<p><strong>src/5-3-45.tex</strong></p>
+<pre class="tex"><code>% \usepackage{caption,subcaption}
+\begin{table}
+\caption{&#23376;&#22270;&#34920;&#30418;&#23376;}
+\centering
+\subcaptionbox{&#25991;&#23383;&#34920;&#26684;\label{subtab:test}}[6em]{%
+  \begin{tabular}{|c|c|} \hline &#22270; &amp; &#34920; \\ \hline \end{tabular}}\qquad
+\subcaptionbox{&#25968;&#23398;&#34920;&#26684;}{%
+  $\begin{array}{|c|c|}
+    \hline \sqrt{2} &amp; 1.414\dots \\ \hline
+    \sqrt{3} &amp; 1.732\dots \\ \hline
+  \end{array}$}
+\end{table}</code></pre>
+<p><strong>src/5-3-46.tex</strong></p>
+<pre class="tex"><code>\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[sub]{font={small,it}} % &#35774;&#32622;&#25152;&#26377;&#23376;&#26631;&#39064;
+\captionsetup[subtable]{labelformat=simple,labelsep=colon} % &#35774;&#32622;&#23376;&#34920;&#26684;</code></pre>
+<p><strong>src/5-3-47.tex</strong></p>
+<pre class="tex"><code>% \usepackage{float}
+\begin{figure}[H]
+\centering
+\includegraphics[height=1cm]{lion.eps}
+\caption{&#19981;&#28014;&#21160;&#30340;&#22270;&#34920;}
+\end{figure}</code></pre>
+<p><strong>src/5-3-48.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+% \usepackage{float}
+\newfloat{flowchart}{htbp}{loflow}[chapter]
+\floatname{flowchart}{&#27969;&#31243;&#22270;}
+% &#27491;&#25991;
+\begin{flowchart}
+  \centering
+  \includegraphics{turing-reverse.pdf}
+  \caption{&#27714;&#36870;&#23383;&#31526;&#20018;&#30340;&#22270;&#28789;&#26426;}
+\end{flowchart}</code></pre>
+<p><strong>src/5-3-49.tex</strong></p>
+<pre class="tex"><code>\floatstyle{ruled}
+\restylefloat{flowchart}
+% &#27491;&#25991;
+\begin{flowchart}
+  \fbox{A} $\longrightarrow$ \fbox{B} \\
+  \fbox{C} $\longrightarrow$ \fbox{D}
+\caption{&#22522;&#26412;&#27969;&#31243;&#22270;}
+\end{flowchart}</code></pre>
+<p><strong>src/5-3-50.tex</strong></p>
+<pre class="tex"><code>\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}</code></pre>
+<p><strong>src/5-3-51.tex</strong></p>
+<pre class="tex"><code>\listof{flowchart}{&#27969;&#31243;&#22270;&#30446;&#24405;}</code></pre>
+<p><strong>src/5-3-52.tex</strong></p>
+<pre class="tex"><code>% \usepackage{afterpage}
+\afterpage{\begin{figure}[H]
+  ...
+\end{figure}}</code></pre>
+<p><strong>src/5-3-53.tex</strong></p>
+<pre class="tex"><code>% \usepackage{afterpage}
+\afterpage{\clearpge}</code></pre>
+<p><strong>src/5-3-54.tex</strong></p>
+<pre class="tex"><code>% \usepackage{picinpar}
+\begin{figwindow}[2,c,% &#36328;&#36807;&#27573;&#33853;&#30340;&#21069;&#20004;&#34892;&#65292;&#20013;&#38388;&#20301;&#32622;
+  \includegraphics{lion.eps},Lion\label{fig:wraplion}]
+\lipsum*[1] % &#36275;&#22815;&#38271;&#30340;&#25991;&#26412;&#27573;&#33853;
+\end{figwindow}</code></pre>
+<p><strong>src/5-3-55.tex</strong></p>
+<pre class="tex"><code>% \usepackage{wrapfig}
+\begin{wraptable}[4]{r}[1.5cm]{4.5cm}
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline &#30002; &amp; &#20057; &amp; &#19993; &amp; &#19969; \\ \hline
+  \end{tabular}
+  \caption{&#21521;&#21491;&#20280;&#20986;&#30340;&#32469;&#25490;&#34920;&#26684;}\label{tag:wraptable}
+\end{wraptable}</code></pre>
+<p><strong>src/5-3-56.tex</strong></p>
+<pre class="tex"><code>% \usepackage{shapepar}
+% \usepackage{tikz,lipsum}
+\cutout{r}(-1cm,1cm)\shapepar[2cm]{\circleshape}%
+\begin{tikzpicture}[overlay]
+  \filldraw[fill=lightgray] (0.5,-0.5) circle (1);
+\end{tikzpicture}\par
+\small\lipsum[1]</code></pre>
+<p><strong>src/5-4-01.tex</strong></p>
+<pre class="tex"><code>% \usepackage{color}
+\color{red}&#32418;&#33394;&#25991;&#23383;&#22841;&#26434;%
+\textcolor{blue}{&#34013;&#33394;}&#25991;&#23383;</code></pre>
+<p><strong>src/5-4-02.tex</strong></p>
+<pre class="tex"><code>\colorbox{yellow}{&#40644;&#33394;&#30418;&#23376;} \\
+\fcolorbox{black}{green}{&#40657;&#26694;&#32511;&#30418;&#23376;}</code></pre>
+<p><strong>src/5-4-03.tex</strong></p>
+<pre class="tex"><code>\textcolor[gray]{0.5}{50\% &#28784;&#33394;} \\
+\color[rgb]{0.6,0.6,0}&#26263;&#40644;&#33394;</code></pre>
+<p><strong>src/5-4-04.tex</strong></p>
+<pre class="tex"><code>% \usepackage[dvipsnames]{color}
+\textcolor{Purple}{&#32043;&#33394;&#25991;&#23383;}</code></pre>
+<p><strong>src/5-4-05.tex</strong></p>
+<pre class="tex"><code>\definecolor{Purple}{cmyk}{0.45,0.86,0,0}</code></pre>
+<p><strong>src/5-4-06.tex</strong></p>
+<pre class="tex"><code>% &#23558;&#25152;&#26377;&#33394;&#24425;&#36716;&#25442;&#20026; CMYK &#27169;&#22411;
+\usepackage[cmyk]{xcolor}</code></pre>
+<p><strong>src/5-4-07.tex</strong></p>
+<pre class="tex"><code>\textcolor{purple!70}{&#28129;&#32043;&#33394;}
+
+{\color{blue!60!black}60\% &#34013;&#19982; 40\% &#40657;&#28151;&#21512;&#30340;&#28145;&#34013;&#33394;}
+
+\colorbox{-red}{&#38738;&#33394;&#19982;&#32418;&#33394;&#20114;&#34917;}</code></pre>
+<p><strong>src/5-4-08.tex</strong></p>
+<pre class="tex"><code>\colorlet{darkred}{red!50!black}
+\textcolor{darkred}{&#23450;&#20041;&#26263;&#32418;&#33394;}</code></pre>
+<p><strong>src/5-4-09.tex</strong></p>
+<pre class="tex"><code>% \usepackage{colortbl}
+% \usepackage{xcolor}
+\begin{tabular}{&gt;{\columncolor{gray}}c &gt;{\columncolor{lightgray}}c}
+  &#28145; &amp; &#27973; \\
+  darker &amp; lighter \\
+\end{tabular}</code></pre>
+<p><strong>src/5-4-10.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|c|@{}&gt;{\columncolor{lightgray}[0pt][\tabcolsep]}c|}
+  &#34920;&#21015; &amp; &#24038;&#32039;&#21491;&#26494; \\
+\end{tabular}</code></pre>
+<p><strong>src/5-4-11.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|ccc|}
+\hline \rowcolor{lightgray} A &amp; B &amp; C \\
+  &#19968; &amp; &#20108; &amp; &#19977; \\\hline % &#20445;&#25345;&#30333;&#33394;
+\end{tabular}</code></pre>
+<p><strong>src/5-4-12.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{cccc}
+  No &amp; No &amp; \cellcolor{lightgray}Yes &amp; No \\
+  \cellcolor{lightgray}Yes &amp; No &amp; No &amp; No \\
+\end{tabular}</code></pre>
+<p><strong>src/5-4-13.tex</strong></p>
+<pre class="tex"><code>% \usepackage{xcolor, colortbl}
+\arrayrulecolor{gray}
+\doublerulesepcolor{lightgray}
+\begin{tabular}{|c|c|}
+\hline\hline &#28784;&#33394;&#34920;&#32447; &amp; &#27973;&#28784;&#33394;&#38388;&#38553; \\
+\arrayrulecolor{black}\hline
+&#20197;&#19979;&#20026;&#21407;&#33394; &amp; &#34920;&#32447; \\
+\doublerulesepcolor{white}\hline\hline
+\end{tabular}
+\arrayrulecolor{black} % &#24674;&#22797;&#40664;&#35748;&#20540;</code></pre>
+<p><strong>src/5-4-14.tex</strong></p>
+<pre class="tex"><code>% \usepackage[table]{xcolor}
+\begin{table}[htbp]
+  \centering
+  \rowcolors{2}{black!20}{black!10} % &#20132;&#38169;&#30340;&#34920;&#34892;
+  \begin{tabular}{crrr}
+  \rowcolor{black!30} % &#31532;&#19968;&#34892;&#30340;&#34920;&#22836;&#21333;&#29420;&#35774;&#32622;&#32972;&#26223;&#33394;
+    &#39033;&#30446; &amp; &#25968;&#20540; &amp; &#25968;&#20540; &amp; &#25968;&#20540; \\
+    A &amp; 10 &amp; 20 &amp; 30 \\
+    B &amp; 20 &amp; 15 &amp; 40 \\
+    C &amp; 15 &amp; 25 &amp; 37
+  \end{tabular}
+\end{table}</code></pre>
+<p><strong>src/5-4-15.tex</strong></p>
+<pre class="tex"><code>% \usepackage[table]{xcolor} % &#23558;&#35843;&#20837; colortbl
+% \usepackage{arydshln} % &#22312; colortbl &#21518;&#38754;&#20351;&#29992;
+\rowcolors*[\hline]{1}{black!20}{black!10}
+\begin{tabular}{|c:r|}
+  A &amp; 10 \\
+  B &amp; 20 \\
+\hiderowcolors
+\end{tabular}</code></pre>
+<p><strong>src/5-4-16.tex</strong></p>
+<pre class="tex"><code>\begin{tabular}{|cc|} \hline
+ &amp; foo \\
+\rowcolor{lightgray}
+\multirow{-2}*{Test} &amp; bar \\\hline
+\end{tabular}</code></pre>
+<p><strong>src/5-5-01.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  a &amp; b &amp; a+b \\
+  1 &amp; 2 &amp; 3 \\
+}</code></pre>
+<p><strong>src/5-5-02.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  a &amp; b\ar[rd] &amp; a+b \\ % &#25351;&#21521;&#21491;&#19979;&#26041;
+  1 &amp; 2 &amp; 3\ar&quot;1,1&quot;     % &#25351;&#21521; (1,1)
+  \ar&quot;1,1&quot;;&quot;2,2&quot;  % &#30452;&#25509;&#20174; (1,1) &#21040; (2,2)
+}</code></pre>
+<p><strong>src/5-5-03.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  A\ar[r]^{\alpha} &amp; B\ar[d]_{\beta} \\
+  C\ar[ur]|{\Sigma} &amp; D \\
+}</code></pre>
+<p><strong>src/5-5-04.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  A\ar[rd]|\hole &amp; B \\
+  C\ar[ru] &amp; D
+}</code></pre>
+<p><strong>src/5-5-05.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  A \ar[r]^&gt;{f} &amp; B \\
+  C \ar[r]^&gt;&gt;{g} &amp; D \\
+  E \ar[r]^(0.6){h} &amp; F
+}</code></pre>
+<p><strong>src/5-5-06.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  A \ar[drr]|!{[d];[r]}\hole &amp; B &amp; \\
+  C \ar[ur] &amp; &amp; D
+}</code></pre>
+<p><strong>src/5-5-07.tex</strong></p>
+<pre class="tex"><code>\begin{equation}
+\begin{gathered} \xymatrix{
+  S\ar[r]^{f_s} \ar[d]_{\lambda}
+    &amp; T\ar[d]^{\bar\lambda} \\
+  S&#39; \ar[r]_{f_{s&#39;}} &amp; T&#39; \\
+} \end{gathered}
+\end{equation}</code></pre>
+<p><strong>src/5-5-08.tex</strong></p>
+<pre class="tex"><code>&#26144;&#23556; $\xymatrix@1{A\ar[r]^{f} &amp; B}$
+&#26159;&#21516;&#24577;&#12290;</code></pre>
+<p><strong>src/5-5-09.tex</strong></p>
+<pre class="tex"><code>\[ \xymatrix{
+  A \ar@/^/[r]^{\phi} &amp; B \ar@/^/[l]^{\psi}
+} \]</code></pre>
+<p><strong>src/5-5-10.tex</strong></p>
+<pre class="tex"><code>\[ \xymatrix{
+  A \ar[r] &amp; B \ar@(ur,dr)
+} \]</code></pre>
+<p><strong>src/5-5-11.tex</strong></p>
+<pre class="tex"><code>\[ \xymatrix{
+  A \ar@&lt;.5ex&gt;[r]^f &amp;
+  \ar@&lt;.5ex&gt;[l]^g B
+} \]</code></pre>
+<p><strong>src/5-5-12.tex</strong></p>
+<pre class="tex"><code>\[ \xymatrix@=2cm{
+  *[F]{A} \ar[r]^*+[F=]{k} &amp; *+[o][F]{B}
+} \]</code></pre>
+<p><strong>src/5-5-13.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  *++=[o][F]\txt{&#29483;&#29483;} \ar@{&lt;-&gt;}[r] &amp;
+  *+[F]\txt{&#29399;\\&#29399;}
+}</code></pre>
+<p><strong>src/5-5-14.tex</strong></p>
+<pre class="tex"><code>\xymatrix{
+  *+[F.]{\composite{*+[o][F]{a\quad} * *+[F]{\quad b}}} \ar[r]
+    &amp; *+[F]{c}
+}</code></pre>
+<p><strong>src/5-5-15.tex</strong></p>
+<pre class="tex"><code>\xymatrix@R=2ex{
+  A \ar[drr]&amp; B &amp; C \\
+  D &amp; E &amp; F
+}</code></pre>
+<p><strong>src/5-5-16.tex</strong></p>
+<pre class="tex"><code>\xymatrix@ru{
+  A \ar[r] &amp; B \ar[d] \\
+  C \ar[u] &amp; D \ar[l]
+}</code></pre>
+<p><strong>src/5-5-17.tex</strong></p>
+<pre class="tex"><code>\usepackage{pst-plot,pst-node}</code></pre>
+<p><strong>src/5-5-18.tex</strong></p>
+<pre class="tex"><code>\usepackage{pstricks-add} % &#21516;&#26102;&#36733;&#20837;&#20869;&#26680;&#19982;&#24120;&#29992;&#30340;&#21151;&#33021;&#27169;&#22359;</code></pre>
+<p><strong>src/5-5-19.tex</strong></p>
+<pre class="tex"><code>&#30452;&#32447;
+\psline(0,0)(1,1em)(1.5,0)
+&#30452;&#32447;</code></pre>
+<p><strong>src/5-5-20.tex</strong></p>
+<pre class="tex"><code>&#30452;&#32447;
+\begin{pspicture}(1.5,1em)
+\psline(0,0)(1,1em)(1.5,0)
+\end{pspicture}
+&#30452;&#32447;</code></pre>
+<p><strong>src/5-5-21.tex</strong></p>
+<pre class="tex"><code>\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+  \psaxes(0,0)(-1.2,-1.2)(1.2,1.2)
+  \pscircle(0,0){1}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-22.tex</strong></p>
+<pre class="tex"><code>\psset{linewidth=0.4pt}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+  \psaxes[labels=none,ticks=none]
+    {-&gt;}(0,0)(-1.2,-1.2)(1.2,1.2)
+  \pscircle[linewidth=0.8pt](0,0){1}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-23.tex</strong></p>
+<pre class="tex"><code>\begin{pspicture}(-0.5,0)(1,1)
+  \pswedge(0,0){1}{0}{120}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-24.tex</strong></p>
+<pre class="tex"><code>\begin{pspicture}(-0.5,0)(1.2,1.2)
+\psaxes[labels=none,ticks=none]{-&gt;}(1.2,1.2)
+\pswedge[fillstyle=solid,fillcolor=gray,
+  opacity=0.2](0,0){1}{0}{120}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-25.tex</strong></p>
+<pre class="tex"><code>\uput[120](1;120){$P$}</code></pre>
+<p><strong>src/5-5-26.tex</strong></p>
+<pre class="tex"><code>\pnode(1;120){P}
+\uput[120](P){$P$}</code></pre>
+<p><strong>src/5-5-27.tex</strong></p>
+<pre class="tex"><code>\pnode(1;120){P}
+\pnode(P|0,0){P0}</code></pre>
+<p><strong>src/5-5-28.tex</strong></p>
+<pre class="tex"><code>\pnode(1;120){P}
+\pnode(P|0,0){P0}
+\ncline{-}{P}{P0} % &#31561;&#20215;&#20110; \psline(P)(P0)</code></pre>
+<p><strong>src/5-5-29.tex</strong></p>
+<pre class="tex"><code>\psset{linewidth=0.4pt}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+  \psaxes[labels=none,ticks=none]{-&gt;}(0,0)(-1.2,-1.2)(1.2,1.2)
+  \pscircle[linewidth=0.8pt](0,0){1}
+  \pswedge[fillstyle=solid,fillcolor=gray,opacity=0.2]
+    (0,0){1}{0}{120}
+  \pswedge[fillstyle=solid,fillcolor=gray,opacity=0.5]
+    (0,0){0.3}{0}{120}
+  \uput[60](0.3;60){$120^\circ$} % &#22312;&#25159;&#24418;&#20013;&#38388;&#26631;&#27880;&#35282;&#24230;
+  \pnode(1;120){P}
+  \pnode(P|0,0){P0}
+  \ncline{-}{P}{P0}            % &#27491;&#24358;&#32447;
+  \uput[120](P){$P$}
+  \uput[d](P0){$P_0$}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-30.tex</strong></p>
+<pre class="tex"><code>\begin{pspicture}(-1,-1.2)(3.5,1.2)
+  \psaxes{-&gt;}(0,0)(0,-1.2)(3.5,1.2)
+  \psplot{0}{3.5}{x 180 Pi div mul sin} % &#19977;&#35282;&#20989;&#25968;&#21333;&#20301;&#26159;&#24230;
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-31.tex</strong></p>
+<pre class="tex"><code>\psset{algebraic=true}
+\begin{pspicture}(-1,-1.2)(3.5,1.2)
+  \psaxes{-&gt;}(0,0)(0,-1.2)(3.5,1.2)
+  \psplot{0}{3.5}{sin(x)} % &#19977;&#35282;&#20989;&#25968;&#21333;&#20301;&#26159;&#24359;&#24230;
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-32.tex</strong></p>
+<pre class="tex"><code>\psset{algebraic=true}
+\begin{pspicture}(0,-1.2)(3.5,1.2)
+\psaxes[labels=none,dx=1.57]
+  {-&gt;}(0,0)(0,-1.2)(3.5,1.2)
+\psplot{0}{3.5}{sin(x)}
+\uput*[d](0,0){$0^\circ$}
+\uput*[d](1.57,0){$90^\circ$}
+\uput*[d](3.14,0){$180^\circ$}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-33.tex</strong></p>
+<pre class="tex"><code>\multido{\n=0+1.57,\i=0+90}{3}{
+  \uput*[d](\n,0){$\i^\circ$}
+}</code></pre>
+<p><strong>src/5-5-34.tex</strong></p>
+<pre class="tex"><code>\pnode(!120 Pi mul 180 div 120 sin){Q}
+\pnode(Q|0,0){Q0}</code></pre>
+<p><strong>src/5-5-35.tex</strong></p>
+<pre class="tex"><code>\uput[r](*{3.5} {sin(x)}){$\sin x$}</code></pre>
+<p><strong>src/5-5-36.tex</strong></p>
+<pre class="tex"><code>\begin{pspicture}(-1.5,-0.5)(1.5,0.5)
+\pscircle*(0,0){0.5}
+\rput(-1,0){
+  \pscircle(0,0){0.5}
+}
+\rput(1,0){
+  \pscircle(0,0){0.5}
+}
+\end{pspicture}</code></pre>
+<p><strong>src/5-5-37.tex</strong></p>
+<pre class="tex"><code>% \newcommand\iangle{120}
+\pnode(!\iangle\space Pi mul 180 div \iangle\space sin){Q}</code></pre>
+<p><strong>src/5-5-38.tex</strong></p>
+<pre class="tex"><code>% \usepackage{pstricks-add}
+% \usepackage{siunitx}
+\begin{figure}
+\centering
+\newcommand\iangle{120}
+\psset{unit=1.5cm,linewidth=0.4pt,algebraic=true}
+\begin{pspicture}(-3.5,-1.5)(4.5,1.5)
+\rput(-2,0){
+  \psaxes[labels=none,ticks=none]{-&gt;}(0,0)(-1.2,-1.2)(1.2,1.2)
+  \pscircle[linewidth=0.8pt](0,0){1}
+  \pswedge[fillstyle=solid,fillcolor=gray,opacity=0.2]
+    (0,0){1}{0}{\iangle}
+  \pswedge[fillstyle=solid,fillcolor=gray,opacity=0.5]
+    (0,0){0.3}{0}{\iangle}
+  \uput[!\iangle\space 2 div]
+    (0.3;!\iangle\space 2 div) {\ang{\iangle}}
+  \pnode(1;\iangle){P}
+  \pnode(P|0,0){P0}
+  \ncline{-}{P}{P0}
+  \uput[\iangle](P){$P$}
+  \uput[d](P0){$P_0$}
+}
+
+\psaxes[labels=none,dx=1.57]
+  {-&gt;}(0,0)(0,-1.2)(3.5,1.2)
+\psplot[linewidth=0.8pt]{0}{3.5}{sin(x)}
+\multido{\n=0+1.57,\i=0+90}{3}{
+  \uput*[d](\n,0){\small\ang{\i}}
+}
+\uput[r](*{3.5} {sin(x)}){$\sin x$}
+\pnode(!\iangle\space Pi mul 180 div \iangle\space sin){Q}
+\pnode(Q|0,0){Q0}
+\uput[u](Q){$Q$}
+\uput[d](Q0){$Q_0$}
+\ncline{-}{Q}{Q0}
+
+\psline[linestyle=dashed](P)(Q)
+\end{pspicture}
+  \caption{&#27491;&#24358;&#20989;&#25968;&#19982;&#21333;&#20301;&#22278;&#65288;\textsf{PSTricks} &#23454;&#29616;&#65289;}
+  \label{fig:pstsine}
+\end{figure}</code></pre>
+<p><strong>src/5-5-39.tex</strong></p>
+<pre class="tex"><code>\usepackage{tikz}</code></pre>
+<p><strong>src/5-5-40.tex</strong></p>
+<pre class="tex"><code>% &#20351;&#29992; latex + dvipdfmx &#32534;&#35793;&#26102;
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{tikz}</code></pre>
+<p><strong>src/5-5-41.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+\draw (0,0) circle (1ex);
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-42.tex</strong></p>
+<pre class="tex"><code>&#22278;&#24418;
+\tikz \draw (0,0) circle (1ex);</code></pre>
+<p><strong>src/5-5-43.tex</strong></p>
+<pre class="tex"><code>\tikz \fill (0,0) circle (1ex);</code></pre>
+<p><strong>src/5-5-44.tex</strong></p>
+<pre class="tex"><code>\tikz \filldraw[thick,fill=gray]
+  (0,0) circle (0.5cm);</code></pre>
+<p><strong>src/5-5-45.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+  \draw[-&gt;] (-1.2,0) -- (1.2,0);
+  \draw[-&gt;] (0,-1.2) -- (0,1.2);
+  \draw[thick] (0,0) circle (1);
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-46.tex</strong></p>
+<pre class="tex"><code>\tikz\draw (30:0.5) arc (30:150:0.5);</code></pre>
+<p><strong>src/5-5-47.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+  \draw[thick] (0,0) circle (1);
+  \fill[fill=gray, fill opacity=0.3]
+    (0,0) -- (0:1) arc (0:120:1) -- cycle;
+  \filldraw[fill=gray,fill opacity=0.5]
+    (0,0) -- (0:0.3) arc (0:120:0.3) -- cycle;
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-48.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+\draw (0,0) circle (1);
+\fill (120:1) circle (2pt);
+\node[above left] (P) at (120:1) {$P$};
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-49.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+\draw (0,0) circle (1);
+\coordinate[label=120:$P$] (P) at (120:1);
+\draw (0,0) -- (P);
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-50.tex</strong></p>
+<pre class="tex"><code>\coordinate[label=below:$P_0$] (P0) at (P |- 0,0);</code></pre>
+<p><strong>src/5-5-51.tex</strong></p>
+<pre class="tex"><code>% \usepackage{siunitx}
+\begin{tikzpicture}
+  \newcommand\iangle{120}
+  \draw[-&gt;] (-1.2,0) -- (1.2,0);
+  \draw[-&gt;] (0,-1.2) -- (0,1.2);
+  \draw[thick] (0,0) circle (1);
+  \coordinate[label=\iangle:$P$] (P) at (\iangle:1);
+  \coordinate[label=below:$P_0$] (P0) at (P |- 0,0);
+  \draw (0,0) -- (P);
+  \draw (P) -- (P0);
+  \fill[fill=gray,fill opacity=0.2]
+    (0,0) -- (0:1) arc (0:\iangle:1) -- cycle;
+  \filldraw[fill=gray,fill opacity=0.5]
+    (0,0) -- (0:0.3) arc (0:\iangle:0.3) -- cycle;
+  \node[right] at (\iangle/2:0.3) {\ang{\iangle}};
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-52.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+  % &#20174; 0 &#24230;&#21040; 360 &#24230;&#30340;&#27491;&#24358;&#20989;&#25968;&#26354;&#32447;&#65292;rad &#20989;&#25968;&#21644;&#21333;&#20301; r &#25226;&#24230;&#36716;&#25442;&#20026;&#24359;&#24230;
+  \draw[domain=0:rad(360)] plot (\x, {sin(\x r)});
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-53.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+\draw (0,0) -- (2,0) node[right] {&#21491;};
+\draw (0,-1) -- node[above] {&#36830;&#32447;} (2,-1);
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-54.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}
+% &#22352;&#26631;&#36724;
+\draw[-&gt;] (0,0) -- ({rad(210)}, 0);
+\draw[-&gt;] (0,-1.2) -- (0,1.2);
+% &#25991;&#23383;&#26631;&#31614;&#19982;&#21051;&#24230;
+\foreach \t in {0, 90, 180} {                           % &#36941;&#21382;&#19977;&#20010;&#35282;&#24230;
+  \draw ({rad(\t)}, -0.05) -- ({rad(\t)}, 0.05);        % &#30011;&#21051;&#24230;&#32447;
+  \node[below, outer sep=2pt, fill=white, font=\small]  % &#26631;&#27880;&#27178;&#36724;&#35282;&#24230;
+    at ({rad(\t)}, 0) {\ang{\t}};
+}
+\foreach \y in {-1,1} {\draw (-0.05,\y) -- (0.05,\y);}  % &#32437;&#36724;&#21051;&#24230;
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-55.tex</strong></p>
+<pre class="tex"><code>\begin{tikzpicture}[fill=lightgray] % &#20840;&#23616;&#36873;&#39033;
+\begin{scope}[thick,-&gt;,fill=gray,xshift=-3cm] % &#21306;&#22359;&#20869;&#25972;&#20307;&#21521;&#24038;&#24179;&#31227;
+  \filldraw (0,0) circle (1);
+  \draw (-1.2,0) -- (1.2,0);
+  \draw (0,-1.2) -- (0,1.2);
+\end{scope}
+\filldraw (0,0) circle (1); % &#21407;&#20301;&#32622;
+\end{tikzpicture}</code></pre>
+<p><strong>src/5-5-56.tex</strong></p>
+<pre class="tex"><code>\begin{figure}
+\centering
+% \usepackage{siunitx}
+\begin{tikzpicture}[scale=1.5] % &#25972;&#20307;&#25918;&#22823;&#22352;&#26631;&#65292;&#20294;&#19981;&#24433;&#21709;&#23383;&#21495;
+  \newcommand\iangle{120}
+  % &#24038;&#36793;&#30340;&#21333;&#20301;&#22278;
+  \begin{scope}[xshift=-2cm]
+    \draw[-&gt;] (-1.2,0) -- (1.2,0);
+    \draw[-&gt;] (0,-1.2) -- (0,1.2);
+    \draw[thick] (0,0) circle (1);
+    \coordinate[label=\iangle:$P$] (P) at (\iangle:1);
+    \coordinate[label=below:$P_0$] (P0) at (P |- 0,0);
+    \draw (0,0) -- (P);
+    \draw (P) -- (P0);
+    \fill[fill=gray,fill opacity=0.2]
+      (0,0) -- (0:1) arc (0:\iangle:1) -- cycle;
+    \filldraw[fill=gray,fill opacity=0.5]
+      (0,0) -- (0:0.3) arc (0:\iangle:0.3) -- cycle;
+    \node[right] at (\iangle/2:0.3) {\ang{\iangle}};
+  \end{scope}
+  % &#21491;&#36793;&#30340;&#20989;&#25968;&#22270;
+  \draw[-&gt;] (0,0) -- ({rad(210)}, 0);
+  \draw[-&gt;] (0,-1.2) -- (0,1.2);
+  \draw[thick, domain=0:rad(210)] plot (\x, {sin(\x r)})
+    node[right] {$\sin x$};
+  \foreach \t in {0, 90, 180} {
+    \draw ({rad(\t)}, -0.05) -- ({rad(\t)}, 0.05);
+    \node[below, outer sep=2pt, fill=white, font=\small]
+      at ({rad(\t)}, 0) {\ang{\t}};
+  }
+  \foreach \y in {-1,1} {\draw (-0.05,\y) -- (0.05,\y);}
+  \coordinate[label=above:$Q$] (Q) at ({rad(\iangle)}, {sin(\iangle)});
+  \coordinate[label=below:$Q_0$] (Q0) at (Q |- 0,0);
+  \draw (Q) -- (Q0);
+  \draw[dashed] (P) -- (Q);
+\end{tikzpicture}
+\caption{&#27491;&#24358;&#20989;&#25968;&#19982;&#21333;&#20301;&#22278;&#65288;\textsf{TikZ} &#23454;&#29616;&#65289;}
+\label{fig:tikzsine}
+\end{figure}</code></pre>
+<p><strong>src/5-5-57.tex</strong></p>
+<pre class="tex"><code>\setlength\unitlength{1cm}
+\begin{picture}(1,1)
+\put(0,0) {&#24038;&#19979;} \put(1,1) {&#21491;&#19978;}
+\end{picture}</code></pre>
+<p><strong>src/5-5-58.mp</strong></p>
+<pre class="tex"><code>% &#20027;&#35201;&#20195;&#30721;&#29255;&#26029;
+draw (0,0) .. tension 2 .. (1cm,1cm){right} .. (2cm,0){right}
+  .. (5cm,1cm);</code></pre>
+<p><strong>src/5-5-59.mp</strong></p>
+<pre class="tex"><code>% &#20027;&#35201;&#20195;&#30721;&#29255;&#26029;
+z1 = (0,0);   z2 = (2cm,0);   z3 = (0,1cm);   z4 = (3cm,1.5cm);
+dotlabel.lft(btex $z_1$ etex, z1);  dotlabel.rt(btex $z_2$ etex, z2);
+dotlabel.lft(btex $z_3$ etex, z3);  dotlabel.rt(btex $z_4$ etex, z4);
+draw z1 -- z4;  draw z2 -- z3;
+z5 = whatever[z1, z4] = whatever[z2, z3];  % &#35745;&#31639;&#20132;&#28857;
+dotlabel.bot(btex $z_5$ etex, z5);</code></pre>
+<p><strong>src/5-5-60.mp</strong></p>
+<pre class="tex"><code>input metaobj;
+beginfig(1);
+x = new_Tree( new_Box(btex root etex) )
+  ( new_Circle(btex child etex),
+    new_Circle(btex child etex));
+Obj(x).c=origin;
+draw_Obj(x);
+endfig;
+end.</code></pre>
+<p><strong>src/5-5-61.mp</strong></p>
+<pre class="tex"><code>prologues := 3;</code></pre>
+<p><strong>src/5-5-62.tex</strong></p>
+<pre class="tex"><code>% pdfTeX&#65292;&#35774;&#32622;&#25554;&#20837; MetaPost &#22270;&#24418;
+\DeclareGraphicsRule{*}{mps}{*}{}</code></pre>
+<p><strong>src/5-5-63.tex</strong></p>
+<pre class="tex"><code>% XeTeX&#65292;&#35774;&#32622;&#25554;&#20837; MetaPost &#22270;&#24418;
+\DeclareGraphicsRule{*}{eps}{*}{}</code></pre>
+<p><strong>src/5-5-64.mp</strong></p>
+<pre class="tex"><code>outputtemplate := &quot;%j-%c.mps&quot;;</code></pre>
+<p><strong>src/5-5-65.tex</strong></p>
+<pre class="tex"><code>% XeTeX&#65292;&#35774;&#32622;&#25554;&#20837; MetaPost &#22270;&#24418;
+\DeclareGraphicsRule{.mps}{eps}{.mps}{}</code></pre>
+<p><strong>src/5-5-66.mp</strong></p>
+<pre class="tex"><code>% &#24102;&#26377; LaTeX &#26631;&#31614;&#30340; MetaPost &#25991;&#20214;
+% &#38656;&#35201;&#20351;&#29992; mpost -tex=latex &#25110; mptopdf --latex &#21629;&#20196;&#32534;&#35793;
+
+verbatimtex
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}% &#21518;&#38754;&#21487;&#20197;&#30465;&#21435; \end{document}
+etex
+
+beginfig(1);
+draw fullcircle scaled 2cm;
+label.rt(btex $\Lleftarrow$ unit circle etex, (1cm,0));
+endfig;
+end.</code></pre>
+<p><strong>src/5-5-67.mp</strong></p>
+<pre class="tex"><code>% &#24102;&#26377; LaTeX &#26631;&#31614;&#30340; MetaPost &#25991;&#20214;
+% &#38656;&#35201;&#20351;&#29992; mpost &#25110; mptopdf &#21629;&#20196;&#32534;&#35793;&#20004;&#36941;
+input latexmp;
+setupLaTeXMP(packages=&quot;amssymb&quot;);
+beginfig(1);
+draw fullcircle scaled 2cm;
+label.rt(textext(&quot;$\Lleftarrow$ unit circle&quot;), (1cm,0));
+endfig;
+end.</code></pre>
+<p><strong>src/5-5-68.mp</strong></p>
+<pre class="tex"><code>% &#24102;&#26377;&#20013;&#25991; LaTeX &#26631;&#31614;&#30340; MetaPost &#25991;&#20214;
+% &#38656;&#35201;&#20351;&#29992; mpost &#25110; mptopdf &#21629;&#20196;&#32534;&#35793;&#20004;&#36941;
+input latexmp;
+setupLaTeXMP(
+  packages=&quot;amssymb,CJK&quot;,
+  preamble=(&quot;\AtBeginDocument{\begin{CJK}{UTF8}{gbsn}}&quot; &amp;
+&quot;\AtEndDocument{\end{CJK}}&quot;));
+beginfig(1);
+draw fullcircle scaled 2cm;
+label.rt(textext(&quot;$\Lleftarrow$ &#21333;&#20301;&#22278;&quot;), (1cm,0));
+endfig;
+end.</code></pre>
+<p><strong>src/5-5-69.tex</strong></p>
+<pre class="tex"><code>% \usepackage[shellescape]{gmp}
+% &#20351;&#29992; xelatex -shell-escape &#21629;&#20196;&#32534;&#35793;
+\begin{mpost}
+draw ((0,0) -- (0,2) -- (1,3.25) -- (2,2) -- (2,0)
+  -- (0,2) -- (2,2) -- (0,0) -- (2,0)) scaled 1cm;
+\end{mpost}</code></pre>
+<p><strong>src/5-5-70.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;&#20351;&#29992;
+\usepackage[shellescape,latex]{gmp}
+\usempxpackage{CJKutf8}
+\mpxcommands{
+  \AtBeginDocument{\begin{CJK*}{UTF8}{gbsn}}
+  \AtEndDocument{\clearpage\end{CJK*}}
+}</code></pre>
+<p><strong>src/5-5-71.tex</strong></p>
+<pre class="tex"><code>\begin{mpost*}[mpsettings={u:=\mpdim{0.4\linewidth};}]
+fill (0,0) -- (u, 1pt) -- (2u, 0) -- (u, -1pt) -- cycle;
+label.top(btex &#31034;&#20363; etex, (u, 1pt));
+label.bot(btex \textit{Example} etex, (u, -1pt));
+\end{mpost*}</code></pre>
+<p><strong>src/5-5-72.asy</strong></p>
+<pre class="tex"><code>draw((0,0) .. tension 2 .. (1cm,1cm){right} .. (2cm,0){right}
+  .. (5cm,1cm));</code></pre>
+<p><strong>src/5-5-73.asy</strong></p>
+<pre class="tex"><code>guide star(int n = 5, real r0 = 1)
+{
+    guide unitstar;
+    if (n &lt; 5) return nullpath;
+    real theta = 180/n;
+    real r = Cos(2theta) / Cos(theta);
+    for (int k = 0; k &lt; n; ++k)
+        unitstar = unitstar -- dir(90+2k*theta)
+            -- r * dir(90+(2k+1)*theta);
+    unitstar = unitstar -- cycle;
+    return scale(r0) * unitstar;
+}
+for (int i = 5; i &lt;= 8; ++i)
+    filldraw(shift(i*2cm,0) * star(i,1cm), lightgray, gray+1mm);</code></pre>
+<p><strong>src/5-5-74.asy</strong></p>
+<pre class="tex"><code>import binarytree;
+binarytree bt=searchtree(4,2,1,3,5,6);
+draw(bt);</code></pre>
+<p><strong>src/5-5-75.asy</strong></p>
+<pre class="tex"><code>import solids;
+size(4cm);
+currentprojection = orthographic(1, 1, 1);
+real a = 4;
+real h = 2.2a;
+draw(scale3(a) * unitsphere, white);
+draw(shift((a/2,0,-h/2)) * scale(a/2,a/2,h) * unitcylinder, gray);</code></pre>
+<p><strong>src/5-5-76.tex</strong></p>
+<pre class="tex"><code>% \usepackage{asymptote}
+\begin{asy}
+real r = 0.8cm;
+for (int i = 0; i &lt; 360; i+=10)
+    draw(circle(dir(i)*r, r));
+\end{asy}</code></pre>
+<p><strong>src/5-5-77.tex</strong></p>
+<pre class="tex"><code>\usepackage{asymptote}
+\begin{asydef}
+import graph;
+unitsize(1cm);
+\end{asydef}</code></pre>
+<p><strong>src/6-1-01.tex</strong></p>
+<pre class="tex"><code>\documentclass{beamer}
+\usepackage[UTF8,noindent]{ctexcap}
+\begin{document}
+% ...
+\end{document}</code></pre>
+<p><strong>src/6-1-02.tex</strong></p>
+<pre class="tex"><code>\makeatletter
+\def\beamer@linkspace#1{%
+  \begin{pgfpicture}{0pt}{-1.5pt}{#1}{5.5pt}
+    \pgfsetfillopacity{0}
+    \pgftext[x=0pt,y=-1.5pt]{.}
+    \pgftext[x=#1,y=5.5pt]{.}
+  \end{pgfpicture}}
+\makeatother</code></pre>
+<p><strong>src/6-1-03.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+&#36825;&#26159;&#31616;&#21333;&#30340;&#19968;&#24103;&#12290;
+
+&#24103;&#37324;&#30340;&#20869;&#23481;&#26159;&#22402;&#30452;&#23621;&#20013;&#30340;&#12290;
+\end{frame}</code></pre>
+<p><strong>src/6-1-04.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+  \frametitle{&#26631;&#39064;}
+  \framesubtitle{&#23567;&#26631;&#39064;}
+  &#36825;&#26159;&#31616;&#21333;&#30340;&#19968;&#24103;&#12290;
+\end{frame}</code></pre>
+<p><strong>src/6-1-05.tex</strong></p>
+<pre class="tex"><code>\begin{frame}{&#26631;&#39064;}{&#23567;&#26631;&#39064;}
+  &#36825;&#26159;&#31616;&#21333;&#30340;&#19968;&#24103;&#12290;
+\end{frame}</code></pre>
+<p><strong>src/6-1-06.tex</strong></p>
+<pre class="tex"><code>\begin{frame}{&#21476;&#20013;&#22269;&#25968;&#23398;}{&#23450;&#29702;&#21457;&#29616;}
+&#20013;&#22269;&#22312; 3000 &#22810;&#24180;&#21069;&#23601;&#30693;&#36947;&#21246;&#32929;&#25968;&#30340;&#27010;&#24565;&#65292;&#27604;&#21476;&#24076;&#33098;&#26356;&#26089;&#19968;&#20123;&#12290;
+
+&#12298;&#21608;&#39616;&#31639;&#32463;&#12299;&#30340;&#35760;&#36733;&#65306;
+\begin{itemize}
+\item &#20844;&#20803;&#21069; 11 &#19990;&#32426;&#65292;&#21830;&#39640;&#31572;&#21608;&#20844;&#38382;&#65306;
+\begin{quote}
+&#21246;&#24191;&#19977;&#65292;&#32929;&#20462;&#22235;&#65292;&#24452;&#38533;&#20116;&#12290;
+\end{quote}
+\item &#21448;&#36733;&#20844;&#20803;&#21069; 7--6 &#19990;&#32426;&#38472;&#23376;&#31572;&#33635;&#26041;&#38382;&#65292;&#34920;&#36848;&#20102;&#21246;&#32929;&#23450;&#29702;&#30340;&#19968;&#33324;&#24418;&#24335;&#65306;
+\begin{quote}
+&#33509;&#27714;&#37034;&#33267;&#26085;&#32773;&#65292;&#20197;&#26085;&#19979;&#20026;&#21246;&#65292;&#26085;&#39640;&#20026;&#32929;&#65292;&#21246;&#32929;&#21508;&#33258;&#20056;&#65292;&#24182;&#32780;&#24320;&#26041;&#38500;&#20043;&#65292;&#24471;&#37034;&#33267;&#26085;&#12290;
+\end{quote}
+\end{itemize}
+\end{frame}</code></pre>
+<p><strong>src/6-1-07.tex</strong></p>
+<pre class="tex"><code>% beamer &#23548;&#35328;&#21306;
+\title{&#26434;&#35848;&#21246;&#32929;&#23450;&#29702;}
+\subtitle{&#25968;&#23398;&#21490;&#35762;&#24231;&#20043;&#19968;}
+\institute{&#20061;&#31456;&#23398;&#22530;}
+\author{&#24352;&#19977;}
+\date{\today}
+\subject{&#21246;&#32929;&#23450;&#29702;}
+\keywords{&#21246;&#32929;&#23450;&#29702;, &#21382;&#21490;}</code></pre>
+<p><strong>src/6-1-08.tex</strong></p>
+<pre class="tex"><code>\part{&#24341;&#35328;}
+\begin{frame}
+  \partpage
+\end{frame}</code></pre>
+<p><strong>src/6-1-09.tex</strong></p>
+<pre class="tex"><code>\lecture{&#26434;&#35848;&#21246;&#32929;&#23450;&#29702;}{gougu} % &#35762;&#24231;&#26631;&#39064;&#21644;&#35762;&#24231;&#26631;&#31614;</code></pre>
+<p><strong>src/6-1-10.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+\AtBeginLecture{
+  \begin{frame}
+    \Large
+    &#26412;&#21608;&#35770;&#39064;&#65306;\insertlecture
+  \end{frame}
+}</code></pre>
+<p><strong>src/6-1-11.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306;
+\AtBeginSection[]{  % &#31354;&#30340;&#21487;&#36873;&#39033;&#34920;&#31034; \section* &#21069;&#19981;&#21152;&#30446;&#24405;
+  \begin{frame}{&#26412;&#33410;&#25552;&#35201;}
+    \tableofcontents[currentsection]
+  \end{frame}
+}</code></pre>
+<p><strong>src/6-1-12.tex</strong></p>
+<pre class="tex"><code>\begin{frame}{&#21442;&#32771;&#25991;&#29486;}
+\nocite{Shiye}
+\bibliography{math}
+\end{frame}</code></pre>
+<p><strong>src/6-1-13.tex</strong></p>
+<pre class="tex"><code>% &#25552;&#20379;&#31616;&#21333;&#30340;&#20316;&#32773;&#24180;&#20195;&#24341;&#29992;&#26684;&#24335;
+\bibliographystyle{apalike}</code></pre>
+<p><strong>src/6-1-14.tex</strong></p>
+<pre class="tex"><code>\newtheorem{thm}{&#23450;&#29702;}</code></pre>
+<p><strong>src/6-1-15.tex</strong></p>
+<pre class="tex"><code>\renewcommand\proofname{&#35777;&#26126;}</code></pre>
+<p><strong>src/6-1-16.tex</strong></p>
+<pre class="tex"><code>\begin{frame}{&#29616;&#20195;&#21465;&#36848;}
+\begin{thm}[&#21246;&#32929;&#23450;&#29702;]
+&#30452;&#35282;&#19977;&#35282;&#24418;&#26012;&#36793;&#30340;&#24179;&#26041;&#31561;&#20110;&#20004;&#30452;&#35282;&#36793;&#30340;&#24179;&#26041;&#21644;&#12290;
+\end{thm}
+\end{frame}</code></pre>
+<p><strong>src/6-1-17.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+\begin{block}{&#22359;&#26631;&#39064;}
+&#36825;&#26159;&#19968;&#20010;&#21306;&#22359;
+\end{block}
+
+\begin{block}{}% &#26080;&#26631;&#39064;
+&#36825;&#26159;&#21478;&#19968;&#20010;&#21306;&#22359;
+\end{block}
+\end{frame}</code></pre>
+<p><strong>src/6-1-18.tex</strong></p>
+<pre class="tex"><code>\begin{frame}{&#21476;&#20013;&#22269;&#25968;&#23398;}{&#23450;&#29702;&#35777;&#26126;}
+&#26377;&#35770;&#32773;&#35748;&#20026;&#26089;&#22312;&#20844;&#20803;&#21069; 11 &#19990;&#32426;&#21830;&#39640;&#21363;&#24050;&#35777;&#26126;&#21246;&#32929;&#23450;&#29702;\cite{quanjing}&#12290;
+&#23436;&#25972;&#30340;&#35777;&#26126;&#35265;&#20110;&#19977;&#22269;&#26102;&#65288;&#20844;&#20803; 3 &#19990;&#32426;&#65289;&#36213;&#29245;&#23545;&#12298;&#21608;&#39616;&#31639;&#32463;&#12299;&#30340;&#27880;&#37322;&#12290;
+\begin{figure}
+\centering
+\includegraphics[height=0.4\textheight]{xiantu.pdf}
+\caption{&#36213;&#29245;&#30340;&#24358;&#22270;&#21487;&#32473;&#20986;&#21246;&#32929;&#23450;&#29702;&#30340;&#19968;&#20010;&#23500;&#20110;&#23545;&#31216;&#32654;&#30340;&#35777;&#26126;}
+\end{figure}
+\end{frame}</code></pre>
+<p><strong>src/6-1-19.tex</strong></p>
+<pre class="tex"><code>\logo{\includegraphics{logo.pdf}}</code></pre>
+<p><strong>src/6-1-20.tex</strong></p>
+<pre class="tex"><code>% &#22312; thm &#29615;&#22659;&#26368;&#21518;&#65306;
+\begin{center}
+\begin{tikzpicture}[scale=0.5,font=\small]
+\draw[thick] (0,0) node[left] {$A$}
+   -- (4,0) node[right] {$C$}
+   -- (4,3) node[above right] {$B$} -- cycle;
+\draw (3.5,0) |- (4,0.5);
+\end{tikzpicture}
+\end{center}</code></pre>
+<p><strong>src/6-1-21.tex</strong></p>
+<pre class="tex"><code>\documentclass[xcolor=table]{beamer}</code></pre>
+<p><strong>src/6-1-22.tex</strong></p>
+<pre class="tex"><code>% &#39068;&#33394; craneorange &#26159;&#22312; crane &#33394;&#24425;&#20027;&#39064;&#20013;&#23450;&#20041;&#30340;
+\rowcolors{2}{craneorange!25}{craneorange!50}
+\begin{tabular}{rrr}
+\rowcolor{craneorange}&#30452;&#35282;&#36793; $a$ &amp; &#30452;&#35282;&#36793; $b$ &amp; &#26012;&#36793; $c$\\
+3 &amp; 4 &amp; 5 \\
+5 &amp; 12 &amp; 13 \\
+7 &amp; 24 &amp; 25 \\
+8 &amp; 15 &amp; 17 \\
+\end{tabular}</code></pre>
+<p><strong>src/6-2-01.tex</strong></p>
+<pre class="tex"><code>\usetheme{PaloAlto}</code></pre>
+<p><strong>src/6-2-02.tex</strong></p>
+<pre class="tex"><code>\usecolortheme{crane}</code></pre>
+<p><strong>src/6-2-03.tex</strong></p>
+<pre class="tex"><code>\usebeamerfonttheme{professionalfonts}
+\usepackage{arev}</code></pre>
+<p><strong>src/6-2-04.tex</strong></p>
+<pre class="tex"><code>% XeLaTeX &#32534;&#35793;
+\usepackage[noindent,UTF8]{ctexcap}
+\setCJKsansfont[ItalicFont={&#21326;&#25991;&#26032;&#39759;}]{&#40657;&#20307;}
+\renewcommand\CJKfamilydefault{\CJKsfdefault}</code></pre>
+<p><strong>src/6-2-05.tex</strong></p>
+<pre class="tex"><code>\documentclass[no-math]{beamer}
+\usepackage[noindent,UTF8]{ctexcap}
+\setCJKsansfont[ItalicFont={&#21326;&#25991;&#26032;&#39759;}]{&#40657;&#20307;}
+\renewcommand\CJKfamilydefault{\CJKsfdefault}</code></pre>
+<p><strong>src/6-2-06.tex</strong></p>
+<pre class="tex"><code>\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{itemize item}[fg=black]
+\setbeamercolor{itemize/enumerate body}{fg=gray}
+\setbeamerfont{itemize/enumerate body}{family=\rmfamily}</code></pre>
+<p><strong>src/6-3-01.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+  \onslide&lt;1&gt;{&#21482;&#26377;&#31532; 1 &#27493;}
+
+  \onslide&lt;2-&gt;{&#31532; 2 &#27493;&#20043;&#21518;}
+
+  \onslide&lt;1,3&gt;{&#31532; 1, 3 &#20004;&#27493;}
+\end{frame}</code></pre>
+<p><strong>src/6-3-02.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+&#35745;&#25968;&#65306;\only&lt;1&gt;{1}\only&lt;2&gt;{2}\only&lt;3&gt;{3}\only&lt;4-&gt;{4}
+
+\onslide&lt;5&gt; &#25968;&#23436;&#20102;&#12290;
+\end{frame}</code></pre>
+<p><strong>src/6-3-03.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+\textbf&lt;3&gt;{&#21482;&#22312;&#31532; 3 &#27493;&#21152;&#31895;}
+\end{frame}</code></pre>
+<p><strong>src/6-3-04.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+\begin{theorem}&lt;2-&gt;
+  &#31532; 2 &#27493;&#20197;&#21518;&#26174;&#31034;&#30340;&#23450;&#29702;
+\end{theorem}
+\end{frame}</code></pre>
+<p><strong>src/6-3-05.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+\begin{itemize}
+  \item&lt;1-&gt; &#24320;&#22987;&#26174;&#31034;
+  \item&lt;3-&gt; &#26368;&#21518;&#26174;&#31034;
+  \item&lt;2-&gt; &#28982;&#21518;&#26174;&#31034;
+\end{itemize}
+\end{frame}</code></pre>
+<p><strong>src/6-3-06.tex</strong></p>
+<pre class="tex"><code>\begin{frame}
+\begin{itemize}[&lt;+-&gt;]
+  \item &#24320;&#22987;&#26174;&#31034;
+  \item &#20854;&#27425;&#26174;&#31034;
+  \item &#26368;&#21518;&#26174;&#31034;
+\end{itemize}
+\end{frame}</code></pre>
+<p><strong>src/6-3-07.tex</strong></p>
+<pre class="tex"><code>\alert&lt;2&gt;{&#22312;&#31532; 2 &#27493;&#24378;&#35843;&#37325;&#35201;&#30340;&#20869;&#23481;}</code></pre>
+<p><strong>src/6-3-08.tex</strong></p>
+<pre class="tex"><code>\begin{itemize}
+\item&lt;+-| alert@+&gt;
+  &#20844;&#20803;&#21069; 6 &#19990;&#32426;&#65292;&#27605;&#36798;&#21733;&#25289;&#26031;&#23398;&#27966;&#21457;&#29616;&#19968;&#20010;&#27861;&#21017;&#65292;&#21487;&#20197;&#26500;&#36896;&#30452;&#35282;&#19977;&#35282;&#24418;&#30340;&#36793;&#38271;&#65307;
+\item&lt;+-| alert@+&gt;
+  &#20844;&#20803;&#21069; 3 &#19990;&#32426;&#65292;&#27431;&#20960;&#37324;&#24503;&#12298;&#20960;&#20309;&#21407;&#26412;&#12299;&#20351;&#29992;&#38754;&#31215;&#27861;&#35777;&#26126;&#21246;&#32929;&#23450;&#29702;&#12290;
+\end{itemize}</code></pre>
+<p><strong>src/6-3-09.tex</strong></p>
+<pre class="tex"><code>\newdimen\xoffset
+\begin{frame}
+% &#31532;&#19968;&#27493;&#26159;&#38745;&#27490;&#30340;&#65292;&#20043;&#21518;&#33258;&#21160;&#36816;&#21160;
+\animate&lt;2-10&gt;
+\animatevalue&lt;1-10&gt;{\xoffset}{0cm}{5cm}
+\hspace{\xoffset}&#20174;&#24038;&#21040;&#21491;
+\end{frame}</code></pre>
+<p><strong>src/6-3-10.tex</strong></p>
+<pre class="tex"><code>% \usepackage{multimedia}
+\begin{frame}{AVI movie}
+\movie[width=4cm,height=3cm]{Click to play}{foo.avi}
+\end{frame}</code></pre>
+<p><strong>src/6-3-11.tex</strong></p>
+<pre class="tex"><code>% \usepackage{multimedia}
+\begin{frame}{Music}
+% &#33258;&#21160;&#25773;&#25918;&#65292;&#26080;&#26174;&#31034;&#20869;&#23481;
+\sound[autostart]{}{foo.au}
+\end{frame}</code></pre>
+<p><strong>src/6-3-12.tex</strong></p>
+<pre class="tex"><code>% \usepackage{tdclock}
+\begin{frame}
+  &#24403;&#21069;&#26102;&#38388;&#65306;\tdtime&#65307;&#24050;&#32463;&#36807;&#21435;&#26102;&#38388;&#65306;\crono
+\end{frame}</code></pre>
+<p><strong>src/6-3-13.tex</strong></p>
+<pre class="tex"><code>% \usepackage{ocgtools}
+\begin{frame}
+  % &#28857;&#20987;&#20844;&#24335;&#20250;&#26174;&#31034;&#23450;&#29702;&#21517;&#31216;
+  \ocgminitext{$a^2+b^2=c^2$}{Pythagoras Theorem}
+\end{frame}</code></pre>
+<p><strong>src/7-1-01.tex</strong></p>
+<pre class="tex"><code>\documentclass{article} % &#21253;&#21547;&#38169;&#35823;&#30340;&#25991;&#26723;
+\begin{document}
+\secton{Start}
+A simple equation
+\begin{equation}
+  x = \overline{a+b
+\end{equation}
+\end{document}</code></pre>
+<p><strong>src/7-1-02.tex</strong></p>
+<pre class="tex"><code>% &#24403;&#20986;&#29616; ! No room for a new ... &#30340;&#38169;&#35823;&#26102;&#20351;&#29992;
+\usepackage{etex}</code></pre>
+<p><strong>src/7-1-03.tex</strong></p>
+<pre class="tex"><code>% &#23558; txfonts &#23450;&#20041;&#30340;&#37325;&#31215;&#20998;&#31526;&#21495;&#23450;&#20041;&#20026; \TXFiint&#65292;&#20445;&#30041;&#21407;&#26469; amsmath &#30340; \iint
+\usepackage{savesym}
+\usepackage{amsmath}
+\savesymbol{iint}
+\usepackage{txfonts}
+\restoresymbol{TXF}{iint}</code></pre>
+<p><strong>src/7-2-01.tex</strong></p>
+<pre class="tex"><code>\newcommand\Emph[1]{\textbf{\textit{#1}}}
+\show\Emph</code></pre>
+<p><strong>src/7-2-02.tex</strong></p>
+<pre class="tex"><code>\newcommand\Emph[1]{\textbf{\textit{#1}}}
+\texttt{\meaning\Emph}</code></pre>
+<p><strong>src/7-2-03.tex</strong></p>
+<pre class="tex"><code>&#29256;&#38754;&#23485;&#24230;&#26159;&#65306;
+\texttt{\the\textwidth}</code></pre>
+<p><strong>src/7-2-04.tex</strong></p>
+<pre class="tex"><code>\showhyphens{information technology}</code></pre>
+<p><strong>src/7-2-05.tex</strong></p>
+<pre class="tex"><code>\draftmode=1</code></pre>
+<p><strong>src/7-2-06.tex</strong></p>
+<pre class="tex"><code>% &#23548;&#35328;&#21306; \usepackage{trace}
+\newcommand\test[2]{(#1-#2)}
+\traceon
+\test{a}{b}
+\traceoff</code></pre>
+<p><strong>src/7-2-07.tex</strong></p>
+<pre class="tex"><code>\usepackage[l2tabu, orthodox]{nag}</code></pre>
+<p><strong>src/7-2-08.tex</strong></p>
+<pre class="tex"><code>% \usepackage{lipsum}
+\linespread{1}\usefont{T1}{bch}{m}{n}
+\lipsum[1-2]</code></pre>
+<p><strong>src/7-3-01.tex</strong></p>
+<pre class="tex"><code>\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\[
+  \cases{ a &amp; b \cr
+          c &amp; d \cr}
+\]
+\end{document}</code></pre>
+<p><strong>src/7-3-02.tex</strong></p>
+<pre class="tex"><code>\documentclass{minimal}
+\usepackage{amsmath}
+\listfiles
+\begin{document}
+\[
+  \cases{ a &amp; b \cr
+          c &amp; d \cr}
+\]
+\end{document}</code></pre>
+<p><strong>src/8-1-01.tex</strong></p>
+<pre class="tex"><code>\def\testsentence{This is a test.}
+\def\Emph#1{\textbf{#1}}</code></pre>
+<p><strong>src/8-1-02.tex</strong></p>
+<pre class="tex"><code>\def\exchange(#1,#2){#2 and #1}
+\exchange(left,right)</code></pre>
+<p><strong>src/8-1-03.tex</strong></p>
+<pre class="tex"><code>\def\multi#1{(#1,#1)}
+\edef\multi#1{[\multi{#1}, \multi{#1}]}
+\multi{X}</code></pre>
+<p><strong>src/8-1-04.tex</strong></p>
+<pre class="tex"><code>\let\oldemph=\emph
+\renewcommand\emph[1]{\textbf{#1}}
+An \emph{important} command</code></pre>
+<p><strong>src/8-1-05.tex</strong></p>
+<pre class="tex"><code>\let\oldemph=\emph
+\renewcommand\emph[1]{%
+  \oldemph{\Large #1}}
+An \emph{important} command</code></pre>
+<p><strong>src/8-1-06.tex</strong></p>
+<pre class="tex"><code>\ifnum 0=1 &#19981;\fi &#30456;&#31561;&#65292;
+\ifnum \value{page}&gt;100 &#22823;&#39029;&#30721;
+  \else &#23567;&#39029;&#30721;\fi&#65292;
+\ifdim \linewidth&lt;5cm &#31364;&#34892;\else &#23485;&#34892;\fi&#12290;</code></pre>
+<p><strong>src/8-1-07.tex</strong></p>
+<pre class="tex"><code>% \usepackage{changepage}
+\def\outside#1{%
+  \checkoddpage % &#35774;&#32622;&#33258;&#21160;&#20132;&#21449;&#24341;&#29992;
+  \ifoddpage    % &#20351;&#29992;&#20132;&#21449;&#24341;&#29992;&#24182;&#26816;&#26597;&#39029;&#30721;&#22855;&#20598;
+    {\raggedleft #1$\rightarrow$}% &#22855;&#25968;&#39029;&#21491;&#20391;
+  \else
+    {\raggedright $\leftarrow$#1}% &#20598;&#25968;&#39029;&#24038;&#20391;
+  \fi}
+\outside{\textsf{&#21521;&#22806;&#20391;&#23545;&#40784;}}</code></pre>
+<p><strong>src/8-1-08.tex</strong></p>
+<pre class="tex"><code>\def\bigchinese#1{%
+  \ifcase\value{#1}%
+    &#38646;\or &#22777;\or &#36144;\or &#21441;\or &#32902;\or &#20237;\or &#38470;\or &#26578;\or &#25420;\or &#29590;\else &#28322;&#20986;
+  \fi}
+\renewcommand\theenumi{\bigchinese{enumi}}
+\begin{enumerate}\sffamily
+  \item 1 \item 2 \item 3
+\end{enumerate}</code></pre>
+<p><strong>src/8-1-09.tex</strong></p>
+<pre class="tex"><code>\ifnum 0=1\relax 0\else 1\fi</code></pre>
+<p><strong>src/8-1-10.tex</strong></p>
+<pre class="tex"><code>% &#23558;&#21442;&#25968; #2 &#36755;&#20986; 2^#1 &#27425;
+\def\recur#1#2{%
+  \ifnum #1=0\relax%
+    #2 %
+  \else
+    \setcounter{enumi}{#1}%
+    \addtocounter{enumi}{-1}%
+    \recur{\value{enumi}}{#2 #2}%
+  \fi}
+\textsf{\recur0a\recur1b\recur2c\recur3d}</code></pre>
+<p><strong>src/8-1-11.tex</strong></p>
+<pre class="tex"><code>% \usepackage{etoolbox}
+\sffamily
+\ifnumcomp{\value{page}+1}&gt;{10*10}{&#22823;&#39029;&#30721;}{&#23567;&#39029;&#30721;}&#65292;
+\ifboolexpr{not test {\ifnumodd{\value{page}}}
+            and test {\ifdimcomp{\linewidth}&gt;{5cm+20pt/2}}}%
+  {&#26159;}{&#19981;&#26159;}%
+&#20598;&#25968;&#39029;&#23485;&#34892;&#12290;</code></pre>
+<p><strong>src/8-1-12.tex</strong></p>
+<pre class="tex"><code>% \usepackage{etoolbox}
+\begin{math}
+\setcounter{enumi}{1}
+\whileboolexpr{not test {\ifnumcomp{\value{enumi}}&gt;{30}}}%
+{
+  \mathsf{\theenumi}\rightarrow
+  \stepcounter{enumi}
+}
+\cdots
+\end{math}</code></pre>
+<p><strong>src/8-1-13.tex</strong></p>
+<pre class="tex"><code>\catcode`\&quot;=\active
+\def&quot;#1&quot;{\textbf{#1}}
+An &quot;important&quot; usage.</code></pre>
+<p><strong>src/8-1-14.tex</strong></p>
+<pre class="tex"><code>\makeatletter
+\setlength\@fpsep{1cm}% &#28014;&#21160;&#39029;&#20013;&#19981;&#21516;&#28014;&#21160;&#20307;&#38388;&#36317;
+\makeatother</code></pre>
+<p><strong>src/8-1-15.tex</strong></p>
+<pre class="tex"><code>% boldmath.sty
+\ProvidesPackage{boldmath}[2010/10/10 v1.0 emphasis using bold font]
+\newcommand\Emph[1]{\textbf{#1}}</code></pre>
+<p><strong>src/8-1-16.tex</strong></p>
+<pre class="tex"><code>% myarticle.cls
+\ProvidesClass{myarticle}[2010/10/10 v1.0]
+\LoadClass[a4paper,11pt]{article}
+\RequirePackage{boldemph}[2010/10/10]</code></pre>
+<p><strong>src/8-1-17.tex</strong></p>
+<pre class="tex"><code>\DeclareOption{hyperref}{%
+  \RequirePackage{hyperref}%
+}</code></pre>
+<p><strong>src/8-1-18.tex</strong></p>
+<pre class="tex"><code>\AtEndDocument{%
+  \begin{center}
+    \includegraphics{logo.pdf}
+  \end{center}}</code></pre>
+<p><strong>src/8-1-19.tex</strong></p>
+<pre class="tex"><code>% &#22312; boldemph.sty &#20013;&#65292;&#32473; emph &#22686;&#21152;&#21152;&#31895;&#30340;&#21151;&#33021;
+\let\boldmath@oldemph\emph
+\def\emph#1{\textbf{\boldemph@oldemph{#1}}}</code></pre>
+<p><strong>src/8-1-20.tex</strong></p>
+<pre class="tex"><code>% &#36890;&#24120;&#26159;&#22312;&#26576; .sty &#25110; .cls &#20013;
+% \RequirePackage{keyval}
+% &#23450;&#20041; text &#26063;&#30340; emph &#36873;&#39033;&#65292;&#25511;&#21046; \emph &#21629;&#20196;&#30340;&#23450;&#20041;
+\let\text@emph=\emph
+\define@key{text}{emph}[\text@emph]{%
+  \let\emph=#1}
+\newcommand\settext[1]{%
+  \setkeys{text}{#1}}
+
+% &#22312; .tex &#25991;&#20214;&#20013;&#20351;&#29992;
+\begin{quotation}
+\settext{emph=\textbf}  % &#31895;&#20307;
+An \emph{important} example.
+
+\settext{emph}  % &#40664;&#35748;&#30340;&#26684;&#24335;
+An \emph{important} example.
+\end{quotation}</code></pre>
+<p><strong>src/8-1.tex</strong></p>
+<pre class="tex"><code>\begin{codebox}
+\Procname{$\proc{BinSearch}(A, x, L, H)$}
+\li \While $L\le H$ \RComment $L$ &#19982;$H$ &#26159;&#24038;&#21491;&#20998;&#28857;
+\li   \Do $M \gets \lfloor(L+H)/2\rfloor$ \RComment $M$ &#26159;&#20013;&#38388;&#20998;&#28857;
+\li     \If $x &gt; A[M]$
+\li       \Then $H \gets M-1$
+\li     \ElseIf $x &lt; A[M]$
+\li       \Then $H \gets M+1$
+\li     \ElseNoIf \RComment &#25214;&#21040; $x$&#65292;&#36820;&#22238;&#20301;&#32622;
+\li       $j \gets M$
+\li       \Return $j$
+      \End
+    \End
+\li $j \gets 0$
+\li \Return $j$
+\end{codebox}</code></pre>
+<p><strong>src/8-2-01.plt</strong></p>
+<pre class="tex"><code>set terminal epslatex size 8cm,4cm
+set output &#39;sine-epslatex.tex&#39;
+set size 1,1
+set xlabel &#39;$x$&#39;
+set ylabel &#39;$y$&#39;
+set xtics (&#39;$-\pi$&#39; -pi, &#39;$-\frac12\pi$&#39; -pi/2, 0, \
+    &#39;$\frac12\pi$&#39; pi/2, &#39;$\pi$&#39; pi)
+set ytics (-1, 0, 1)
+set format y &quot;$%g$&quot;
+plot [-pi:pi] [-1:1] sin(x) title &#39;$\sin x$&#39;</code></pre>
+<p><strong>src/8-2-02.tex</strong></p>
+<pre class="tex"><code>% \usepackage{pgfplotstable}
+\pgfplotstabletypeset{
+  Input Output
+  -1    10
+  0     1500
+  1     1235.7
+  2     1.53e6
+}</code></pre>
+<p><strong>src/8-2-03.tex</strong></p>
+<pre class="tex"><code>% \usepackage{pgfplotstable,booktabs}
+\pgfplotstableset{
+  every head row/.style={
+    before row=\toprule,after row=\midrule},
+  every last row/.style={
+    after row=\bottomrule},
+  column type=r, col sep=comma}
+\pgfplotstabletypeset{temperature.csv}</code></pre>
+<p><strong>src/8-2-04.markdown</strong></p>
+<pre class="tex"><code>C &#35821;&#35328;&#30340;&#24490;&#29615;&#35821;&#21477;
+================
+
+C &#35821;&#35328;&#21487;&#20197;&#20351;&#29992; `for` &#24490;&#29615;&#35821;&#21477;&#65292;&#20363;&#22914;&#35745;&#31639; $s = \sum_k k^2$&#65306;
+
+    int s = 0;
+    for (int k = 1; k &lt; 10; ++k)
+        s += k * k;</code></pre>
+<p><strong>src/temperature.csv</strong></p>
+<pre class="tex"><code>&#21326;&#24335;,&#25668;&#24335;,&#24320;&#23572;&#25991;
+1,-17.22222222,255.9277778
+20,-6.666666667,266.4833333
+40,4.444444444,277.5944444
+60,15.55555556,288.7055556
+80,26.66666667,299.8166667
+100,37.77777778,310.9277778</code></pre>

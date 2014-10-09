@@ -3,7 +3,10 @@ About Pandoc Markdown {.title}
 
 <title>About Pandoc Markdown</title>
 <link rel="stylesheet" type="text/css" href="https://gist.githubusercontent.com/district10/ad8cdbf68052b70cddf0/raw/qiniu-css-pandoc-intro.css"></link> 
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" href="../../_hl/v1/default.css">
+<script src="../../_hl/v1/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 I. Normal Markdown {.h2 .section}
 ---------------------------------
@@ -93,7 +96,15 @@ $$
 \end{bmatrix}
 $$
 
-这个也不行。。。
+~~这个也不行。。。~~
+
+MD 文件中加上 
+
+~~~~ {.html}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+~~~~
+
+现在可以了。
 
 
 ### 3. Inline HTML（Markdown 中使用 HTML 标记） {.h3}
